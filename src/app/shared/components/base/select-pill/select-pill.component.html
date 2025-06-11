@@ -1,0 +1,40 @@
+<app-pill
+  app-pill
+  [color]="color"
+  [prefixIcon]="prefixIcon"
+  [suffixIcon]="suffixIcon"
+  [size]="size"
+  [sizeIcon]="5"
+  [ngClass]="{
+    'pill-select': true,
+    active: isActive
+  }"
+  nz-dropdown
+  [nzTrigger]="'click'"
+  [nzDropdownMenu]="dropDownTpl"
+  [nzPlacement]="'bottomRight'"
+  [nzOverlayClassName]="'app-select-pill-dropdown'"
+  (click)="handleFocus()"
+  (clickOutside)="handleBlur()"
+>
+  {{ selectedItem?.label }}
+</app-pill>
+
+<nz-dropdown-menu #dropDownTpl="nzDropdownMenu">
+  <ul nz-menu>
+    <li
+      nz-menu-item
+      *ngFor="let item of options"
+      [ngClass]="{
+        'ant-dropdown-menu-item-pill': true,
+        'ant-dropdown-menu-item-pill-selected':
+          item?.value === selectedItem?.value
+      }"
+      (click)="handleChange(item)"
+    >
+      <app-dropdown-item [iconColorChange]="false">
+        {{ item.label }}
+      </app-dropdown-item>
+    </li>
+  </ul>
+</nz-dropdown-menu>

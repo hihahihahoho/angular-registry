@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge",
+  "type": "registry:component",
+  "author": "anhnd13",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/app/shared/components/base/badge/badge.component.ts",
+      "content": "import { CommonModule } from '@angular/common';\r\nimport { Component, HostBinding, Input } from '@angular/core';\r\nimport { BadgeColor, BadgeSize } from '@enums/ui.enum';\r\nimport { SvgInlineComponent } from '../svg-inline/svg-inline.component';\r\n\r\n@Component({\r\n  selector: 'app-badge, [app-badge]',\r\n  standalone: true,\r\n  imports: [CommonModule, SvgInlineComponent],\r\n  templateUrl: './badge.component.html',\r\n  styleUrls: ['./badge.component.scss'],\r\n})\r\nexport class BadgeComponent {\r\n  @Input() color: BadgeColor = BadgeColor.Success;\r\n  @Input() size: BadgeSize = BadgeSize.Md;\r\n  @Input() prefixIcon!: string;\r\n  @Input() suffixIcon!: string;\r\n\r\n  @HostBinding('class') get hostClass() {\r\n    return this.initClass();\r\n  }\r\n\r\n  initClass() {\r\n    let classs = ['app-badge'];\r\n    classs.push('app-badge-' + this.color);\r\n    if (this.size !== BadgeSize.Md) classs.push('app-badge-' + this.size);\r\n    if (this.prefixIcon) classs.push('app-badge-icon-prefix');\r\n    if (this.suffixIcon) classs.push('app-badge-icon-suffix');\r\n    return classs.join(' ');\r\n  }\r\n}\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/badge/badge.component.html",
+      "content": "<app-svg\r\n  *ngIf=\"prefixIcon\"\r\n  [src]=\"prefixIcon\"\r\n  [size]=\"5\"\r\n/>\r\n<ng-content />\r\n<app-svg\r\n  *ngIf=\"suffixIcon\"\r\n  [src]=\"suffixIcon\"\r\n  [size]=\"5\"\r\n/>\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/badge/badge.component.scss",
+      "content": "//name, textColor,  bgColor, borderColor, iconColor\r\n$BadgeConfigs:\r\n  (\"success\", var(--text-textsuccess), var(--background-backgroundsuccesssecondary), var(--transparent), var(--icon-iconsuccess)),\r\n  (\"warning\", var(--text-textwarning), var(--background-backgroundwarningsecondary), var(--transparent), var(--icon-iconwarning)),\r\n  (\"disable\", var(--text-textdisable), var(--background-backgrounddisable), var(--transparent), var(--icon-icondisable)),\r\n  (\"non-semantic\", var(--text-textneutralprimary), var(--background-backgroundsecondary), var(--transparent), var(--icon-iconneutralprimary)),\r\n  (\"error\", var(--text-texterror), var(--background-backgrounderrorsecondary), var(--transparent), var(--icon-iconerror)),\r\n  (\"info\", var(--text-textinfo), var(--background-backgroundinfosecondary), var(--transparent), var(--icon-iconinfo));\r\n\r\n:host {\r\n  @each $name, $textColor, $bgColor, $borderColor, $iconColor in $BadgeConfigs {\r\n    &.app-badge-#{$name} {\r\n      --badge-color: #{$textColor};\r\n      --badge-bg: #{$bgColor};\r\n      --badge-border: #{$borderColor};\r\n      --badge-icon-color: #{$iconColor};\r\n    }\r\n  }\r\n\r\n  &.app-badge {\r\n    @apply inline-flex items-center justify-center gap-1 rounded-full text-label-medium px-3 py-1;\r\n    transition: all 0.15s ease-in;\r\n    background: var(--badge-bg);\r\n    color: var(--badge-color);\r\n    box-shadow: inset 0 0 0 1px var(--badge-border);\r\n  }\r\n  &.app-badge-icon-prefix {\r\n    @apply pl-1;\r\n  }\r\n  &.app-badge-icon-suffix {\r\n    @apply pr-1;\r\n  }\r\n\r\n  svg {\r\n    color: var(--badge-icon-color);\r\n  }\r\n\r\n  &.app-badge {\r\n    &-sm {\r\n      // @apply text-label-xs px-[7px] py-[2px];\r\n    }\r\n\r\n    &-lg {\r\n      // @apply text-label-medium py-[6px] px-3;\r\n    }\r\n  }\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

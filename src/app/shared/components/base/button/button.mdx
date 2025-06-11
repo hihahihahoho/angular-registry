@@ -1,0 +1,62 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Markdown
+} from "@storybook/addon-docs/blocks";
+import button from './button.md?raw';
+
+import * as ButtonStories from "./button.stories";
+
+<Meta of={ButtonStories} />
+
+
+<Title />
+
+---
+<Description />
+<Markdown>{button}</Markdown>
+
+### When to use
+
+#### Button Types
+- Use primary buttons for the main action in a section or form
+- Use secondary buttons for alternative or less important actions
+- Use link buttons for navigation or less prominent actions
+- Use sub-danger buttons for destructive actions
+- Use link-on-color buttons for actions on colored backgrounds
+
+#### Button Sizes
+- Use extra small (xs) buttons in very compact spaces
+- Use small buttons in compact spaces or for less prominent actions
+- Use medium buttons for standard actions
+- Use large buttons for main calls-to-action or when you need more visibility
+
+#### Button Shapes
+- Use circle shape for icon-only buttons
+- Use around shape for standard buttons with rounded corners
+- Use none shape for buttons that need to blend with the background
+
+#### Button Features
+- Use icon buttons when space is limited or when the icon clearly conveys the action
+- Use full-width buttons on mobile devices or when you want to emphasize the action
+- Use buttons with icons to provide additional visual context for the action
+- Use muted style buttons for subtle or tertiary actions
+- Use disabled buttons to indicate that an action is not currently available
+- Use hug content option when you want the button to fit its content exactly
+
+#### Button Alignment
+- Use start alignment to align content to the left
+- Use end alignment to align content to the right
+- Use center alignment for balanced content
+- Use between alignment to space content evenly
+
+### Usage
+
+<Primary />
+<Controls />
+<Stories />

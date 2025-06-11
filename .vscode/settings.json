@@ -1,0 +1,26 @@
+{
+  "tailwindCSS.includeLanguages": {
+    "javascript": "javascript",
+    "html": "HTML"
+  },
+
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "path-autocomplete.pathMappings": {
+    "media/": "${folder}/src/assets/media" // alias for /test
+  },
+  "i18n-ally.localesPaths": ["src/assets/i18n"],
+  "scss.lint.unknownAtRules": "ignore",
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.validProperties": ["composes", "@apply"],
+  "css.lint.validProperties": ["composes", "@apply"],
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+}

@@ -1,0 +1,25 @@
+:host {
+  &.app-validate-error {
+    @apply block;
+    .error-item {
+      @apply flex items-center gap-1 text-text-texterror text-body-medium-pominent;
+      &-left {
+        @apply justify-start;
+      }
+      &-center {
+        @apply justify-center;
+      }
+      &-right {
+        @apply justify-end;
+      }
+      ::ng-deep {
+        .icon-svg {
+          @apply size-5 min-w-5;
+          svg [fill="white"] {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+}

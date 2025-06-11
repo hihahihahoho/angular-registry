@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "otp",
+  "type": "registry:component",
+  "author": "anhnd13",
+  "dependencies": [
+    "ng-otp-input"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/app/shared/components/base/otp/otp.component.ts",
+      "content": "import { CommonModule } from '@angular/common';\r\nimport {\r\n  Component,\r\n  EventEmitter,\r\n  forwardRef,\r\n  HostBinding,\r\n  inject,\r\n  Input,\r\n  Output,\r\n} from '@angular/core';\r\nimport {\r\n  FormBuilder,\r\n  FormControl,\r\n  FormGroup,\r\n  NG_VALUE_ACCESSOR,\r\n  ReactiveFormsModule,\r\n  Validators,\r\n} from '@angular/forms';\r\nimport { ValidateErrorComponent } from '@components/base/validate-error/validate-error.component';\r\nimport { BaseCVADirective } from '@directives/base-cva/base-cva.directive';\r\nimport { UI } from '@services/ui/ui.service';\r\nimport { NgOtpInputComponent } from 'ng-otp-input';\r\n@Component({\r\n  selector: 'app-otp',\r\n  standalone: true,\r\n  templateUrl: './otp.component.html',\r\n  styleUrl: './otp.component.scss',\r\n  imports: [\r\n    CommonModule,\r\n    ReactiveFormsModule,\r\n    ValidateErrorComponent,\r\n    NgOtpInputComponent,\r\n  ],\r\n  providers: [\r\n    {\r\n      provide: NG_VALUE_ACCESSOR,\r\n      useExisting: forwardRef(() => OTPComponent),\r\n      multi: true,\r\n    },\r\n  ],\r\n})\r\nexport class OTPComponent<T> extends BaseCVADirective<T> {\r\n  @HostBinding('class.app-otp') otp = true;\r\n  @Input() size: number = 6;\r\n  @Input() digitOnly: boolean = true;\r\n  @Input() hint!: string;\r\n  @Input() showError: boolean = true;\r\n  @Input() errorMessages?: Record<string, string>;\r\n  @Input() otpValue?: string;\r\n  @Output() otpValueChange = new EventEmitter<string>();\r\n\r\n  readonly UI = inject(UI);\r\n\r\n  private fb = inject(FormBuilder);\r\n\r\n  config = {\r\n    allowNumbersOnly: true,\r\n    showError: this.showError,\r\n    placeholder: '-',\r\n    length: this.size,\r\n    inputClass: 'input-otp',\r\n  };\r\n\r\n  formOTP!: FormGroup;\r\n  errors: Record<string, any> | null = null;\r\n  invalid: boolean = true;\r\n\r\n  override ngOnInit() {\r\n    super.ngOnInit();\r\n    this.formOTP = this.fb.group({\r\n      otp: [this.control.value, Validators.required],\r\n    });\r\n  }\r\n\r\n  onOtpChange(event: string) {\r\n    this.otpValueChange.emit(event);\r\n    this.formOTP.get('otp')?.setValue(event);\r\n    this.invalid = !this.formOTP.valid;\r\n    this.errors = this.formOTP.get('otp')?.errors || null;\r\n  }\r\n\r\n  get otpControl(): FormControl {\r\n    return this.formOTP.get('otp') as FormControl;\r\n  }\r\n}\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/otp/otp.component.html",
+      "content": "<div [formGroup]=\"formOTP\" class=\"input-otps\">\r\n  <ng-otp-input\r\n    formControlName=\"otp\"\r\n    [config]=\"config\"\r\n    (onInputChange)=\"onOtpChange($event)\"\r\n    class=\"input-otp-wrap\"\r\n  ></ng-otp-input>\r\n</div>\r\n\r\n@if ((otpControl.invalid && otpControl.touched && errors) || hint) {\r\n  <div class=\"explain\">\r\n    @if (hint && !(otpControl.invalid && otpControl.touched)) {\r\n      <div class=\"hint\">\r\n        {{ hint }}\r\n      </div>\r\n    }\r\n    @if (showError) {\r\n      @if ((otpControl.invalid && otpControl.touched) || invalid) {\r\n        <app-validate-error [errors]=\"errors\" [errorMessages]=\"errorMessages\" [align]=\"UI.ValidateErrorAlign.Center\" />\r\n      }\r\n    }\r\n  </div>\r\n}\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/otp/otp.component.scss",
+      "content": "",
+      "type": "registry:component"
+    }
+  ]
+}

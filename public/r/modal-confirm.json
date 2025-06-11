@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "modal-confirm",
+  "type": "registry:component",
+  "author": "anhnd13",
+  "dependencies": [
+    "ng-zorro-antd"
+  ],
+  "registryDependencies": [
+    "modal-base",
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/app/shared/components/base/modal/confirm/confirm.component.ts",
+      "content": "import { Component, HostListener, inject } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\nimport { NZ_MODAL_DATA, NzModalRef } from 'ng-zorro-antd/modal';\r\nimport { TranslateModule } from '@ngx-translate/core';\r\nimport { ModalBaseComponent } from '../base/base.component';\r\nimport { UI } from '@services/ui/ui.service';\r\nimport { ReplaceToStyleContentFromServerPipe } from '@pipes/replace-to-style-content-from-server/replace-to-style-content-from-server.pipe';\r\nimport { ButtonComponent } from '@components/base/button/button.component';\r\nimport { SvgInlineComponent } from '@components/base/svg-inline/svg-inline.component';\r\nimport { AnySafeType } from '@enums/type.enum';\r\n\r\n@Component({\r\n  selector: 'app-modal-confirm',\r\n  standalone: true,\r\n  imports: [\r\n    CommonModule,\r\n    TranslateModule,\r\n    ModalBaseComponent,\r\n    SvgInlineComponent,\r\n    ButtonComponent,\r\n    ReplaceToStyleContentFromServerPipe,\r\n  ],\r\n  templateUrl: './confirm.component.html',\r\n  styleUrls: ['./confirm.component.scss'],\r\n})\r\nexport class ModalConfirmComponent {\r\n  readonly UI = inject(UI);\r\n  readonly data: AnySafeType = inject(NZ_MODAL_DATA);\r\n\r\n  constructor(private modal: NzModalRef) {}\r\n\r\n  @HostListener('document:keydown.escape', ['$event']) onKeydownEvent(\r\n    event: KeyboardEvent\r\n  ) {\r\n    // if (!this.data.maskClosable ){\r\n    //   event.preventDefault();\r\n    //   return;\r\n    // }\r\n\r\n    this.closeModal();\r\n  }\r\n\r\n  @HostListener('document:keydown.enter', ['$event']) onEnterEvent(\r\n    event: KeyboardEvent\r\n  ) {\r\n    this.confirmModal();\r\n  }\r\n\r\n  confirmModal() {\r\n    if (this.data.confirm) {\r\n      this.data.confirm();\r\n    }\r\n    this.destroyModal();\r\n  }\r\n\r\n  closeModal() {\r\n    if (this.data.cancel) {\r\n      this.data.cancel();\r\n    }\r\n    this.destroyModal();\r\n  }\r\n\r\n  destroyModal() {\r\n    this.modal.destroy();\r\n  }\r\n\r\n  typeOf(value: any) {\r\n    return typeof value;\r\n  }\r\n}\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/modal/confirm/confirm.component.html",
+      "content": "<ng-template #iconTpl let-type=\"type\">\r\n  <div class=\"flex items-center justify-center notice-icon-wrap\">\r\n    <div class=\"notice-icon-inner\" [ngClass]=\"type?.type\">\r\n      <app-svg\r\n        [src]=\"type?.icon\"\r\n        [colorChange]=\"false\"\r\n        [extendClass]=\"'notice-icon'\"\r\n      />\r\n    </div>\r\n  </div>\r\n</ng-template>\r\n<ng-template #header>\r\n  <ng-container\r\n    *ngIf=\"data.type\"\r\n    [ngTemplateOutlet]=\"iconTpl\"\r\n    [ngTemplateOutletContext]=\"{ type: data.type }\"\r\n  />\r\n\r\n  @if(data.title || data.subTitle) {\r\n  <div class=\"modal-title-group\">\r\n    @if(data.title) {\r\n    <h3 class=\"modal-title\">\r\n      {{ data.title | translate }}\r\n    </h3>\r\n    } @if(data.subTitle) {\r\n    <p class=\"modal-title-sub\">\r\n      {{ data.subTitle | translate }}\r\n    </p>\r\n    }\r\n  </div>\r\n  }\r\n</ng-template>\r\n\r\n<ng-template #actions>\r\n  <a\r\n    app-button\r\n    [size]=\"UI.ButtonSize.Lg\"\r\n    [color]=\"data?.btnCancel?.color || data?.type?.btnCancel?.color\"\r\n    (click)=\"closeModal()\"\r\n  >\r\n    {{ data.btnCancel?.title | translate }}\r\n  </a>\r\n  <a\r\n    app-button\r\n    [size]=\"UI.ButtonSize.Lg\"\r\n    [color]=\"data?.btnConfirm?.color || data?.type?.btnConfirm?.color\"\r\n    (click)=\"confirmModal()\"\r\n  >\r\n    {{ data.btnConfirm?.title | translate }}\r\n  </a>\r\n</ng-template>\r\n\r\n<app-modal-base\r\n  [header]=\"header\"\r\n  [actions]=\"actions\"\r\n  [actionsLayout]=\"data.actionsLayout\"\r\n>\r\n  @if (typeOf(data.message) === 'object') {\r\n  <div class=\"message\">\r\n    <ng-container [ngTemplateOutlet]=\"data.message\" />\r\n  </div>\r\n  } @else { @if(data.isServerContent) {\r\n  <div\r\n    class=\"message\"\r\n    [innerHTML]=\"data.message | replaceToStyleContentFromServer\"\r\n  ></div>\r\n  } @else {\r\n  <div class=\"message\" [innerHTML]=\"data.message | translate\"></div>\r\n  } }\r\n</app-modal-base>\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/modal/confirm/confirm.component.scss",
+      "content": "",
+      "type": "registry:component"
+    }
+  ]
+}

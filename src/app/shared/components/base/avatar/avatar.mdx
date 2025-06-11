@@ -1,0 +1,55 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Markdown
+} from "@storybook/addon-docs/blocks";
+import avatar from './avatar.md?raw';
+
+import * as AvatarStories from "./avatar.stories";
+
+<Meta of={AvatarStories} />
+
+<Title />
+
+---
+<Description />
+<Markdown>{avatar}</Markdown>
+
+### When to use
+
+#### Avatar Types
+- Use image avatar for user photos
+- Use text avatar for initials
+- Use icon avatar for system avatars
+- Use placeholder avatar for missing images
+
+#### Avatar Features
+- Use different sizes based on context
+- Use with status indicators
+- Use with badges for notifications
+- Use with custom fallback content
+
+#### Use Cases
+- User profiles and accounts
+- Team member displays
+- Chat interfaces
+- Comment sections
+- Navigation menus
+
+#### Best Practices
+- Use appropriate size for context
+- Provide meaningful fallbacks
+- Consider accessibility
+- Maintain consistent styling
+- Use high-quality images
+
+### Usage
+
+<Primary />
+<Controls />
+<Stories />

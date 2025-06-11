@@ -1,0 +1,84 @@
+import { Meta, Story, Controls, Primary } from '@storybook/addon-docs/blocks';
+import * as ToggleStories from './toggle.stories';
+
+<Meta of={ToggleStories} />
+
+# Toggle Component
+
+The Toggle component provides a switch control for boolean values, allowing users to toggle between on and off states.
+
+## Features
+
+- Form control integration
+- Custom label support
+- Click event handling
+- Disabled state
+- ng-zorro control option
+- Accessibility support
+
+## When to use
+
+- **Settings**: Toggle application settings
+- **Preferences**: Switch user preferences
+- **Feature Flags**: Enable/disable features
+- **Notifications**: Control notification settings
+- **Form Controls**: Boolean input in forms
+
+## Examples
+
+<Primary />
+
+## Usage Guidelines
+
+### Basic Usage
+- Use for simple on/off toggles
+- Include clear, concise labels
+- Consider the context of the toggle
+
+### Form Integration
+- Use with ReactiveFormsModule
+- Handle form control states
+- Manage disabled states appropriately
+
+### Best Practices
+1. Use clear, descriptive labels
+2. Position toggles consistently
+3. Provide visual feedback
+4. Consider touch targets
+5. Handle state changes appropriately
+6. Support keyboard navigation
+
+## Accessibility
+
+- Ensure proper color contrast
+- Include appropriate ARIA labels
+- Support keyboard navigation
+- Provide clear focus states
+- Consider screen reader compatibility
+
+## API Reference
+
+<Controls />
+
+### Properties
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| label | string | - | Label text for the toggle |
+| nzControl | boolean | false | Whether to use ng-zorro control |
+| control | FormControl | - | Form control for the toggle |
+| labelLeftTpl | TemplateRef | - | Custom label template |
+
+### Events
+
+| Event | Description |
+|-------|-------------|
+| clickEvent | Emitted when toggle is clicked |
+
+## Integration
+
+The toggle component integrates with:
+- Angular's form system
+- ng-zorro-antd
+- Custom styling system
+- Accessibility features

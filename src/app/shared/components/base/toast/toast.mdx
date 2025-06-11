@@ -1,0 +1,94 @@
+import { Meta, Story, Controls, Primary } from '@storybook/addon-docs/blocks';
+import * as ToastStories from './toast.stories';
+
+<Meta of={ToastStories} />
+
+# Toast Component
+
+The Toast component provides non-disruptive notifications that appear temporarily to provide feedback to users about their actions.
+
+## Features
+
+- Multiple types (success, error, warning, info)
+- Customizable duration
+- Configurable placement
+- Custom styling support
+- Automatic dismissal
+- Close button
+
+## When to use
+
+- **Success Messages**: Confirm successful operations
+- **Error Notifications**: Alert users about errors
+- **Warning Messages**: Draw attention to potential issues
+- **Information Updates**: Provide non-critical information
+- **Action Feedback**: Give feedback for user actions
+
+## Examples
+
+<Primary />
+
+## Usage Guidelines
+
+### Types
+- **Success**: Use for completed operations
+- **Error**: Use for failed operations
+- **Warning**: Use for potential issues
+- **Info**: Use for general information
+
+### Duration
+- Default: 3000ms (3 seconds)
+- Adjust based on message importance
+- Longer for critical information
+- Shorter for quick confirmations
+
+### Placement
+- Default: topRight
+- Options: topLeft, topRight, bottomLeft, bottomRight
+- Consider screen space and user attention
+
+### Best Practices
+1. Keep messages clear and concise
+2. Use appropriate toast type
+3. Don't overuse toasts
+4. Ensure sufficient duration
+5. Consider mobile responsiveness
+6. Maintain consistent styling
+
+## Accessibility
+
+- Ensure proper color contrast
+- Include appropriate ARIA labels
+- Support keyboard navigation
+- Consider screen reader compatibility
+- Provide clear focus states
+
+## API Reference
+
+<Controls />
+
+### Properties
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| data | object | - | Toast configuration object |
+| data.type | string | - | Type of toast (success/error/warning/info) |
+| data.title | string | - | Toast title |
+| data.message | string | - | Toast message |
+| data.duration | number | 3000 | Display duration in milliseconds |
+| data.placement | string | 'topRight' | Toast placement |
+| data.class | string | '' | Additional CSS classes |
+
+### Events
+
+| Event | Description |
+|-------|-------------|
+| close | Emitted when toast is closed |
+
+## Integration
+
+The toast component integrates with:
+- Notification service
+- Angular's dependency injection
+- Custom styling system
+- Responsive design framework

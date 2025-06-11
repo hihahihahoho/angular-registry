@@ -1,0 +1,83 @@
+import { Meta, Story, Controls, Primary } from '@storybook/addon-docs/blocks';
+import * as StepStories from './step.stories';
+
+<Meta of={StepStories} />
+
+# Step Component
+
+The Step component provides a visual representation of progress through a sequence of steps in a process.
+
+## Features
+
+- Multiple step types (Full, Bar)
+- Customizable step count
+- Current step tracking
+- Translation support
+- Responsive design
+- Progress visualization
+
+## When to use
+
+- **Multi-step Forms**: Guide users through form completion
+- **Onboarding**: Show progress in user onboarding flows
+- **Wizards**: Display steps in wizard interfaces
+- **Process Flows**: Visualize progress in multi-step processes
+- **Registration**: Track progress in registration flows
+
+## Examples
+
+<Primary />
+
+## Usage Guidelines
+
+### Types
+- **Full**: Use for detailed step information with descriptions
+- **Bar**: Use for simple progress indication
+
+### Step Count
+- Keep steps to a minimum (3-5 recommended)
+- Ensure logical progression
+- Avoid too many steps in a single flow
+
+### Best Practices
+1. Use clear, concise step labels
+2. Maintain consistent step ordering
+3. Show current step clearly
+4. Provide clear progress indication
+5. Consider mobile responsiveness
+6. Use appropriate step type for context
+
+## Accessibility
+
+- Ensure proper color contrast
+- Include appropriate ARIA labels
+- Support keyboard navigation
+- Provide clear focus states
+- Consider screen reader compatibility
+
+## API Reference
+
+<Controls />
+
+### Properties
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| type | StepType | Full | Type of the step component |
+| currentStep | number | 1 | Current active step |
+| count | number | - | Total number of steps |
+| steps | any[] | - | Array of step items |
+
+### Events
+
+| Event | Description |
+|-------|-------------|
+| stepChange | Emitted when active step changes |
+
+## Integration
+
+The step component integrates with:
+- Angular's template system
+- Translation service
+- Custom styling system
+- Responsive design framework

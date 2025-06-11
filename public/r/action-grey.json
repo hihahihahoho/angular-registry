@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "action-grey",
+  "type": "registry:component",
+  "author": "anhnd13",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/app/shared/components/base/action-grey/action-grey.component.ts",
+      "content": "import { Component } from '@angular/core';\r\nimport { SvgInlineComponent } from '@components/base/svg-inline/svg-inline.component';\r\n\r\n@Component({\r\n  selector: '[app-action-grey]',\r\n  imports: [SvgInlineComponent],\r\n  templateUrl: './action-grey.component.html',\r\n  styleUrl: './action-grey.component.scss'\r\n})\r\nexport class ActionGreyComponent {\r\n\r\n}\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/action-grey/action-grey.component.html",
+      "content": "<div class=\"flex-1\">\r\n  <ng-content></ng-content>\r\n</div>\r\n<app-svg [src]=\"'media/icons/outline/chevron-right.svg'\" [size]=\"5\" />\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/action-grey/action-grey.component.scss",
+      "content": ":host {\r\n  @apply flex rounded-xl bg-background-backgroundsecondary px-4 py-3 items-center gap-3 w-full text-left;\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

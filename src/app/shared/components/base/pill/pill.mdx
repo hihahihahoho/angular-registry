@@ -1,0 +1,88 @@
+import { Meta, Story, Controls, Primary } from '@storybook/addon-docs/blocks';
+import * as PillStories from './pill.stories';
+
+<Meta of={PillStories} />
+
+# Pill Component
+
+The Pill component is a versatile element used to display small pieces of information, status indicators, or interactive elements in a compact, visually distinct format.
+
+## Features
+
+- Multiple color variants
+- Different sizes
+- Icon support (prefix and suffix)
+- Clickable state
+- Customizable content
+- Responsive design
+
+## When to use
+
+- **Status Indicators**: Show status or state information
+- **Tags**: Display categories or labels
+- **Filters**: Represent active filters
+- **Interactive Elements**: Create clickable pills for actions
+- **Information Display**: Show small pieces of information
+
+## Examples
+
+<Primary />
+
+## Usage Guidelines
+
+### Colors
+- **Primary**: Use for main actions or important information
+- **Secondary**: Use for secondary actions or less prominent information
+- **Success**: Use for positive states or successful actions
+- **Warning**: Use for cautionary states or pending actions
+- **Danger**: Use for critical states or destructive actions
+
+### Sizes
+- Small (sm): Use for compact spaces
+- Medium (md): Default size for most cases
+- Large (lg): Use for emphasis or touch targets
+
+### Icons
+- Prefix icons: Add before content
+- Suffix icons: Add after content
+- Icon sizes: Adjust based on pill size
+
+### Best Practices
+1. Keep content concise and clear
+2. Use appropriate color for context
+3. Consider touch targets for clickable pills
+4. Maintain consistent spacing
+5. Use icons to enhance meaning
+6. Ensure proper contrast for accessibility
+
+## Accessibility
+
+- Ensure proper color contrast
+- Include appropriate ARIA labels
+- Support keyboard navigation
+- Provide clear focus states
+- Consider screen reader compatibility
+
+## API Reference
+
+<Controls />
+
+### Properties
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| color | PillColor | Primary | Color variant of the pill |
+| size | PillSize | Md | Size of the pill |
+| prefixIcon | string \| null | null | Icon to show before content |
+| suffixIcon | string \| null | null | Icon to show after content |
+| sizeIcon | number | - | Size of the icon |
+| labelClick | boolean | false | Whether the pill is clickable |
+| data | any \| null | null | Additional data for the pill |
+
+## Integration
+
+The pill component integrates with:
+- Angular's template system
+- Icon system
+- Custom styling system
+- Accessibility features

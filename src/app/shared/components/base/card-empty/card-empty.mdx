@@ -1,0 +1,82 @@
+import { Meta, Story, Controls, Primary, Markdown } from '@storybook/addon-docs/blocks';
+import * as CardEmptyStories from './card-empty.stories';
+
+<Meta of={CardEmptyStories} />
+
+# Card Empty Component
+
+The Card Empty component displays a placeholder state when there is no content to show, providing a better user experience than showing a blank space.
+
+## Features
+
+- Multiple empty state types (List, User)
+- Customizable title
+- Optional additional content
+- Responsive design
+- Consistent styling
+
+## When to use
+
+- **Empty Lists**: When a list or table has no items
+- **No Results**: When a search returns no matches
+- **Empty States**: When a section has no content
+- **User Profiles**: When a user profile is empty
+- **Initial States**: When content is loading or not yet available
+
+## Examples
+
+<Primary />
+
+## Usage Guidelines
+
+### Types
+- **List**: Use for empty lists, tables, or collections
+- **User**: Use for empty user profiles or user-related content
+
+### Content
+- Keep titles clear and descriptive
+- Use appropriate empty state type
+- Consider adding helpful actions
+- Provide context for the empty state
+
+### Best Practices
+1. Use clear, friendly messaging
+2. Provide next steps or actions when possible
+3. Maintain consistent styling with your design system
+4. Consider adding illustrations or icons
+5. Keep the interface clean and uncluttered
+
+## Accessibility
+
+- Use proper ARIA labels
+- Ensure sufficient color contrast
+- Provide clear text alternatives
+- Consider screen reader compatibility
+- Maintain keyboard navigation
+
+## API Reference
+
+<Controls />
+
+### Properties
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| type | CardEmptyType | List | The type of empty state to display |
+| title | string | - | The title text to display |
+| moreContent | TemplateRef | null | Additional content template |
+
+### Events
+
+| Event | Description |
+|-------|-------------|
+| action | Emitted when an action button is clicked |
+
+## Integration
+
+The card empty component can be used with:
+- Lists and tables
+- Search results
+- User profiles
+- Content sections
+- Loading states

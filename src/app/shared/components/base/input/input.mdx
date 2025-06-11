@@ -1,0 +1,40 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Markdown
+} from "@storybook/addon-docs/blocks";
+import input from './input.md?raw';
+
+import * as InputStories from "./input.stories";
+
+<Meta of={InputStories} />
+
+<Title />
+
+---
+<Description />
+<Markdown>{input}</Markdown>
+
+### When to use
+
+- Use text inputs for free-form text entry
+- Use password inputs for sensitive information
+- Use small inputs in compact spaces or for less important fields
+- Use large inputs for main form fields or when you need more visibility
+- Use inputs with icons to provide additional visual context
+- Use tooltips when you need to provide additional information about the field
+- Use hint text to provide guidance on what to enter
+- Use required indicators for mandatory fields
+- Use borderless style for a cleaner look in certain contexts
+- Use validation states to provide feedback on user input
+
+### Usage
+
+<Primary />
+<Controls />
+<Stories />

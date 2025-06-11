@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge-number",
+  "type": "registry:component",
+  "author": "anhnd13",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/app/shared/components/base/badge-number/badge-number.component.ts",
+      "content": "import { Component, HostBinding, Input } from '@angular/core';\r\nimport { BadgeNumberColor } from '@enums/ui.enum';\r\n\r\n@Component({\r\n  selector: 'app-badge-number, [app-badge-number]',\r\n  imports: [],\r\n  templateUrl: './badge-number.component.html',\r\n  styleUrl: './badge-number.component.scss'\r\n})\r\nexport class BadgeNumberComponent {\r\n  @Input() color: BadgeNumberColor = BadgeNumberColor.Primary;\r\n\r\n  @HostBinding('class') get hostClass() {\r\n    return this.initClass();\r\n  }\r\n\r\n  initClass() {\r\n    let classs = ['app-badge-number'];\r\n    classs.push('app-badge-number-' + this.color);\r\n    return classs.join(' ');\r\n  }\r\n}\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/badge-number/badge-number.component.html",
+      "content": "<ng-content></ng-content>\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/badge-number/badge-number.component.scss",
+      "content": ":host {\r\n  @apply min-w-5 h-5 flex items-center justify-center text-center text-label-small rounded-full ring-[1.5px] ring-border-borderwhite;\r\n  &.app-badge-number {\r\n    &-primary {\r\n      @apply bg-background-backgroundbrandprimary text-text-textoncolorprimary;\r\n    }\r\n    &-secondary {\r\n      @apply bg-brand-brandprimary20 text-text-textlink;\r\n    }\r\n  }\r\n}\r\n\r\n::ng-deep {\r\n  .ant-tabs-tab:not(.ant-tabs-tab-active) {\r\n    .app-badge-number-primary {\r\n      @apply bg-brand-brandprimary20 text-text-textlink;\r\n    }\r\n  }\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

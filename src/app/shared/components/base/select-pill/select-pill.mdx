@@ -1,0 +1,100 @@
+import { Meta, Story, Controls, Primary } from '@storybook/addon-docs/blocks';
+import * as SelectPillStories from './select-pill.stories';
+
+<Meta of={SelectPillStories} />
+
+# Select Pill Component
+
+The Select Pill component combines the functionality of a select dropdown with a pill-style display, providing a compact and visually appealing way to select and display options.
+
+## Features
+
+- Pill-style display
+- Single and multiple selection
+- Searchable options
+- Custom option templates
+- Form integration
+- Validation support
+- Loading state
+- Disabled state
+- Clearable selection
+- Custom placeholder
+- Responsive design
+
+## When to use
+
+- **Tags Selection**: When selecting multiple tags or categories
+- **Filter Pills**: For displaying active filters
+- **Status Selection**: For selecting status or state
+- **Category Selection**: For choosing categories with visual feedback
+- **Multi-select Inputs**: When multiple selections need to be displayed as pills
+
+## Examples
+
+<Primary />
+
+## Usage Guidelines
+
+### Selection Modes
+- **Single**: Use for selecting one option
+- **Multiple**: Use for selecting multiple options with pill display
+
+### Display
+- Use pills to show selected items
+- Consider pill color for different states
+- Maintain consistent spacing
+- Handle overflow gracefully
+
+### Best Practices
+1. Keep option labels concise
+2. Use appropriate colors for different states
+3. Consider mobile responsiveness
+4. Handle loading states
+5. Provide clear validation feedback
+6. Support keyboard navigation
+
+## Accessibility
+
+- Ensure proper ARIA labels
+- Support keyboard navigation
+- Provide clear focus states
+- Consider screen reader compatibility
+- Handle focus management
+
+## API Reference
+
+<Controls />
+
+### Properties
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| options | any[] | [] | Array of select options |
+| value | any \| any[] | - | Selected value(s) |
+| multiple | boolean | false | Whether multiple selection is allowed |
+| searchable | boolean | false | Whether options are searchable |
+| placeholder | string | 'Select...' | Placeholder text |
+| loading | boolean | false | Loading state |
+| disabled | boolean | false | Disabled state |
+| clearable | boolean | false | Whether selection can be cleared |
+| optionTemplate | TemplateRef | - | Custom option template |
+| valueTemplate | TemplateRef | - | Custom value template |
+| pillColor | string | - | Color for the pill display |
+
+### Events
+
+| Event | Description |
+|-------|-------------|
+| selectionChange | Emitted when selection changes |
+| search | Emitted when search input changes |
+| remove | Emitted when a pill is removed |
+
+## Integration
+
+The select pill component integrates with:
+- Angular's form system
+- Reactive forms
+- Template-driven forms
+- Custom styling system
+- Accessibility features
+- Pill component system

@@ -1,0 +1,2 @@
+--semantic-blue10: #f1fafe;
+--background-backgroundinfosecondary: var(--semantic-blue10)

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "copy-button",
+  "type": "registry:component",
+  "author": "anhnd13",
+  "dependencies": [
+    "ng-zorro-antd"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/app/shared/components/base/copy-button/copy-button.component.ts",
+      "content": "import { CommonModule } from '@angular/common';\r\nimport { Component, HostListener, Input, inject } from '@angular/core';\r\nimport { ToastService } from '@services/toast/toast.service';\r\nimport { NzToolTipModule } from 'ng-zorro-antd/tooltip';\r\nimport { SvgInlineComponent } from '../svg-inline/svg-inline.component';\r\n\r\n@Component({\r\n  selector: 'app-copy-button',\r\n  standalone: true,\r\n  imports: [\r\n    CommonModule,\r\n    SvgInlineComponent, // Or your actual SvgComponent\r\n    NzToolTipModule\r\n  ],\r\n  templateUrl: './copy-button.component.html',\r\n  styleUrls: ['./copy-button.component.scss'],\r\n})\r\nexport class CopyButtonComponent {\r\n  @Input() text!: string;\r\n  @Input() size = 6;\r\n  private toastService = inject(ToastService);\r\n\r\n  @HostListener('click', ['$event'])\r\n  onHostClick(event: MouseEvent): void {\r\n    event.preventDefault();   // Prevent default action (like navigation if it were an <a>)\r\n    event.stopPropagation(); // Stop the event from bubbling to parent elements\r\n    this.copyTextToClipboard();\r\n  }\r\n\r\n  private copyTextToClipboard(): void {\r\n    if (!this.text) {\r\n      console.warn('CopyButtonComponent: No text provided to copy.');\r\n      return;\r\n    }\r\n\r\n    if (navigator.clipboard && window.isSecureContext) {\r\n      navigator.clipboard.writeText(this.text).then(\r\n        () => this.toastService.success({\r\n          title: 'Sao chép thành công'\r\n        }),\r\n        (err) => {\r\n          console.error('Failed to copy: ', err);\r\n          this.toastService.error({\r\n            title: 'Sao chép thất bại'\r\n          });\r\n        }\r\n      );\r\n    } else {\r\n      console.error('Clipboard API not available or context is not secure. Cannot copy.');\r\n      this.toastService.error({\r\n        title: 'Không thể sao chép',\r\n        message: 'Tính năng sao chép không khả dụng trong môi trường này.'\r\n      });\r\n    }\r\n  }\r\n}\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/copy-button/copy-button.component.html",
+      "content": "<div\r\n  class=\"min-w-{{ size }} min-h-{{\r\n    size\r\n  }} cursor-pointer select-none flex items-center gap-1\"\r\n  nz-tooltip\r\n  [nzTooltipTitle]=\"'Sao chép'\"\r\n>\r\n  <ng-content> </ng-content>\r\n  <app-svg [size]=\"size\" [src]=\"'media/icons/outline/copy.svg'\" />\r\n</div>\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/copy-button/copy-button.component.scss",
+      "content": ":host {\r\n  @apply block text-label-medium\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

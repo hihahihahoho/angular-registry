@@ -1,0 +1,51 @@
+<ng-template #headerDefaultTpl>
+  @if (close) {
+    <a
+      app-button
+      [color]="UI.ButtonColor.LinkPrimary"
+      [mute]="true"
+      [iconOnly]="true"
+      [shape]="UI.ButtonShape.Circle"
+      [size]="UI.ButtonSize.Sm"
+      [prefixIcon]="'media/icons/outline/close.svg'"
+      class="modal-close"
+      (click)="closeModal()"
+    ></a>
+  }
+  @if (title || subTitle) {
+    <div class="modal-title-group">
+      @if (title) {
+        <h3 class="modal-title">
+          {{ title | translate }}
+        </h3>
+      }
+      @if (subTitle) {
+        <p class="modal-title-sub">
+          {{ subTitle | translate }}
+        </p>
+      }
+    </div>
+  }
+  <ng-container *ngTemplateOutlet="headerExtendBotTpl" />
+</ng-template>
+
+<div class="text-center modal-header">
+  <ng-container *ngTemplateOutlet="header || headerDefaultTpl" />
+</div>
+
+<div class="modal-body" [ngClass]="{ '!px-0': bodyNoPx }">
+  <ng-content />
+</div>
+
+@if (footer || actions) {
+  <div class="modal-footer">
+    <div class="footer-wrap">
+      <ng-container *ngIf="footer" [ngTemplateOutlet]="footer" />
+      @if (actions) {
+        <div class="actions actions-{{ actionsLayout }}">
+          <ng-container [ngTemplateOutlet]="actions" />
+        </div>
+      }
+    </div>
+  </div>
+}

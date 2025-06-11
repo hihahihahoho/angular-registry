@@ -1,0 +1,44 @@
+:host {
+  @apply p-3 rounded-xl gap-2 flex;
+  &.alert-c-card-header {
+    @apply rounded-b-none px-4 sm:px-6
+  }
+  &.alert-c {
+    &-info {
+      @apply bg-background-backgroundinfosecondary;
+      .title {
+        @apply text-text-textinfo;
+      }
+      ::ng-deep svg {
+        @apply text-icon-iconinfo;
+      }
+    }
+    &-alert {
+      @apply bg-background-backgroundwarningsecondary;
+      .title {
+        @apply text-text-textwarning;
+      }
+      ::ng-deep svg {
+        @apply text-icon-iconwarning;
+      }
+    }
+    &-error {
+      @apply bg-background-backgrounderrorsecondary;
+      .title {
+        @apply text-text-texterror;
+      }
+      ::ng-deep svg {
+        @apply text-icon-iconerror;
+      }
+    }
+    &-success {
+      @apply bg-background-backgroundsuccesssecondary;
+      .title {
+        @apply text-text-textsuccess;
+      }
+      ::ng-deep svg {
+        @apply text-icon-iconsuccess;
+      }
+    }
+  }
+}

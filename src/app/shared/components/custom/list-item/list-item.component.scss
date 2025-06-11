@@ -1,0 +1,15 @@
+:host {
+  &.c-list-item {
+    @apply hover:bg-hover block;
+    @apply p-4 md:px-6 rounded-none w-full text-left #{!important};
+  }
+}
+
+.c-list-item {
+  &__content {
+    @apply flex flex-1 gap-3 items-center;
+    &__logo {
+      @apply size-10;
+    }
+  }
+}

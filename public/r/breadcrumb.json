@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "breadcrumb",
+  "type": "registry:component",
+  "author": "anhnd13",
+  "dependencies": [
+    "ng-zorro-antd"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/app/shared/components/base/breadcrumb/breadcrumb.component.ts",
+      "content": "import { CommonModule } from '@angular/common';\r\nimport { Component, HostBinding, inject, Input, OnInit } from '@angular/core';\r\nimport { RouterModule } from '@angular/router';\r\nimport { DropdownItemComponent } from '@components/base/dropdown-item/dropdown-item.component';\r\nimport { MainRoute } from '@enums/route.enum';\r\nimport { TranslateModule } from '@ngx-translate/core';\r\nimport {\r\n  BreadcrumbService,\r\n  IBreadcrumb,\r\n} from '@services/breadcrumb/breadcrumb.service';\r\nimport { NzDropDownModule } from 'ng-zorro-antd/dropdown';\r\nimport { SvgInlineComponent } from '../svg-inline/svg-inline.component';\r\n\r\n@Component({\r\n  selector: 'app-breadcrumb',\r\n  standalone: true,\r\n  imports: [\r\n    CommonModule,\r\n    RouterModule,\r\n    TranslateModule,\r\n    DropdownItemComponent,\r\n    NzDropDownModule,\r\n    SvgInlineComponent\r\n  ],\r\n  templateUrl: './breadcrumb.component.html',\r\n  styleUrls: ['./breadcrumb.component.scss'],\r\n})\r\nexport class BreadcrumbComponent implements OnInit {\r\n  @HostBinding('class.app-breadcrumb') wrap = true;\r\n  @Input() LENGTH_MAX_SHOW_ALL: number = 3;\r\n  private breadcrumbService = inject(BreadcrumbService);\r\n  breadcrumbs!: IBreadcrumb[];\r\n  MainRoute = MainRoute;\r\n\r\n  HomeBread = {\r\n    url: MainRoute.Home,\r\n  };\r\n\r\n  ngOnInit(): void {\r\n    this.breadcrumbService.getBreadcrumb().subscribe((data) => {\r\n      this.breadcrumbs = data;\r\n      console.log(data);\r\n\r\n    });\r\n  }\r\n}\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/breadcrumb/breadcrumb.component.html",
+      "content": "<ng-template\r\n  #breadCrumbTpl\r\n  let-item=\"item\"\r\n  let-isLast=\"isLast\"\r\n  let-special=\"special\"\r\n>\r\n\r\n  @if (special) {\r\n    <a\r\n      class=\"breadcrumb-item\"\r\n      nz-dropdown\r\n      [nzTrigger]=\"'click'\"\r\n      [nzDropdownMenu]=\"dropDownTpl\"\r\n    >\r\n      ...\r\n    </a>\r\n  } @else {\r\n    <a\r\n      class=\"breadcrumb-item\"\r\n      [routerLink]=\"isLast || item?.url === '/' ? null : item?.url\"\r\n      [ngClass]=\"{\r\n        'breadcrumb-item-active': isLast,\r\n        'breadcrumb-item-disabled': item?.url === '/' && !isLast\r\n      }\"\r\n    >\r\n      <div>{{ item.label | translate }}</div>\r\n    </a>\r\n  }\r\n</ng-template>\r\n\r\n<a [routerLink]=\"HomeBread.url\" class=\"flex items-center\">\r\n  <app-svg\r\n    [src]=\"'media/icons/doutone/home.svg'\"\r\n    [size]=\"5\"\r\n  />\r\n</a>\r\n@for (breadcrumb of breadcrumbs; track $index) {\r\n  @if ($count > LENGTH_MAX_SHOW_ALL) {\r\n    @let lastIndex = $count - 1;\r\n    @if ([0, lastIndex].includes($index)) {\r\n      <ng-container\r\n        [ngTemplateOutlet]=\"breadCrumbTpl\"\r\n        [ngTemplateOutletContext]=\"{ item: breadcrumb, isLast: $last }\"\r\n      />\r\n    } @else if ($index === 1) {\r\n      <ng-container\r\n        [ngTemplateOutlet]=\"breadCrumbTpl\"\r\n        [ngTemplateOutletContext]=\"{ special: true }\"\r\n      />\r\n    }\r\n  } @else {\r\n    <ng-container\r\n      [ngTemplateOutlet]=\"breadCrumbTpl\"\r\n      [ngTemplateOutletContext]=\"{ item: breadcrumb, isLast: $last }\"\r\n    />\r\n  }\r\n}\r\n<nz-dropdown-menu #dropDownTpl=\"nzDropdownMenu\">\r\n  <ul nz-menu>\r\n    @for (item of breadcrumbs.slice(1, -1); track $index) {\r\n      <li nz-menu-item [routerLink]=\"item.url\">\r\n        <app-dropdown-item>\r\n          {{ item.label | translate }}\r\n        </app-dropdown-item>\r\n      </li>\r\n    }\r\n  </ul>\r\n</nz-dropdown-menu>\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/breadcrumb/breadcrumb.component.scss",
+      "content": ":host {\r\n  &.app-breadcrumb {\r\n    @apply flex flex-wrap gap-0.5 text-body-small-semibold text-text-textneutralsecondary;\r\n  }\r\n}\r\n\r\n.breadcrumb-item {\r\n  @apply flex items-center hover:text-inherit;\r\n\r\n  &:not(:first-child)::before {\r\n    content: \"\";\r\n    background-size: 16px;\r\n    @apply inline-block size-4 mr-0.5 bg-center bg-no-repeat;\r\n    background-image: url(\"data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 4L9.5286 7.5286C9.78894 7.78895 9.78894 8.21106 9.5286 8.4714L6 12' stroke='%23A1A1AA' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6 4L9.5286 7.5286C9.78894 7.78895 9.78894 8.21106 9.5286 8.4714L6 12' stroke='%2318181B' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A\");\r\n  }\r\n\r\n  &:last-child {\r\n    @apply cursor-text;\r\n  }\r\n\r\n  &:not(:last-child) {\r\n    &:hover {\r\n      // @apply text-primary;\r\n    }\r\n  }\r\n  &-disabled {\r\n    @apply cursor-not-allowed text-text-textneutraltertiary #{!important};\r\n  }\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

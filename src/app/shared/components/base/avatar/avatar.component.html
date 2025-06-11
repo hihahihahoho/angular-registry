@@ -1,0 +1,43 @@
+<div [ngClass]="{ wrapper: true, 'wrapper-change-photo': enableChange }">
+  <ng-container [ngSwitch]="type">
+    <img
+      *ngSwitchCase="'image'"
+      alt="avatar"
+      [src]="content"
+      class="avt"
+      [alt]="content"
+    />
+    <ng-container *ngSwitchCase="'icon'">
+      <app-svg
+        *ngIf="style === 'light'"
+        [src]="content"
+        [size]="SIZE_ICON_CONTENT[style][size]"
+        [colorChange]="changeColorIcon"
+      />
+      <img
+        *ngIf="style === 'bank'"
+        [src]="content"
+        [class]="'size-' + SIZE_ICON_CONTENT[style][size]"
+        alt="img-{{ content }}"
+      />
+    </ng-container>
+    <div *ngSwitchCase="'text'" class="title">
+      {{ content | shortenName }}
+    </div>
+  </ng-container>
+</div>
+@if(enableChange) {
+<button
+  class="change-box"
+  type="button"
+  aria-label="button change avt"
+  [shape]="UI.ButtonShape.Circle"
+  app-button
+  [iconOnly]="true"
+  [color]="btnChangeColor"
+  [iconSize]="SIZE_ICON_BTN[size]"
+  [prefixIcon]="iconChange"
+  [iconColorChange]="iconChange2Color"
+  (click)="handleChangeAvt()"
+></button>
+}

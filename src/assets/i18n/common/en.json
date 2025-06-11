@@ -1,0 +1,25 @@
+{
+  "common": {
+    "thong_bao": "Notification",
+    "khong_tim_thay_ket_qua_phu_hop": "Could not find matching results"
+  },
+
+  "breadcrumb": {
+    "components":"Components",
+    "trang_chu":"Home"
+
+  },
+  "step": {
+    "khoi_tao":"Initiate",
+    "xac_nhan": "Confirm",
+    "xac_thuc": "Authenticate",
+    "ket_qua": "Result",
+  },
+  "msg_invalid" : {
+    "required": "Vui lòng không bỏ trống _en",
+    "mail_pattern":"Email sai định dạng _en",
+    "otp_not_match":"OTP không khớp _en",
+    "not_filled":"Vui lòng điền đủ thông tin _en",
+    "otp_notFill":"OTP chưa được nhập đầy đủ _en"
+  }
+}

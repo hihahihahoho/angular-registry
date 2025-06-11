@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-empty",
+  "type": "registry:component",
+  "author": "anhnd13",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/app/shared/components/base/card-empty/card-empty.component.ts",
+      "content": "import { CommonModule } from '@angular/common';\r\nimport { Component, HostBinding, Input, TemplateRef } from '@angular/core';\r\nimport { CardEmptyIconType, CardEmptyType } from '@enums/ui.enum';\r\n\r\n@Component({\r\n  selector: 'app-card-empty, [app-card-empty]',\r\n  standalone: true,\r\n  imports: [CommonModule],\r\n  templateUrl: './card-empty.component.html',\r\n  styleUrl: './card-empty.component.scss',\r\n})\r\nexport class CardEmptyComponent {\r\n  @Input() type: CardEmptyType = CardEmptyType.List;\r\n  @Input() title!: string;\r\n  @Input() moreContent!: TemplateRef<void>;\r\n\r\n  @HostBinding('class.app-card-empty') card = true;\r\n\r\n  mediaSrc!: string;\r\n\r\n  ngOnInit() {\r\n    switch (this.type) {\r\n      case CardEmptyType.User:\r\n        this.mediaSrc = CardEmptyIconType.User;\r\n        break;\r\n      default:\r\n        this.mediaSrc = CardEmptyIconType.List;\r\n        break;\r\n    }\r\n  }\r\n}\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/card-empty/card-empty.component.html",
+      "content": "<div class=\"card-empty-inner\">\r\n  <div class=\"empty-media\">\r\n    <img [src]=\"mediaSrc\" class=\"media\" alt=\"\" />\r\n  </div>\r\n  <div class=\"content\">\r\n    @if (title) {\r\n      <p class=\"title\">{{ title }}</p>\r\n    }\r\n    <div class=\"descriptions\">\r\n      <ng-content />\r\n    </div>\r\n  </div>\r\n  @if (moreContent) {\r\n    <div class=\"more-content\">\r\n      <ng-container [ngTemplateOutlet]=\"moreContent\" />\r\n    </div>\r\n  }\r\n</div>\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/card-empty/card-empty.component.scss",
+      "content": ":host {\r\n  &.app-card-empty {\r\n    @apply block pb-3;\r\n    .card-empty-inner {\r\n      @apply space-y-3 w-full mx-auto py-6;\r\n    }\r\n\r\n    .empty-media {\r\n      @apply w-[120px] h-[120px] mx-auto;\r\n    }\r\n\r\n    .content {\r\n      @apply text-text-textneutralsecondary text-body-medium-regular text-center;\r\n    }\r\n\r\n    .title {\r\n      @apply text-text-textneutralprimary text-body-large-semibold mb-1;\r\n    }\r\n\r\n    .descriptions {\r\n      // @apply text-text-secondary text-body-large-medium;\r\n    }\r\n  }\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

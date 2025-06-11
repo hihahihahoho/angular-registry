@@ -1,0 +1,260 @@
+<ng-template #emptyDefaultTpl>
+  {{ "common.khong_tim_thay_ket_qua_phu_hop" | translate }}
+</ng-template>
+
+<ng-template #notFoundContent>
+  <app-card-empty>
+    <ng-container [ngTemplateOutlet]="emptyTpl || emptyDefaultTpl" />
+  </app-card-empty>
+</ng-template>
+
+<ng-template #selectSuffixIcon>
+  <div class="flex gap-x-2 items-center">
+    @if (suffix) {
+      <div [innerHTML]="suffix"></div>
+    }
+    <app-svg
+      [colorChange]="false"
+      class="arrow"
+      [src]="'media/icons/outline/chevron-down-2.svg'"
+    />
+  </div>
+</ng-template>
+
+<ng-template #clearIconTpl>
+  <a
+    app-button
+    class="clear-icon"
+    [mute]="true"
+    [iconOnly]="true"
+    [iconColorChange]="false"
+    [size]="'lg'"
+    [prefixIcon]="'media/icons/solid/cancel.svg'"
+    (click)="clear()"
+  ></a>
+</ng-template>
+
+<ng-template #imageTpl let-image="image">
+  @switch (iconType) {
+    @case ("avatar") {
+      <app-avatar [content]="image" [type]="avatarType" [size]="iconSize" />
+    }
+    @case ("card") {
+      <div class="type-card">
+        <img [src]="image" alt="" class="" />
+      </div>
+    }
+    @default {
+      <div class="select-prefix-image-wrap">
+        <app-svg
+          [src]="image"
+          [extendClass]="'select-prefix-image'"
+          [colorChange]="false"
+          [size]="5"
+        />
+      </div>
+    }
+  }
+</ng-template>
+
+<ng-template #resultTplDefault let-selected>
+  <ng-container *ngIf="getItem(selected) as item">
+    @if (resultTpl) {
+      <ng-container
+        [ngTemplateOutlet]="resultTpl"
+        [ngTemplateOutletContext]="{ item: item }"
+      />
+    } @else {
+      <div class="selected-wrap">
+        @if (item?.image) {
+          <div class="selected-image">
+            <div class="size-9 logo-bg">
+              <img [src]="item?.image" alt="" class="size-[80%]" />
+            </div>
+          </div>
+        }
+        <div class="selected-value">
+          <div class="title">{{ item?.label }}</div>
+          @if (showSub && item?.sub) {
+            <div class="sub">
+              {{ item?.sub }}
+            </div>
+          }
+        </div>
+      </div>
+    }
+  </ng-container>
+</ng-template>
+
+<ng-template #optionDefaultTpl let-item="item">
+  <div
+    [ngClass]="{
+      'custom-option-item': true,
+      isPagination: isPagination,
+      'has-sub': hasSub,
+    }"
+  >
+    @if (item?.image) {
+      <div class="custom-option-item--image">
+        <div class="size-10 logo-bg">
+          <img [src]="item?.image" alt="" class="size-[80%]" />
+        </div>
+      </div>
+    }
+    <div class="custom-option-item--value">
+      <div class="option-title">
+        @if (titleTpl) {
+          <ng-container
+            [ngTemplateOutlet]="titleTpl"
+            [ngTemplateOutletContext]="{ item: item }"
+          />
+        } @else {
+          {{ item?.label | translate }}
+        }
+      </div>
+      @if (item?.sub) {
+        <div class="option-sub">
+          @if (subTpl) {
+            <ng-container
+              [ngTemplateOutlet]="subTpl"
+              [ngTemplateOutletContext]="{ item: item }"
+            />
+          } @else {
+            {{ item?.sub | translate }}
+          }
+        </div>
+      }
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #optionItemTpl let-item="item">
+  <ng-container
+    [ngTemplateOutlet]="optionTpl || optionDefaultTpl"
+    [ngTemplateOutletContext]="{ item: item }"
+  />
+</ng-template>
+
+@if (label) {
+  <div
+    [ngClass]="{
+      label: true,
+      required: required && showRequired,
+    }"
+  >
+    <ng-template #tooltipDefaultTpl>
+      <div class="body-medium-thick mb-1">This is a tooltip</div>
+      <div class="body-medium-thin">
+        Tooltips are used to describe or identify an element. In most scenarios,
+        tooltips help the user understand the meaning, function or alt-text of
+        an element.
+      </div>
+    </ng-template>
+    <label class="label-inner" [for]="id">
+      {{ label }}
+      @if (showTooltip) {
+        <app-svg
+          class="icon-tooltip"
+          [extendClass]="'md:size-6'"
+          [size]="5"
+          [colorChange]="false"
+          nz-tooltip
+          [nzTooltipTitle]="tooltipTpl || tooltipDefaultTpl"
+          [src]="tooltipIcon"
+        />
+      }
+    </label>
+  </div>
+}
+
+<div class="app-root">
+  <div class="app-root-main">
+    <div class="select-wrapper" [class.more-wrapper]="moreBlock">
+      <nz-select
+        [nzId]="id"
+        [nzPlaceHolder]="placeholder"
+        [nzShowSearch]="allowSearch"
+        [nzFilterOption]="handleFilterWhenChangeSearch.bind(this)"
+        [nzMode]="multiple ? 'multiple' : 'default'"
+        [nzOptionHeightPx]="optionHeight"
+        [nzShowArrow]="showArrow"
+        [nzBorderless]="borderLess"
+        [nzAllowClear]="isShowClear()"
+        [nzSuffixIcon]="selectSuffixIcon"
+        [nzClearIcon]="clearIconTpl"
+        [nzDropdownClassName]="dropdownClassName"
+        [nzSize]="size"
+        [class.show-sub]="showSub"
+        [class]="class"
+        [nzCustomTemplate]="resultTplDefault"
+        [nzNotFoundContent]="notFoundContent"
+        [nzDropdownRender]="dropdownRender"
+        [formControl]="control"
+        (nzOpenChange)="open($event)"
+        (nzBlur)="handleBlur($event)"
+        (nzScrollToBottom)="handleScrollToBottom()"
+        [nzOptionOverflowSize]="optionOverflowSize"
+        [nzLoading]="false"
+      >
+        @if (allowAll) {
+          <nz-option
+            [nzValue]="'all'"
+            [nzCustomContent]="true"
+            [nzDisabled]="disabledAll"
+          >
+            <ng-container
+              [ngTemplateOutlet]="optionItemTpl"
+              [ngTemplateOutletContext]="{
+                item: {
+                  label: 'common.tat_ca',
+                  value: 'all',
+                },
+              }"
+            />
+          </nz-option>
+        }
+        @for (item of options; track item.value) {
+          <nz-option
+            [nzValue]="item.value"
+            [nzCustomContent]="true"
+            [nzDisabled]="item?.disabled"
+          >
+            <ng-container
+              [ngTemplateOutlet]="optionItemTpl"
+              [ngTemplateOutletContext]="{ item: item }"
+            />
+          </nz-option>
+        }
+      </nz-select>
+
+      @if (moreBlock) {
+        <div class="more">
+          <ng-container [ngTemplateOutlet]="moreBlock" />
+        </div>
+        <div class="wrapper"></div>
+      }
+    </div>
+
+    @if (extendRight) {
+      <div class="extend-right">
+        <ng-container [ngTemplateOutlet]="extendRight" />
+      </div>
+    }
+  </div>
+
+  @if ((control.invalid && control.touched && showInvalid) || hint) {
+    <div class="explain">
+      @if (hint && !(control.invalid && control.touched)) {
+        <div class="hint">
+          {{ hint }}
+        </div>
+      }
+      @if (control.invalid && control.touched && showInvalid) {
+        <app-validate-error
+          [errors]="control.errors"
+          [errorMessages]="errorMessages"
+        />
+      }
+    </div>
+  }
+</div>

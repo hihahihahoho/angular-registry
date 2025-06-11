@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "accordion",
+  "type": "registry:file",
+  "author": "anhnd13",
+  "dependencies": [
+    "ng-zorro-antd"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/app/shared/components/base/accordion/accordion.component.ts",
+      "content": "import { CommonModule } from '@angular/common';\r\nimport { Component, HostBinding, Input, TemplateRef } from '@angular/core';\r\nimport { SvgInlineComponent } from '@components/base/svg-inline/svg-inline.component';\r\nimport { AccordionSize, AccordionType } from '@enums/ui.enum';\r\nimport { NzCollapseModule } from 'ng-zorro-antd/collapse';\r\n\r\n@Component({\r\n  selector: 'app-accordion, [app-accordion]',\r\n  standalone: true,\r\n  imports: [CommonModule, NzCollapseModule, SvgInlineComponent],\r\n  templateUrl: './accordion.component.html',\r\n  styleUrl: './accordion.component.scss',\r\n})\r\nexport class AccordionComponent {\r\n  @Input() header?: string;\r\n  @Input() expandIconSrc: string = 'media/icons/outline/chevron-down-2.svg';\r\n  @Input() expandIconPosition: 'end' | 'start' = 'end';\r\n  @Input() headerTpl?: TemplateRef<void>;\r\n  @Input() extraTpl?: TemplateRef<void>;\r\n  @Input() isActive: boolean = false;\r\n  @Input() isDisabled: boolean = false;\r\n  @Input() showArrow: boolean = true;\r\n  @Input() headerCenter: boolean = false;\r\n  @Input() reverse: boolean = false;\r\n  @Input() type: AccordionType = AccordionType.Box;\r\n  @Input() size: AccordionSize = AccordionSize.Lg;\r\n\r\n  readonly AccordionType = AccordionType;\r\n\r\n  @HostBinding('class') get hostClass() {\r\n    return `app-accordion\r\n    app-accordion-${this.type}\r\n    app-accordion-${this.size}\r\n    ${this.isActive ? 'app-accordion-active' : ''}\r\n    ${this.headerCenter ? 'app-accordion-header-center' : ''}\r\n    ${this.reverse ? 'app-accordion-reverse' : ''}\r\n    `;\r\n  }\r\n\r\n  changeActive(active: boolean) {\r\n    this.isActive = active;\r\n  }\r\n}\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/accordion/accordion.component.html",
+      "content": "<ng-template #headerDefaultTpl>\r\n  @if (type === AccordionType.Arrow) {\r\n    <div class=\"flex gap-1.5 items-center\">\r\n      <div class=\"flex-1 text-title-large\">\r\n        {{ header }}\r\n      </div>\r\n      <div class=\"size-9 rounded-full flex items-center justify-center bg-neutral-white100 collapse-arrow\">\r\n        <app-svg\r\n          [src]=\"'media/icons/outline/chevron-down.svg'\"\r\n          [ngClass]=\"isActive ? 'active' : ''\"\r\n        />\r\n      </div>\r\n    </div>\r\n  } @else {\r\n    {{ header }}\r\n  }\r\n</ng-template>\r\n\r\n<ng-template #headerWrapTpl>\r\n  <div class=\"app-accordion-header\">\r\n    <div class=\"app-accordion-title\">\r\n      <ng-container\r\n        [ngTemplateOutlet]=\"headerTpl || headerDefaultTpl\"\r\n        [ngTemplateOutletContext]=\"{ isActive: isActive }\"\r\n      />\r\n    </div>\r\n  </div>\r\n</ng-template>\r\n\r\n<ng-template #expandedIcon>\r\n  <div class=\"ant-collapse-arrow\">\r\n    <app-svg\r\n      class=\"text-icon-iconbrandprimary\"\r\n      [src]=\"expandIconSrc\"\r\n      [ngClass]=\"isActive ? 'active' : ''\"\r\n    />\r\n  </div>\r\n</ng-template>\r\n\r\n<nz-collapse nzGhost [nzExpandIconPosition]=\"expandIconPosition\">\r\n  <nz-collapse-panel\r\n    #panel\r\n    [nzHeader]=\"headerWrapTpl\"\r\n    [nzExpandedIcon]=\"expandedIcon\"\r\n    [nzActive]=\"isActive\"\r\n    [nzDisabled]=\"isDisabled\"\r\n    [nzExtra]=\"extraTpl\"\r\n    [nzShowArrow]=\"type === AccordionType.Arrow ? false : showArrow\"\r\n    (nzActiveChange)=\"changeActive($event)\"\r\n  >\r\n    <ng-content />\r\n  </nz-collapse-panel>\r\n</nz-collapse>\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/accordion/accordion.component.scss",
+      "content": "",
+      "type": "registry:component"
+    }
+  ]
+}

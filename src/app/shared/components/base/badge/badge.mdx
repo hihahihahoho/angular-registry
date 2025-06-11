@@ -1,0 +1,89 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories
+} from "@storybook/addon-docs/blocks";
+import * as BadgeStories from './badge.stories';
+
+<Meta of={BadgeStories} />
+
+# Badge Component
+<Markdown>
+
+</Markdown>
+The Badge component is a versatile UI element used to display status, labels, or counts in a compact and visually appealing way.
+
+## Features
+
+- Multiple color variants
+- Different sizes (small, medium, large)
+- Support for prefix and suffix icons
+- Customizable content
+- Responsive design
+
+## When to use
+
+- **Status Indicators**: Use badges to show the status of an item or process
+- **Labels**: Display categories, tags, or labels
+- **Counters**: Show numerical values or counts
+- **Notifications**: Indicate new or updated content
+
+## Examples
+
+<Primary />
+
+## Usage Guidelines
+
+### Colors
+- Use primary color for important or primary actions
+- Use success color for completed or successful states
+- Use warning color for pending or attention-required states
+- Use danger color for errors or critical states
+- Use info color for informational states
+
+### Sizes
+- Small (sm): Use for compact spaces or inline text
+- Medium (md): Default size, use for most cases
+- Large (lg): Use for prominent display or emphasis
+
+### Icons
+- Prefix icons: Use to enhance visual recognition
+- Suffix icons: Use for actions or additional information
+- Icon colors: Can be customized to match the badge color scheme
+
+### Best Practices
+1. Keep badge text concise and clear
+2. Use appropriate colors to convey meaning
+3. Ensure sufficient contrast for accessibility
+4. Maintain consistent spacing around badges
+5. Use icons sparingly and purposefully
+
+## Accessibility
+
+- Badges should have sufficient color contrast
+- Include appropriate ARIA labels when used as status indicators
+- Ensure text is readable at all sizes
+- Consider screen reader compatibility when using icons
+
+## API Reference
+
+<Controls />
+
+### Properties
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| color | BadgeColor | Success | The color variant of the badge |
+| size | BadgeSize | Md | The size of the badge |
+| prefixIcon | string | null | Path to the prefix icon |
+| suffixIcon | string | null | Path to the suffix icon |
+
+### Events
+
+| Event | Description |
+|-------|-------------|
+| click | Emitted when the badge is clicked |

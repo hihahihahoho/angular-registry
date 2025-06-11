@@ -1,0 +1,79 @@
+import { Meta, Story, Controls, Primary, Markdown } from '@storybook/addon-docs/blocks';
+import * as BreadcrumbStories from './breadcrumb.stories';
+
+<Meta of={BreadcrumbStories} />
+
+# Breadcrumb Component
+
+The Breadcrumb component provides navigation context by showing the user's current location within a website's hierarchy.
+
+## Features
+
+- Automatic route-based breadcrumb generation
+- Collapsible for long navigation paths
+- Customizable maximum visible items
+- Responsive design
+- Integration with Angular Router
+
+## When to use
+
+- **Deep Navigation**: Use when users need to navigate through multiple levels
+- **Content Hierarchy**: Show the relationship between pages
+- **Navigation Context**: Help users understand their current location
+- **Back Navigation**: Provide easy way to move up the hierarchy
+
+## Examples
+
+<Primary />
+
+## Usage Guidelines
+
+### Structure
+- Start with home/root level
+- Show current page as the last item
+- Use clear, concise labels
+- Maintain consistent hierarchy
+
+### Maximum Items
+- Default: 3 items visible
+- Collapse middle items when exceeding limit
+- Show first and last items
+- Provide dropdown for collapsed items
+
+### Best Practices
+1. Keep breadcrumb labels short and clear
+2. Use proper hierarchy in navigation
+3. Ensure all items are clickable except current page
+4. Maintain consistent styling
+5. Consider mobile responsiveness
+
+## Accessibility
+
+- Use proper ARIA labels
+- Ensure keyboard navigation
+- Maintain sufficient color contrast
+- Provide clear visual hierarchy
+- Include proper semantic markup
+
+## API Reference
+
+<Controls />
+
+### Properties
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| LENGTH_MAX_SHOW_ALL | number | 3 | Maximum number of breadcrumbs to show before collapsing |
+
+### Events
+
+| Event | Description |
+|-------|-------------|
+| navigation | Emitted when a breadcrumb item is clicked |
+
+## Integration
+
+The breadcrumb component integrates with:
+- Angular Router for automatic route detection
+- Translation service for internationalization
+- Dropdown component for collapsed items

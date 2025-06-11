@@ -1,0 +1,92 @@
+import { Meta, Story, Controls, Primary } from '@storybook/addon-docs/blocks';
+import * as TabStories from './tab.stories';
+
+<Meta of={TabStories} />
+
+# Tab Component
+
+The Tab component provides a way to organize content into separate views where only one view is visible at a time.
+
+## Features
+
+- Multiple tab types (Pill, Line)
+- Different sizes (small, medium, large)
+- Fill and center options
+- Custom themes
+- Initial tab selection
+- Custom tab templates
+
+## When to use
+
+- **Content Organization**: Group related content
+- **Navigation**: Switch between different views
+- **Forms**: Separate form sections
+- **Settings**: Organize settings categories
+- **Data Display**: Show different data views
+
+## Examples
+
+<Primary />
+
+## Usage Guidelines
+
+### Types
+- **Pill**: Use for modern, rounded design
+- **Line**: Use for traditional, underlined design
+
+### Sizes
+- Small (sm): Use for compact spaces
+- Medium (md): Default size for most cases
+- Large (lg): Use for emphasis or touch targets
+
+### Layout
+- **Fill**: Use to distribute tabs evenly
+- **Center**: Use to center-align tabs
+- **Default**: Use for standard left alignment
+
+### Best Practices
+1. Keep tab labels clear and concise
+2. Limit the number of tabs (3-5 recommended)
+3. Use consistent tab ordering
+4. Maintain visual hierarchy
+5. Consider mobile responsiveness
+6. Use appropriate tab type for context
+
+## Accessibility
+
+- Ensure proper color contrast
+- Include appropriate ARIA labels
+- Support keyboard navigation
+- Provide clear focus states
+- Consider screen reader compatibility
+
+## API Reference
+
+<Controls />
+
+### Properties
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| size | TabSize | Md | Size of the tabs |
+| type | TabType | Pill | Type of the tabs |
+| fill | boolean | false | Whether to fill container width |
+| tabCenter | boolean | false | Whether to center the tabs |
+| theme | TabTheme | Brand | Theme of the tabs |
+| initIndex | number | 0 | Initial active tab index |
+| tabs | any[] | - | Array of tab items |
+| tabTitleTpl | TemplateRef | - | Custom tab title template |
+
+### Events
+
+| Event | Description |
+|-------|-------------|
+| tabChangeIndex | Emitted when active tab changes |
+
+## Integration
+
+The tab component integrates with:
+- Angular's template system
+- Translation service
+- Custom styling system
+- Responsive design framework

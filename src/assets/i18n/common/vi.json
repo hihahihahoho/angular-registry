@@ -1,0 +1,25 @@
+{
+  "common": {
+    "thong_bao": "Thông báo",
+    "khong_tim_thay_ket_qua_phu_hop": "Không tìm thấy kết quả phù hợp"
+  },
+
+  "breadcrumb": {
+    "components":"Thư viện",
+    "trang_chu":"Trang chủ"
+
+  },
+  "step": {
+    "khoi_tao":"Khởi tạo",
+    "xac_nhan": "Xác nhận",
+    "xac_thuc": "Xác thực",
+    "ket_qua": "Kết quả"
+  },
+  "msg_invalid" : {
+    "required": "Vui lòng không bỏ trống ",
+    "mail_pattern":"Email sai định dạng ",
+    "otp_not_match":"OTP không khớp ",
+    "not_filled":"Vui lòng điền đủ thông tin ",
+    "otp_notFill":"OTP chưa được nhập đầy đủ "
+  }
+}

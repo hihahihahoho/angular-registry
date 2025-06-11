@@ -1,0 +1,162 @@
+:root {
+  --page-wrapper: 680px;
+  --page-wrapper-lg: 836px;
+  --page-wrapper-xl: 1032px;
+  --page-wrapper-full: 100%;
+
+  --width-sidebar-left-expanded: 300px;
+  --width-sidebar-left-collapsed: 0px;
+  --width-sidebar-left-orgin: var(--width-sidebar-left);
+  --width-sidebar-left: 240px;
+
+  --modal-size-xs: 360px;
+  --modal-size-sm: 440px;
+  --modal-size-xmd: 480px;
+  --modal-size-md: 520px;
+  --modal-size-lg: 640px;
+  --modal-size-xl: 920px;
+
+  --min-width-dropdown-menu: 200px;
+  --max-width-dropdown-menu: min(
+    calc(100vw - 80px),
+    calc(var(--page-wrapper-lg) - 80px)
+  );
+  --width-dropdown-menu-xs: 280px;
+
+  --space-top-drawer: 128px;
+
+  --flex-basic-label: 216px;
+  --pd-base: 24px;
+
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semiBold: 600;
+  --bold: 700;
+  --extraBold: 800;
+
+  --height-input-xs: 32px;
+  --height-input-sm: 32px;
+  --height-input-md: 40px;
+  --height-input-lg: 48px;
+  --height-otp: 56px;
+  --width-otp: 48px;
+  --height-tabline-sm: 40px;
+  --height-tabline-md: 48px;
+  --height-tabline-lg: 56px;
+
+  --height-textarea-sm: 32px;
+  --height-textarea-md: 40px;
+  --height-textarea-lg: 48px;
+
+  --height-inputmoney: 72px;
+
+  --br-radius-input-xs: 8px;
+  --br-radius-input-sm: 8px;
+  --br-radius-input-md: 12px;
+  --br-radius-input-lg: 16px;
+
+  --px-input-sm: 16px;
+  --px-input-md: 16px;
+  --px-input-lg: 16px;
+
+  --br-xs: 4px;
+  --br-sm: 8px;
+  --br-lg: 12px;
+
+  --bg-image-default: url('data:image/svg+xml,<svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M26.4955 32.625H7.00455C3.51364 32.625 0.75 29.8614 0.75 26.3705V6.87955C0.75 3.38864 3.51364 0.625 7.00455 0.625H26.4955C29.9864 0.625 32.75 3.38864 32.75 6.87955V26.3705C32.75 29.8614 29.9864 32.625 26.4955 32.625Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M16.1679 10.5158C16.4588 8.33397 15.0043 6.44307 12.8224 6.0067C10.6406 5.71579 8.74971 7.17034 8.31334 9.35216C8.02243 11.534 9.47698 13.4249 11.6588 13.8612C13.8406 14.1522 15.877 12.6976 16.1679 10.5158Z" fill="%23E9EFF5"/><path fill-rule="evenodd" clip-rule="evenodd" d="M30.2769 18.225C30.2769 17.3523 29.5497 16.625 28.5315 16.625C28.386 16.625 28.386 16.625 28.2406 16.625C25.6224 17.0614 23.0042 19.3886 20.6769 21.2795C15.0042 26.225 10.4951 22.4432 10.4951 22.4432C11.0769 24.9159 11.3678 27.3886 11.2224 29.8614L26.6406 29.7159C28.6769 29.7159 30.4224 27.9705 30.2769 25.9341V18.225Z" fill="%23E0E8F1"/><path fill-rule="evenodd" clip-rule="evenodd" d="M30.2772 25.0614C27.5136 25.6433 23.1499 25.9342 18.4954 21.4251C12.3863 15.4614 8.02266 16.1887 4.82266 17.6433C3.80447 18.0796 3.22266 19.2433 3.22266 20.2614V26.2251C3.22266 28.2614 4.96811 30.0069 7.00447 30.0069L26.4954 29.716C28.5317 29.8614 30.2772 28.2614 30.2772 26.2251C30.2772 26.0796 30.2772 25.9342 30.2772 25.7887V25.0614Z" fill="%23E9EFF5"/></svg>');
+
+  --font-family: "PG Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", serif;
+
+  @media (max-width: 576px) {
+    --flex-basic-label: 120px;
+  }
+
+  @media (max-width: 767px) {
+    --pd-base: 16px;
+  }
+}
+
+/* cyrillic-ext */
+
+@font-face {
+    font-family: 'PG Sans';
+    src: url('../media/fonts/PGSans-Medium.eot');
+    src: local('PG Sans Medium'), local('PGSans-Medium'),
+        url('../media/fonts/PGSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../media/fonts/PGSans-Medium.woff2') format('woff2'),
+        url('../media/fonts/PGSans-Medium.woff') format('woff'),
+        url('../media/fonts/PGSans-Medium.ttf') format('truetype'),
+        url('../media/fonts/PGSans-Medium.svg#PGSans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PG Sans';
+    src: url('../media/fonts/PGSans-Bold.eot');
+    src: local('PG Sans Bold'), local('PGSans-Bold'),
+        url('../media/fonts/PGSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../media/fonts/PGSans-Bold.woff2') format('woff2'),
+        url('../media/fonts/PGSans-Bold.woff') format('woff'),
+        url('../media/fonts/PGSans-Bold.ttf') format('truetype'),
+        url('../media/fonts/PGSans-Bold.svg#PGSans-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PG Sans';
+    src: url('../media/fonts/PGSans-SemiBold.eot');
+    src: local('PG Sans SemiBold'), local('PGSans-SemiBold'),
+        url('../media/fonts/PGSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../media/fonts/PGSans-SemiBold.woff2') format('woff2'),
+        url('../media/fonts/PGSans-SemiBold.woff') format('woff'),
+        url('../media/fonts/PGSans-SemiBold.ttf') format('truetype'),
+        url('../media/fonts/PGSans-SemiBold.svg#PGSans-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PG Sans';
+    src: url('../media/fonts/PGSans-Regular.eot');
+    src: local('PG Sans Regular'), local('PGSans-Regular'),
+        url('../media/fonts/PGSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../media/fonts/PGSans-Regular.woff2') format('woff2'),
+        url('../media/fonts/PGSans-Regular.woff') format('woff'),
+        url('../media/fonts/PGSans-Regular.ttf') format('truetype'),
+        url('../media/fonts/PGSans-Regular.svg#PGSans-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PG Sans';
+    src: url('../media/fonts/PGSans-ExtraBold.eot');
+    src: local('PG Sans ExtraBold'), local('PGSans-ExtraBold'),
+        url('../media/fonts/PGSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../media/fonts/PGSans-ExtraBold.woff2') format('woff2'),
+        url('../media/fonts/PGSans-ExtraBold.woff') format('woff'),
+        url('../media/fonts/PGSans-ExtraBold.ttf') format('truetype'),
+        url('../media/fonts/PGSans-ExtraBold.svg#PGSans-ExtraBold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root,
+[data-theme="light"] {
+  @import "theme/light.scss";
+  @include lighten();
+}
+
+[data-theme="priority"] {
+  @import "theme/priority.scss";
+  @include priority();
+}

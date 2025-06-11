@@ -1,0 +1,52 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Markdown
+} from "@storybook/addon-docs/blocks";
+import accordion from './accordion.md?raw';
+
+import * as AccordionStories from "./accordion.stories";
+
+<Meta of={AccordionStories} />
+
+<Title />
+
+---
+<Description />
+<Markdown>{accordion}</Markdown>
+
+### When to use
+
+#### Accordion Types
+- Use single accordion for simple expandable content
+- Use multiple accordion for grouped related content
+- Use nested accordion for hierarchical information
+
+#### Accordion Features
+- Use with icons to indicate expandable state
+- Use with custom headers for better context
+- Use with different sizes based on content
+- Use with different styles to match your design
+
+#### Content Organization
+- Use for FAQs and help sections
+- Use for complex form sections
+- Use for nested navigation
+- Use for collapsible content sections
+
+#### Best Practices
+- Keep content concise and focused
+- Use clear and descriptive headers
+- Consider mobile responsiveness
+- Maintain consistent styling
+
+### Usage
+
+<Primary />
+<Controls />
+<Stories />

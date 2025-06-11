@@ -1,0 +1,15 @@
+<div *ngIf="prefixIcon" class="prefix">
+  <app-svg [src]="prefixIcon" [size]="sizeIcon || SIZE_ICON[size]" />
+</div>
+<div class="title">
+  <ng-content />
+</div>
+<div *ngIf="suffixIcon || suffix" class="suffix">
+  <app-svg
+    *ngIf="suffixIcon"
+    class="suffix-icon"
+    [size]="sizeIcon || SIZE_ICON[size]"
+    [src]="suffixIcon"
+  />
+  <ng-container [ngTemplateOutlet]="suffix || null" />
+</div>

@@ -1,0 +1,21 @@
+<ng-template #toastTpl let-data="data">
+  <div class="wrapper">
+    <app-svg
+      [src]="data.icon"
+      [colorChange]="false"
+      [extendClass]="'ant-notification-icon'"
+    />
+    <div class="content-wrapper">
+      <div class="title">{{ data.title }}</div>
+      @if(data.message) {
+      <div class="message">
+        <ng-container [ngTemplateOutlet]="data.message" />
+      </div>
+      }
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #closeTpl>
+  <app-svg class="text-text-textneutralsecondary" [src]="'media/icons/outline/close.svg'" />
+</ng-template>

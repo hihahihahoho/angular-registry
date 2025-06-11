@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "validate-error",
+  "type": "registry:component",
+  "author": "anhnd13",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/app/shared/components/base/validate-error/validate-error.component.ts",
+      "content": "import { Component, HostBinding, Input, SimpleChanges } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\nimport { ValidationErrors } from '@angular/forms';\r\nimport { TranslateModule } from '@ngx-translate/core';\r\n// import { SvgInlineComponent } from '../svg-inline/svg-inline.component';\r\nimport { ValidateErrorAlign } from '@enums/ui.enum';\r\n\r\n@Component({\r\n  selector: 'app-validate-error',\r\n  standalone: true,\r\n  imports: [\r\n    CommonModule,\r\n    TranslateModule,\r\n    // SvgInlineComponent,\r\n  ],\r\n  templateUrl: './validate-error.component.html',\r\n  styleUrls: ['./validate-error.component.scss'],\r\n})\r\nexport class ValidateErrorComponent {\r\n  @HostBinding('class.app-validate-error') error = true;\r\n  @Input() errors: Record<string, ValidationErrors> | null = null;\r\n  @Input() errorMessages?: Record<string, string>;\r\n  @Input() align: ValidateErrorAlign = ValidateErrorAlign.Left;\r\n\r\n  customErrorMessages: Record<string, string> = {\r\n    required: 'msg_invalid.required',\r\n    emailNotMatch: 'msg_invalid.mail_pattern',\r\n    otpNotMatched: 'msg_invalid.otp_not_match',\r\n    notFilled: 'msg_invalid.not_filled',\r\n    otpNotFill: 'msg_invalid.otp_notFill',\r\n  };\r\n\r\n  ngOnChanges(changes: SimpleChanges): void {\r\n    const { errorMessages } = changes;\r\n    if (errorMessages) {\r\n      this.customErrorMessages = {\r\n        ...this.customErrorMessages,\r\n        ...errorMessages.currentValue,\r\n      };\r\n    }\r\n  }\r\n}\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/validate-error/validate-error.component.html",
+      "content": "@for (item of errors | keyvalue; track $index) {\r\n<div [class]=\"'error-item error-item-' + align\">\r\n  <!-- <app-svg [src]=\"'media'\" /> -->\r\n  <p>\r\n    {{ customErrorMessages[item.key] | translate }}\r\n  </p>\r\n</div>\r\n}\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/validate-error/validate-error.component.scss",
+      "content": ":host {\r\n  &.app-validate-error {\r\n    @apply block;\r\n    .error-item {\r\n      @apply flex items-center gap-1 text-text-texterror text-body-medium-pominent;\r\n      &-left {\r\n        @apply justify-start;\r\n      }\r\n      &-center {\r\n        @apply justify-center;\r\n      }\r\n      &-right {\r\n        @apply justify-end;\r\n      }\r\n      ::ng-deep {\r\n        .icon-svg {\r\n          @apply size-5 min-w-5;\r\n          svg [fill=\"white\"] {\r\n            fill: #fff;\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

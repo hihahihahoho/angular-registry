@@ -1,0 +1,74 @@
+<button
+  nz-dropdown
+  appElementMetrics
+  [targetElement]="dropdown"
+  nzTrigger="click"
+  [nzDropdownMenu]="menu"
+  class="w-full text-left"
+  [nzVisible]="showDropdown"
+  [ngClass]="{
+    'show-dropdown-simple': showDropdown,
+  }"
+  [type]="'button'"
+  (nzVisibleChange)="visibleChange($event)"
+>
+  <div class="card card--gradient-select-account">
+    <div class="card__content p-4 flex items-center gap-4">
+      <div
+        class="size-10 rounded-full bg-background-backgroundwhite flex items-center justify-center"
+      >
+        <img [src]="'media/logo/logo-square.svg'" />
+      </div>
+      <div class="text-body-xl-semibold flex-1 flex gap-0 sm:items-center -sm:flex-col">
+        @if (selectedAccount) {
+          <div class="text-body-large-semibold flex-1">
+            <span
+              class="text-body-medium-pominent text-text-textoncolorsecondary"
+              >Từ TK:</span
+            >
+            {{ selectedAccount.accountNumber }}
+          </div>
+          <div class="text-title-xl">
+            {{ formatBalance(selectedAccount.balance) }}
+            <sup>{{ selectedAccount.currency }}</sup>
+          </div>
+        } @else {
+          <div>Chọn tài khoản</div>
+        }
+      </div>
+      <app-svg [src]="'media/icons/outline/chevron-down.svg'" />
+    </div>
+  </div>
+</button>
+
+<nz-dropdown-menu #menu="nzDropdownMenu">
+  <div
+    nz-menu
+    #dropdown
+    class="dropdown-constrained drop-down-banks dropdown-full-width !px-0 !shadow-shadow-xxl"
+  >
+    <div class="overflow-y-auto divide-y-card">
+      @for (account of accounts; track $index) {
+        <li
+          app-list-item
+          class="account-option cursor-pointer"
+          (click)="selectAccount(account)"
+        >
+          <div
+            class="flex items-center justify-between text-body-large-semibold"
+          >
+            <div class="account-number">{{ account.accountNumber }}</div>
+            <div class="account-balance text-text-textlink">
+              {{ formatBalance(account.balance) }}
+              <sup>{{ account.currency }}</sup>
+            </div>
+          </div>
+        </li>
+      } @empty {
+        <app-card-empty [type]="UI.CardEmptyType.List">
+          Không tìm thấy kết quả phù hợp
+        </app-card-empty>
+      }
+    </div>
+  </div>
+</nz-dropdown-menu>

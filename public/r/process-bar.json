@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "process-bar",
+  "type": "registry:component",
+  "author": "anhnd13",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/app/shared/components/base/process-bar/process-bar.component.ts",
+      "content": "import { Component, HostBinding, Input } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\nimport { ProcessDirection, ProcessType } from '@enums/ui.enum';\r\n\r\n@Component({\r\n  selector: 'app-process-bar, [app-process-bar]',\r\n  standalone: true,\r\n  imports: [CommonModule],\r\n  templateUrl: './process-bar.component.html',\r\n  styleUrls: ['./process-bar.component.scss'],\r\n})\r\nexport class ProcessBarComponent {\r\n  @Input() percentage = 0;\r\n  @Input() direction: ProcessDirection = ProcessDirection.Ltr;\r\n  @Input() type: ProcessType = ProcessType.Info;\r\n\r\n  @HostBinding('class') get hostClass() {\r\n    return this.initClass();\r\n  }\r\n\r\n  initClass() {\r\n    let classs = ['app-process', this.direction.toString()];\r\n    if (this.type !== ProcessType.Info) classs.push('app-process-' + this.type);\r\n    return classs.join(' ');\r\n  }\r\n}\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/process-bar/process-bar.component.html",
+      "content": "<div class=\"process-inner\">\r\n  <div class=\"process-bar\" [style.width.%]=\"percentage\"></div>\r\n</div>\r\n<ng-content />\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/process-bar/process-bar.component.scss",
+      "content": "//name, bar bg,\r\n\r\n$configs: (\"\", var(--process-bar-primary), var(--process-bar-primary-active)),\r\n  (\"-success\", var(--process-bar-success), var(--process-bar-success-active)),\r\n  (\"-warning\", var(--process-bar-warning), var(--process-bar-warning-active)),\r\n  (\r\n    \"-secondary\",\r\n    var(--process-bar-secondary),\r\n    var(--process-bar-secondary-active)\r\n  ),\r\n  (\"-error\", var(--process-bar-error), var(--process-bar-error-active));\r\n\r\n:host {\r\n  &.app-process {\r\n    @apply flex flex-col gap-2;\r\n\r\n    &.rtl {\r\n      @apply text-right;\r\n\r\n      .process-bar {\r\n        @apply right-0;\r\n      }\r\n    }\r\n\r\n    @each $name, $bgBar, $bgActiveBar in $configs {\r\n      &.app-process#{$name} {\r\n        --bg-active-bar: #{$bgActiveBar};\r\n        --bg-bar: #{$bgBar};\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n.process {\r\n  &-inner {\r\n    background: var(--bg-bar);\r\n    @apply relative h-2 w-full rounded-full;\r\n  }\r\n\r\n  &-bar {\r\n    background: var(--bg-active-bar);\r\n    transition: all 0.15s ease-in-out;\r\n    @apply rounded-full absolute h-full w-0 max-w-full;\r\n  }\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

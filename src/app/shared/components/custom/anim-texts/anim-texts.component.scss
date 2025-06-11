@@ -1,0 +1,8 @@
+.anim-container {
+  @apply grid place-items-center overflow-hidden relative;
+  perspective: 800px;
+}
+
+.animated-text {
+  @apply w-full col-start-1 row-start-1;
+}

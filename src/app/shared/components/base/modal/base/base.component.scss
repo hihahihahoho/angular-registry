@@ -1,0 +1,203 @@
+// $modalSizes: (
+//   "xs": var(--modal-size-xs),
+//   "sm": var(--modal-size-sm),
+//   "xmd": var(--modal-size-xmd),
+//   "md": var(--modal-size-md),
+//   "lg": var(--modal-size-lg),
+//   "xl": var(--modal-size-xl)
+// );
+
+// ::ng-deep {
+//   .notice-icon {
+//     @apply size-12 min-w-12;
+
+//     &-wrap {
+//       @apply mb-4 flex;
+//     }
+
+//     &-inner {
+//       @apply size-12 inline-flex items-center justify-center rounded-circle;
+
+//       &.warning {
+//         .icon-svg {
+//           [fill="#006B68"] {
+//             @apply text-highlight;
+//           }
+//           [fill="white"] {
+//             @apply text-text-base;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   @each $name, $width in $modalSizes {
+//     .modal-#{$name} {
+//       max-width: min($width, calc(100vw - 16px));
+//     }
+//   }
+
+//   .modal-sheet-wrapper {
+//     top: unset;
+
+//     .modal {
+//       top: unset;
+//       @apply rounded-b-none m-0 p-0;
+//     }
+//   }
+
+//   .modal {
+//     @apply my-2 md:my-6 mx-0 max-h-[80vh] md:max-h-[calc(100vh-48px)] overflow-hidden;
+//     @apply inline-flex w-full #{!important};
+
+//     &-base {
+//       @apply flex flex-col overflow-hidden flex-auto;
+
+//       &.modal-visible-scroll {
+//         .modal-body {
+//           @apply overflow-x-hidden overflow-y-auto;
+//         }
+//       }
+//     }
+
+//     &-header {
+//       .modal-close {
+//         top: calc(var(--pd-base) - 3px);
+//         right: calc(var(--pd-base) - 3px);
+//         @apply z-[1] absolute;
+
+//         & ~ .modal-title-group {
+//           @apply mr-6;
+//         }
+//       }
+
+//       .modal-title {
+//         @apply text-text-neutral-primary;
+//         &-sub {
+//           @apply text-text-neutral-primary;
+//         }
+//       }
+//     }
+
+//     &-footer {
+//       .actions {
+//         @apply flex flex-wrap gap-4;
+
+//         &-left {
+//           @apply justify-start;
+//         }
+
+//         &-center {
+//           @apply justify-center;
+//         }
+
+//         &-right {
+//           @apply justify-end;
+//         }
+
+//         & > * {
+//           @apply -sm:flex-1;
+//         }
+
+//         &-fill {
+//           > * {
+//             flex: 1;
+//             .btn {
+//               @apply w-full;
+//             }
+//           }
+//         }
+//       }
+//     }
+
+//     &-form {
+//       .ant-modal-body {
+//         @apply p-0;
+//       }
+
+//       .modal-header {
+//         @apply relative p-6;
+
+//         .modal-title {
+//           @apply text-heading-small;
+//         }
+//       }
+
+//       .modal-body {
+//         @apply py-0 px-6;
+
+//         &:last-child {
+//           @apply pb-4 md:pb-6;
+//         }
+//       }
+
+//       .modal-footer {
+//         @apply relative px-6 pt-2 pb-6 lg:p-6;
+//       }
+//     }
+
+//     &-notice {
+//       .ant-modal-body {
+//         padding: var(--pd-base);
+//       }
+
+//       .modal-base {
+//         @apply gap-4;
+//       }
+
+//       .modal-header .modal-title {
+//         @apply text-title-large;
+//       }
+
+//       .modal-footer {
+//         @apply mt-3;
+//       }
+
+//       .message {
+//         @apply text-text-secondary;
+//       }
+//     }
+
+//     &-server-return-content {
+//       .modal-body .message {
+//         .orange {
+//           @apply text-highlight;
+//         }
+//         .red {
+//           @apply text-invalid;
+//         }
+//         .green {
+//           @apply text-success;
+//         }
+//       }
+//     }
+
+//     &-body-grey {
+//       .modal-body {
+//         @apply bg-grey-lighter;
+//       }
+//     }
+
+//     &-body-pd-0 {
+//       .modal-body {
+//         @apply p-0;
+//       }
+//     }
+//   }
+
+//   .ant-modal {
+//     @apply rounded-3xl text-text-primary shadow-shadow-dropdown;
+
+//     &-content {
+//       @apply flex overflow-hidden flex-auto bg-bg-dropdown;
+//     }
+
+//     &-body {
+//       @apply text-body-large flex overflow-hidden flex-auto;
+
+//       & > * {
+//         @apply flex overflow-hidden flex-auto;
+//       }
+//     }
+//   }
+// }

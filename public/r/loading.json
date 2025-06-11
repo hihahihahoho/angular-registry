@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "loading",
+  "type": "registry:component",
+  "author": "anhnd13",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/app/shared/components/base/loading/loading.component.ts",
+      "content": "import { Component, HostBinding, Input } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\n\r\n@Component({\r\n  selector: 'app-loading',\r\n  templateUrl: './loading.component.html',\r\n  styleUrls: ['./loading.component.scss'],\r\n  standalone: true,\r\n  imports: [CommonModule],\r\n})\r\nexport class LoadingComponent {\r\n  @HostBinding('class.app-spiner') spiner = true;\r\n  @HostBinding('class.inbox') @Input() inBox?: boolean;\r\n}\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/loading/loading.component.html",
+      "content": "<div class=\"spiner-wrap\">\r\n  <div class=\"spiner-inner\"></div>\r\n</div>\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "src/app/shared/components/base/loading/loading.component.scss",
+      "content": ":host {\r\n  &.app-spiner {\r\n    @apply flex items-center justify-center flex-col;\r\n\r\n    &:not(.inbox) {\r\n      @apply fixed z-[9999] top-0 left-0 w-full h-full;\r\n\r\n      &::before {\r\n        content: \"\";\r\n        background: var(--spinner-mask-bg);\r\n        @apply absolute top-0 left-0 w-full h-full;\r\n      }\r\n    }\r\n\r\n    &.inbox {\r\n      .spiner-wrap {\r\n        @apply scale-75;\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n.spiner {\r\n  &-wrap {\r\n    @apply relative;\r\n  }\r\n\r\n  &-inner {\r\n    @apply w-20 h-20 rounded-full;\r\n    // animation: loading-animate 2.2s steps(140) infinite;\r\n    // background-image: var(--logo-loading);\r\n    background:\r\n      radial-gradient(farthest-side,var(--brand-brandprimary60) 94%,#0000) top/8px 8px no-repeat,\r\n      conic-gradient(#0000 30%,var(--brand-brandprimary60));\r\n    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);\r\n    mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);\r\n    animation: loading-animate 1s infinite linear;\r\n  }\r\n\r\n  @keyframes loading-animate {\r\n    100%{transform: rotate(1turn)}\r\n  }\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

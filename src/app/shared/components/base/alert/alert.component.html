@@ -1,0 +1,17 @@
+<app-svg [src]="icon" />
+<div class="space-y-[2px] flex-1 min-h-6 flex-col flex justify-center">
+  <div
+    [ngClass]="{
+      "'text-body-large-semibold'": styleAlert === '1',
+      'text-body-medium-semibold': styleAlert === '2',
+    }"
+    class="title"
+    *ngIf="title"
+  >
+    {{ title }}
+  </div>
+
+  <div class="text-body-medium-regular text-text-textneutralsecondary">
+    <ng-content></ng-content>
+  </div>
+</div>

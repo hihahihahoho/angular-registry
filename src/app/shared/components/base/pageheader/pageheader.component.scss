@@ -1,0 +1,17 @@
+:host {
+  &.app-pageheader {
+    @apply block pb-6;
+  }
+}
+
+.page-header-inner {
+  @apply flex gap-3 items-center;
+}
+
+.btn-back {
+  // @apply text-primary bg-grey-lighter #{!important};
+}
+
+.page-title {
+  @apply text-heading-small md:text-heading-medium flex-auto;
+}

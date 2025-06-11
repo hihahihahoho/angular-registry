@@ -1,0 +1,52 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Markdown
+} from "@storybook/addon-docs/blocks";
+import datepicker from './datepicker.md?raw';
+
+import * as DatepickerStories from "./datepicker.stories";
+
+<Meta of={DatepickerStories} />
+
+<Title />
+
+---
+<Description />
+<Markdown>{datepicker}</Markdown>
+
+### When to use
+
+#### Date Selection Modes
+- Use date mode for selecting a single date
+- Use month mode for selecting a month
+- Use year mode for selecting a year
+- Use week mode for selecting a week
+
+#### Datepicker Features
+- Use clear button when you want to allow users to quickly reset their selection
+- Use tooltips to provide additional information about the date selection
+- Use required indicator for mandatory date fields
+- Use different sizes based on your form layout
+- Use different shapes to match your design system
+
+#### Date Range Selection
+- Use date range selection when you need to select a period
+- Use date range with clear button for better user experience
+- Use date range with tooltips to explain the selection
+
+#### Form Integration
+- Use with reactive forms for form validation
+- Use with template-driven forms for simpler implementations
+- Use with form validation messages for better user feedback
+
+### Usage
+
+<Primary />
+<Controls />
+<Stories />

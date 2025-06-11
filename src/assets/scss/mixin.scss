@@ -1,0 +1,58 @@
+@mixin skeleton {
+  --glimmer-stagger-time: 200ms;
+  --glimmer-animation-direction: alternate;
+  --glimmer-animation-duration: 1000ms;
+  --glimmer-animation-timing-function: steps(10, end);
+  --glimmer-opacity-min: 0.25;
+  --glimmer-opacity-max: 1;
+  --glimmer-name: glimmer-function;
+  --glimmer-radius: 24px;
+
+  animation: var(--glimmer-animation-duration)
+    calc(var(--glimmer-order, 0) * var(--glimmer-stagger-time, 200ms))
+    var(--glimmer-name) var(--glimmer-animation-timing-function)
+    var(--glimmer-animation-direction) infinite;
+  background-color: var(--bg-glimmer);
+  border-radius: var(--glimmer-radius);
+  opacity: var(--glimmer-opacity-min);
+}
+
+@keyframes glimmer-function {
+  0% {
+    opacity: var(--glimmer-opacity-min);
+  }
+  100% {
+    opacity: var(--glimmer-opacity-max);
+  }
+}
+@mixin inputStyle {
+  border-color: var(--border) !important;
+}
+@mixin inputStyleDisabled {
+  border-color: var(--border-disabled) !important;
+  background-color: var(--bg-disabled) !important;
+}
+@mixin inputStyleHover {
+  border-color: var(--border-hover) !important;
+  box-shadow: 0 0 0 0px var(--focus-ring-mass-sm) !important;
+}
+@mixin inputStyleFocus {
+  border-width: 1.5px !important;
+  border-color: var(--border-active) !important;
+  box-shadow: var(--focus-ring-focus-ring) !important;
+}
+@mixin inputStyleError {
+  border-color: var(--border-invalid) !important;
+}
+@mixin inputStyleErrorHover {
+  border-color: var(--border-invalid) !important;
+  box-shadow: 0 0 0 4px var(--danger-light-hover) !important;
+}
+@mixin inputStyleErrorFocus {
+  border-color: var(--border-invalid) !important;
+  box-shadow: 0 0 0 0 var(--danger-light-hover) !important;
+}
+@mixin bgImageDefault {
+  content: "";
+  @apply absolute top-0 left-0 z-0 w-full h-full bg-center bg-no-repeat bg-grey-lightest;
+}

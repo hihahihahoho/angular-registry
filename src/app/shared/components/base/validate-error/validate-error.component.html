@@ -1,0 +1,8 @@
+@for (item of errors | keyvalue; track $index) {
+<div [class]="'error-item error-item-' + align">
+  <!-- <app-svg [src]="'media'" /> -->
+  <p>
+    {{ customErrorMessages[item.key] | translate }}
+  </p>
+</div>
+}

@@ -1,0 +1,29 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "categories": [
+    {
+      "name": "components",
+      "blocks": [
+        {
+          "name": "action-grey",
+          "directory": "components/base/action-grey",
+          "category": "components",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "action-grey.component.html",
+            "action-grey.component.ts",
+            "action-grey.component.scss"
+          ],
+          "localDependencies": [],
+          "_imports_": {},
+          "dependencies": [],
+          "devDependencies": []
+        }
+      ]
+    }
+  ]
+}

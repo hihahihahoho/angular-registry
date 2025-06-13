@@ -2,6 +2,6 @@
   "name": "angular-registry",
   "compatibility_date": "2025-06-09",
   "assets": {
-    "directory": "./storybook-static",
+    "directory": "./src/app/shared",
   },
 }

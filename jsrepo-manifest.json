@@ -1,5 +1,5 @@
 {
-  "name": "@hihahihahoho/angular-registry",
+  "name": "test",
 	"version": "0.0.1",
 	"categories": [
 		{
@@ -79,43 +79,6 @@
 					"localDependencies": [],
 					"_imports_": {},
 					"dependencies": [],
-					"devDependencies": []
-				},
-				{
-					"name": "action-grey.component",
-					"directory": "src/app/shared/components/base/action-grey",
-					"category": "action-grey",
-					"tests": true,
-					"docs": false,
-					"subdirectory": false,
-					"list": true,
-					"files": [
-						"action-grey.component.scss",
-						"action-grey.component.spec.ts"
-					],
-					"localDependencies": [],
-					"_imports_": {},
-					"dependencies": [],
-					"devDependencies": []
-				},
-				{
-					"name": "action-grey.component",
-					"directory": "src/app/shared/components/base/action-grey",
-					"category": "action-grey",
-					"tests": true,
-					"docs": false,
-					"subdirectory": false,
-					"list": true,
-					"files": [
-						"action-grey.component.ts",
-						"action-grey.component.spec.ts"
-					],
-					"localDependencies": [],
-					"_imports_": {},
-					"dependencies": [
-						"@angular/core@^19.2.0",
-						"@components/base"
-					],
 					"devDependencies": []
 				}
 			]

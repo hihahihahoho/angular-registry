@@ -18,7 +18,7 @@
             "action-grey.component.ts",
             "action-grey.component.scss"
           ],
-          "localDependencies": ["capitalize-first-char"],
+          "localDependencies": ["pipes/capitalize-first-char"],
           "_imports_": {},
           "dependencies": [],
           "devDependencies": []

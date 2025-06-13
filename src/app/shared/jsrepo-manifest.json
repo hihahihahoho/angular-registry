@@ -18,7 +18,28 @@
             "action-grey.component.ts",
             "action-grey.component.scss"
           ],
-          "localDependencies": ["pipes/capitalize-first-char"],
+          "localDependencies": ["capitalize-first-char"],
+          "_imports_": {},
+          "dependencies": [],
+          "devDependencies": []
+        }
+      ]
+    },
+    {
+      "name": "pipes",
+      "blocks": [
+        {
+          "name": "capitalize-first-char",
+          "directory": "pipes/capitalize-first-char",
+          "category": "pipes",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "capitalize-first-char.pipe.ts"
+          ],
+          "localDependencies": [],
           "_imports_": {},
           "dependencies": [],
           "devDependencies": []

@@ -75,7 +75,7 @@
 					"files": [
 						"action-grey.component.html",
 						"action-grey.component.ts",
-						"action-grey.component.spec.ts"
+						"action-grey.component.scss"
 					],
 					"localDependencies": [],
 					"_imports_": {},

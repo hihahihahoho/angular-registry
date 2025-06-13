@@ -62,18 +62,19 @@
 			]
 		},
 		{
-			"name": "action-grey",
+			"name": "components",
 			"blocks": [
 				{
-					"name": "action-grey.component",
+					"name": "action-grey",
 					"directory": "src/app/shared/components/base/action-grey",
-					"category": "action-grey",
+					"category": "components",
 					"tests": true,
 					"docs": false,
 					"subdirectory": true,
 					"list": true,
 					"files": [
 						"action-grey.component.html",
+						"action-grey.component.ts",
 						"action-grey.component.spec.ts"
 					],
 					"localDependencies": [],

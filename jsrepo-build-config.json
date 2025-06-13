@@ -1,11 +1,13 @@
 {
 	"$schema": "https://unpkg.com/jsrepo@2.4.0/schemas/registry-config.json",
-	"name": "test-registry",
+	"name": "yourteam/test-registry",
 	"version": "0.0.1",
 	"readme": "README.md",
 	"dirs": [
-		"./src/app/shared"
+		"./src/app/shared/components/base/*",
+    "./src/app/shared/pipes"
 	],
+  "allowSubdirectories": true,
 	"doNotListBlocks": [],
 	"doNotListCategories": [],
 	"listBlocks": [],
@@ -16,5 +18,8 @@
 	"excludeBlocks": [],
 	"excludeCategories": [],
 	"preview": false,
-	"includeDocs": false
+	"includeDocs": false,
+  "rules": {
+    "require-local-dependency-exists": "warn"
+  }
 }

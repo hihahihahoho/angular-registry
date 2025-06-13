@@ -1,3 +1,5 @@
+@import "../../../app/config_registry/destination/generated-theme-imports.scss";
+
 @mixin lighten() {
   --display-display-size: 40px;
   --display-display-size-rem: 2.5rem;
@@ -422,17 +424,16 @@
   );
   --selected-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M5 12L10 17L20 7' stroke='%235A9A16' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5 12L10 17L20 7' stroke='%235A9A16' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   --result-pattern-background: url('/media/imgs/result-pattern.png');
-  --bg-home: var(--background-backgroundsecondary);
-  /* //  custom */
-  --color-primary: #000;
-  --color-secondary: #000;
-  --color-tertiary: #000;
-  --color-quaternary: #000;
-  --color-quinary: #000;
-  --color-senary: #000;
-  --color-septenary: #000;
-  --color-octonary: #000;
-  --color-nonary: #000;
-  --color-denary: #000;
-  --semantic-blue10: #f1fafe;
+
+
+  @if variable-exists(all-combined-lists) {
+    @each $current-list in $all-combined-lists {
+      @each $value, $key in $current-list {
+        // Tạo biến CSS tùy chỉnh từ các cặp key-value
+        --#{$key}: #{$value};
+      }
+    }
+  }
+
+
 }

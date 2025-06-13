@@ -4,6 +4,20 @@
   "homepage": "https://react-19.octung112.workers.dev",
   "items": [
     {
+      "name": "ui-enums",
+      "author": "anhnd13",
+      "type": "registry:file",
+      "registryDependencies": [],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "src/app/shared/enums/ui.enum.ts",
+          "type": "registry:file",
+          "target": "src/app/shared/enums/ui.enum.ts"
+        }
+      ]
+    },
+    {
       "name": "accordion",
       "author": "anhnd13",
       "type": "registry:file",
@@ -54,25 +68,28 @@
       "files": [
         {
           "path": "src/app/shared/components/base/alert/alert.component.ts",
-          "type": "registry:component"
+          "type": "registry:file",
+          "target": "src/app/shared/components/base/alert/alert.component.ts"
         },
         {
           "path": "src/app/shared/components/base/alert/alert.component.html",
-          "type": "registry:component"
+          "type": "registry:file",
+          "target": "src/app/shared/components/base/alert/alert.component.html"
         },
         {
           "path": "src/app/shared/components/base/alert/alert.component.scss",
-          "type": "registry:component"
+          "type": "registry:file",
+          "target": "src/app/shared/components/base/alert/alert.component.scss"
         },
         {
-          "path": "src/app/shared/components/registry/alert/config.txt",
+          "path": "src/app/shared/components/registry/alert/alert.registry.scss",
           "type": "registry:file",
-          "target": "src/app/config_registry/config.txt"
+          "target": "src/app/config_registry/destination/scss/alert.registry.scss"
         },
         {
-          "path": "src/app/shared/components/registry/alert/tailwind.json",
+          "path": "src/app/shared/components/registry/alert/alert.tailwind.js",
           "type": "registry:file",
-          "target": "src/app/config_registry/tailwind.json"
+          "target": "src/app/config_registry/destination/tailwind/alert.tailwind.js"
         }
       ]
     },

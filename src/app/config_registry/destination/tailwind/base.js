@@ -1,35 +1,4 @@
-const fs = require('fs');
-const path = require('path');
-
-const presetsDirectory = path.join(__dirname, 'src/app/config_registry/destination/tailwind');
-const loadedPresets = [];
-
-try {
-  // Đọc tất cả các tệp trong thư mục presets
-  const presetFiles = fs.readdirSync(presetsDirectory);
-
-  // Lọc chỉ các tệp JavaScript và thêm chúng vào mảng loadedPresets
-  presetFiles.forEach(file => { // Sử dụng forEach
-    if (file.endsWith('.js')) {
-      const presetPath = path.join(presetsDirectory, file);
-      loadedPresets.push(require(presetPath));
-    }
-  });
-
-  // Hoặc dùng map (thường gọn hơn):
-  // const loadedPresets = presetFiles
-  //   .filter(file => file.endsWith('.js'))
-  //   .map(file => require(path.join(presetsDirectory, file)));
-
-} catch (error) {
-  console.error("Error loading Tailwind presets:", error);
-  // Tùy chọn: ném lỗi hoặc xử lý khác nếu thư mục không tồn tại/không đọc được
-}
-
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  presets: loadedPresets,
-  content: ["./src/**/*.{html,scss,css,ts}"],
   theme: {
     extend: {
       screens: {
@@ -453,4 +422,4 @@ module.exports = {
       },
     },
   },
-};
+}

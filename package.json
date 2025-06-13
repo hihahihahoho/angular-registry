@@ -10,7 +10,7 @@
     "test": "npx ng test",
     "storybook": "ng run pgbank-omni:storybook",
     "build-storybook": "ng run pgbank-omni:build-storybook",
-    "registry:build": "shadcn build"
+    "registry:build": "shadcn build",
   },
   "private": true,
   "dependencies": {

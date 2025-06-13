@@ -1,0 +1,2340 @@
+{
+  "name": "@yourteam/test-registry",
+	"version": "0.0.1",
+	"categories": [
+		{
+			"name": "accordion",
+			"blocks": [
+				{
+					"name": "accordion.component",
+					"directory": "src/app/shared/components/base/accordion",
+					"category": "accordion",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"accordion.component.html"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "accordion.component",
+					"directory": "src/app/shared/components/base/accordion",
+					"category": "accordion",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"accordion.component.scss"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "accordion.component",
+					"directory": "src/app/shared/components/base/accordion",
+					"category": "accordion",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"accordion.component.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@components/base",
+						"@enums/ui.enum",
+						"ng-zorro-antd@^19.3.1"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "action-grey",
+			"blocks": [
+				{
+					"name": "action-grey.component",
+					"directory": "src/app/shared/components/base/action-grey",
+					"category": "action-grey",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"action-grey.component.html",
+						"action-grey.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "action-grey.component",
+					"directory": "src/app/shared/components/base/action-grey",
+					"category": "action-grey",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"action-grey.component.scss",
+						"action-grey.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "action-grey.component",
+					"directory": "src/app/shared/components/base/action-grey",
+					"category": "action-grey",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"action-grey.component.ts",
+						"action-grey.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/core@^19.2.0",
+						"@components/base"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "alert",
+			"blocks": [
+				{
+					"name": "alert.component",
+					"directory": "src/app/shared/components/base/alert",
+					"category": "alert",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"alert.component.html"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "alert.component",
+					"directory": "src/app/shared/components/base/alert",
+					"category": "alert",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"alert.component.scss"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "alert.component",
+					"directory": "src/app/shared/components/base/alert",
+					"category": "alert",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"alert.component.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "auth-method",
+			"blocks": [
+				{
+					"name": "auth-method.component",
+					"directory": "src/app/shared/components/base/auth-method",
+					"category": "auth-method",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"auth-method.component.html",
+						"auth-method.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "auth-method.component",
+					"directory": "src/app/shared/components/base/auth-method",
+					"category": "auth-method",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"auth-method.component.scss",
+						"auth-method.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "auth-method.component",
+					"directory": "src/app/shared/components/base/auth-method",
+					"category": "auth-method",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"auth-method.component.ts",
+						"auth-method.component.spec.ts"
+					],
+					"localDependencies": [
+						"auth-method/sms-otp"
+					],
+					"_imports_": {
+						"./sms-otp/sms-otp.component": "{{auth-method/sms-otp}}/sms-otp.component"
+					},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@angular/forms@^19.2.0",
+						"@enums/ui.enum"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "sms-otp",
+					"directory": "src/app/shared/components/base/auth-method/sms-otp",
+					"category": "auth-method",
+					"tests": true,
+					"docs": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"sms-otp.component.html",
+						"sms-otp.component.scss",
+						"sms-otp.component.spec.ts",
+						"sms-otp.component.ts"
+					],
+					"localDependencies": [],
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@angular/forms@^19.2.0",
+						"@components/base",
+						"@enums/ui.enum",
+						"@services/steps",
+						"@services/ui",
+						"rxjs@~7.8.0"
+					],
+					"devDependencies": [],
+					"_imports_": {}
+				}
+			]
+		},
+		{
+			"name": "avatar",
+			"blocks": [
+				{
+					"name": "avatar.component",
+					"directory": "src/app/shared/components/base/avatar",
+					"category": "avatar",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"avatar.component.html",
+						"avatar.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "avatar.component",
+					"directory": "src/app/shared/components/base/avatar",
+					"category": "avatar",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"avatar.component.scss",
+						"avatar.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "avatar.component",
+					"directory": "src/app/shared/components/base/avatar",
+					"category": "avatar",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"avatar.component.ts",
+						"avatar.component.spec.ts"
+					],
+					"localDependencies": [
+						"shortenName/shorten-name.pipe"
+					],
+					"_imports_": {
+						"@pipes/shortenName/shorten-name.pipe": "{{shortenName/shorten-name.pipe}}"
+					},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@components/base",
+						"@enums/ui.enum",
+						"@services/ui"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "badge",
+			"blocks": [
+				{
+					"name": "badge.component",
+					"directory": "src/app/shared/components/base/badge",
+					"category": "badge",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"badge.component.html"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "badge.component",
+					"directory": "src/app/shared/components/base/badge",
+					"category": "badge",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"badge.component.scss"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "badge.component",
+					"directory": "src/app/shared/components/base/badge",
+					"category": "badge",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"badge.component.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@components/base",
+						"@enums/ui.enum"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "badge-number",
+			"blocks": [
+				{
+					"name": "badge-number.component",
+					"directory": "src/app/shared/components/base/badge-number",
+					"category": "badge-number",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"badge-number.component.html",
+						"badge-number.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "badge-number.component",
+					"directory": "src/app/shared/components/base/badge-number",
+					"category": "badge-number",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"badge-number.component.scss",
+						"badge-number.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "badge-number.component",
+					"directory": "src/app/shared/components/base/badge-number",
+					"category": "badge-number",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"badge-number.component.ts",
+						"badge-number.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/core@^19.2.0",
+						"@enums/ui.enum"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "breadcrumb",
+			"blocks": [
+				{
+					"name": "breadcrumb.component",
+					"directory": "src/app/shared/components/base/breadcrumb",
+					"category": "breadcrumb",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"breadcrumb.component.html"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "breadcrumb.component",
+					"directory": "src/app/shared/components/base/breadcrumb",
+					"category": "breadcrumb",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"breadcrumb.component.scss"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "breadcrumb.component",
+					"directory": "src/app/shared/components/base/breadcrumb",
+					"category": "breadcrumb",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"breadcrumb.component.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@angular/router@^19.2.0",
+						"@components/base",
+						"@enums/route.enum",
+						"@ngx-translate/core@^16.0.4",
+						"@services/breadcrumb",
+						"ng-zorro-antd@^19.3.1"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "button",
+			"blocks": [
+				{
+					"name": "button.component",
+					"directory": "src/app/shared/components/base/button",
+					"category": "button",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"button.component.html",
+						"button.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "button.component",
+					"directory": "src/app/shared/components/base/button",
+					"category": "button",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"button.component.scss",
+						"button.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "button.component",
+					"directory": "src/app/shared/components/base/button",
+					"category": "button",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"button.component.ts",
+						"button.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/core@^19.2.0",
+						"@angular/common@^19.2.0",
+						"@enums/ui.enum",
+						"@components/base"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "card-empty",
+			"blocks": [
+				{
+					"name": "card-empty.component",
+					"directory": "src/app/shared/components/base/card-empty",
+					"category": "card-empty",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"card-empty.component.html",
+						"card-empty.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "card-empty.component",
+					"directory": "src/app/shared/components/base/card-empty",
+					"category": "card-empty",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"card-empty.component.scss",
+						"card-empty.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "card-empty.component",
+					"directory": "src/app/shared/components/base/card-empty",
+					"category": "card-empty",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"card-empty.component.ts",
+						"card-empty.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@enums/ui.enum"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "card-empty-default",
+			"blocks": [
+				{
+					"name": "card-empty-default.component",
+					"directory": "src/app/shared/components/base/card-empty-default",
+					"category": "card-empty-default",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"card-empty-default.component.html",
+						"card-empty-default.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "card-empty-default.component",
+					"directory": "src/app/shared/components/base/card-empty-default",
+					"category": "card-empty-default",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"card-empty-default.component.scss",
+						"card-empty-default.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "card-empty-default.component",
+					"directory": "src/app/shared/components/base/card-empty-default",
+					"category": "card-empty-default",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"card-empty-default.component.ts",
+						"card-empty-default.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/core@^19.2.0",
+						"@components/base"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "chip",
+			"blocks": [
+				{
+					"name": "chip.component",
+					"directory": "src/app/shared/components/base/chip",
+					"category": "chip",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"chip.component.html",
+						"chip.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "chip.component",
+					"directory": "src/app/shared/components/base/chip",
+					"category": "chip",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"chip.component.scss",
+						"chip.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "chip.component",
+					"directory": "src/app/shared/components/base/chip",
+					"category": "chip",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"chip.component.ts",
+						"chip.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@components/base",
+						"@enums/ui.enum"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "copy-button",
+			"blocks": [
+				{
+					"name": "copy-button.component",
+					"directory": "src/app/shared/components/base/copy-button",
+					"category": "copy-button",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"copy-button.component.html",
+						"copy-button.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "copy-button.component",
+					"directory": "src/app/shared/components/base/copy-button",
+					"category": "copy-button",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"copy-button.component.scss",
+						"copy-button.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "copy-button.component",
+					"directory": "src/app/shared/components/base/copy-button",
+					"category": "copy-button",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"copy-button.component.ts",
+						"copy-button.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@components/base",
+						"@services/toast",
+						"ng-zorro-antd@^19.3.1"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "datepicker",
+			"blocks": [
+				{
+					"name": "datepicker.component",
+					"directory": "src/app/shared/components/base/datepicker",
+					"category": "datepicker",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"datepicker.component.html",
+						"datepicker.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "datepicker.component",
+					"directory": "src/app/shared/components/base/datepicker",
+					"category": "datepicker",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"datepicker.component.scss",
+						"datepicker.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"mixin"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "datepicker.component",
+					"directory": "src/app/shared/components/base/datepicker",
+					"category": "datepicker",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"datepicker.component.ts",
+						"datepicker.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@angular/forms@^19.2.0",
+						"@components/base",
+						"@directives/base-cva",
+						"@enums/ui.enum",
+						"ng-zorro-antd@^19.3.1"
+					],
+					"devDependencies": [
+						"dayjs@^1.11.13"
+					]
+				}
+			]
+		},
+		{
+			"name": "dropdown-item",
+			"blocks": [
+				{
+					"name": "dropdown-item.component",
+					"directory": "src/app/shared/components/base/dropdown-item",
+					"category": "dropdown-item",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"dropdown-item.component.html",
+						"dropdown-item.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "dropdown-item.component",
+					"directory": "src/app/shared/components/base/dropdown-item",
+					"category": "dropdown-item",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"dropdown-item.component.scss",
+						"dropdown-item.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "dropdown-item.component",
+					"directory": "src/app/shared/components/base/dropdown-item",
+					"category": "dropdown-item",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"dropdown-item.component.ts",
+						"dropdown-item.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@components/base"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "input",
+			"blocks": [
+				{
+					"name": "input.component",
+					"directory": "src/app/shared/components/base/input",
+					"category": "input",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"input.component.html"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "input.component",
+					"directory": "src/app/shared/components/base/input",
+					"category": "input",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"input.component.scss"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"mixin"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "input.component",
+					"directory": "src/app/shared/components/base/input",
+					"category": "input",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"input.component.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@angular/forms@^19.2.0",
+						"@components/base",
+						"@directives/base-cva",
+						"@enums/ui.enum",
+						"ng-zorro-antd@^19.3.1"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "label-add-on",
+			"blocks": [
+				{
+					"name": "label-add-on.component",
+					"directory": "src/app/shared/components/base/label-add-on",
+					"category": "label-add-on",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"label-add-on.component.html",
+						"label-add-on.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "label-add-on.component",
+					"directory": "src/app/shared/components/base/label-add-on",
+					"category": "label-add-on",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"label-add-on.component.scss",
+						"label-add-on.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "label-add-on.component",
+					"directory": "src/app/shared/components/base/label-add-on",
+					"category": "label-add-on",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"label-add-on.component.ts",
+						"label-add-on.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@components/base"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "loading",
+			"blocks": [
+				{
+					"name": "loading.component",
+					"directory": "src/app/shared/components/base/loading",
+					"category": "loading",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"loading.component.html",
+						"loading.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "loading.component",
+					"directory": "src/app/shared/components/base/loading",
+					"category": "loading",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"loading.component.scss",
+						"loading.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "loading.component",
+					"directory": "src/app/shared/components/base/loading",
+					"category": "loading",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"loading.component.ts",
+						"loading.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/core@^19.2.0",
+						"@angular/common@^19.2.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "modal",
+			"blocks": [
+				{
+					"name": "base",
+					"directory": "src/app/shared/components/base/modal/base",
+					"category": "modal",
+					"tests": false,
+					"docs": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"base.component.html",
+						"base.component.scss",
+						"base.component.ts"
+					],
+					"localDependencies": [],
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@components/base",
+						"@enums/ui.enum",
+						"@ngx-translate/core@^16.0.4",
+						"@services/ui",
+						"ng-zorro-antd@^19.3.1"
+					],
+					"devDependencies": [],
+					"_imports_": {}
+				},
+				{
+					"name": "confirm",
+					"directory": "src/app/shared/components/base/modal/confirm",
+					"category": "modal",
+					"tests": false,
+					"docs": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"confirm.component.html",
+						"confirm.component.scss",
+						"confirm.component.ts"
+					],
+					"localDependencies": [
+						"modal/base"
+					],
+					"dependencies": [
+						"@angular/core@^19.2.0",
+						"@angular/common@^19.2.0",
+						"ng-zorro-antd@^19.3.1",
+						"@ngx-translate/core@^16.0.4",
+						"@services/ui",
+						"@pipes/replace-to-style-content-from-server",
+						"@components/base",
+						"@enums/type.enum"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../base/base.component": "{{modal/base}}/base.component"
+					}
+				},
+				{
+					"name": "notice",
+					"directory": "src/app/shared/components/base/modal/notice",
+					"category": "modal",
+					"tests": false,
+					"docs": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"notice.component.html",
+						"notice.component.scss",
+						"notice.component.ts"
+					],
+					"localDependencies": [
+						"modal/base"
+					],
+					"dependencies": [
+						"@angular/core@^19.2.0",
+						"@angular/common@^19.2.0",
+						"ng-zorro-antd@^19.3.1",
+						"@ngx-translate/core@^16.0.4",
+						"@services/ui",
+						"@pipes/replace-to-style-content-from-server",
+						"@components/base",
+						"@enums/type.enum"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../base/base.component": "{{modal/base}}/base.component"
+					}
+				}
+			]
+		},
+		{
+			"name": "money-input",
+			"blocks": [
+				{
+					"name": "money-input.component",
+					"directory": "src/app/shared/components/base/money-input",
+					"category": "money-input",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"money-input.component.html",
+						"money-input.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "money-input.component",
+					"directory": "src/app/shared/components/base/money-input",
+					"category": "money-input",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"money-input.component.scss",
+						"money-input.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "money-input.component",
+					"directory": "src/app/shared/components/base/money-input",
+					"category": "money-input",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"money-input.component.ts",
+						"money-input.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@angular/forms@^19.2.0",
+						"@components/base",
+						"@directives/base-cva",
+						"@enums/ccy.enum",
+						"@enums/common.enum",
+						"@enums/type.enum",
+						"@enums/ui.enum",
+						"@pipes/capitalize-first-char",
+						"@pipes/number-to-text",
+						"@services/translation",
+						"@services/ui",
+						"cleave.js",
+						"ng-zorro-antd@^19.3.1",
+						"ngx-cleave-directive@^2.1.0",
+						"rxjs@~7.8.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "otp",
+			"blocks": [
+				{
+					"name": "otp.component",
+					"directory": "src/app/shared/components/base/otp",
+					"category": "otp",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"otp.component.html",
+						"otp.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "otp.component",
+					"directory": "src/app/shared/components/base/otp",
+					"category": "otp",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"otp.component.scss",
+						"otp.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "otp.component",
+					"directory": "src/app/shared/components/base/otp",
+					"category": "otp",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"otp.component.ts",
+						"otp.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@angular/forms@^19.2.0",
+						"@components/base",
+						"@directives/base-cva",
+						"@services/ui"
+					],
+					"devDependencies": [
+						"ng-otp-input@^2.0.7"
+					]
+				}
+			]
+		},
+		{
+			"name": "page-wrapper",
+			"blocks": [
+				{
+					"name": "page-wrapper.component",
+					"directory": "src/app/shared/components/base/page-wrapper",
+					"category": "page-wrapper",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"page-wrapper.component.html"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "page-wrapper.component",
+					"directory": "src/app/shared/components/base/page-wrapper",
+					"category": "page-wrapper",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"page-wrapper.component.scss"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "page-wrapper.component",
+					"directory": "src/app/shared/components/base/page-wrapper",
+					"category": "page-wrapper",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"page-wrapper.component.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@enums/ui.enum"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "pageheader",
+			"blocks": [
+				{
+					"name": "pageheader.component",
+					"directory": "src/app/shared/components/base/pageheader",
+					"category": "pageheader",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"pageheader.component.html",
+						"pageheader.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "pageheader.component",
+					"directory": "src/app/shared/components/base/pageheader",
+					"category": "pageheader",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"pageheader.component.scss",
+						"pageheader.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "pageheader.component",
+					"directory": "src/app/shared/components/base/pageheader",
+					"category": "pageheader",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"pageheader.component.ts",
+						"pageheader.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@angular/platform-browser@^19.2.0",
+						"@angular/router@^19.2.0",
+						"@components/base",
+						"@enums/common.enum",
+						"@enums/type.enum",
+						"@services/breadcrumb",
+						"@services/common",
+						"@services/translation",
+						"@services/ui",
+						"rxjs@~7.8.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "pill",
+			"blocks": [
+				{
+					"name": "pill.component",
+					"directory": "src/app/shared/components/base/pill",
+					"category": "pill",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"pill.component.html",
+						"pill.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "pill.component",
+					"directory": "src/app/shared/components/base/pill",
+					"category": "pill",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"pill.component.scss",
+						"pill.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "pill.component",
+					"directory": "src/app/shared/components/base/pill",
+					"category": "pill",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"pill.component.ts",
+						"pill.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/core@^19.2.0",
+						"@enums/ui.enum",
+						"@angular/common@^19.2.0",
+						"@components/base"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "process-bar",
+			"blocks": [
+				{
+					"name": "process-bar.component",
+					"directory": "src/app/shared/components/base/process-bar",
+					"category": "process-bar",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"process-bar.component.html",
+						"process-bar.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "process-bar.component",
+					"directory": "src/app/shared/components/base/process-bar",
+					"category": "process-bar",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"process-bar.component.scss",
+						"process-bar.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "process-bar.component",
+					"directory": "src/app/shared/components/base/process-bar",
+					"category": "process-bar",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"process-bar.component.ts",
+						"process-bar.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/core@^19.2.0",
+						"@angular/common@^19.2.0",
+						"@enums/ui.enum"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "select",
+			"blocks": [
+				{
+					"name": "select.component",
+					"directory": "src/app/shared/components/base/select",
+					"category": "select",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"select.component.html",
+						"select.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "select.component",
+					"directory": "src/app/shared/components/base/select",
+					"category": "select",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"select.component.scss",
+						"select.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"mixin"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "select.component",
+					"directory": "src/app/shared/components/base/select",
+					"category": "select",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"select.component.ts",
+						"select.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@angular/forms@^19.2.0",
+						"@ngx-translate/core@^16.0.4",
+						"ng-zorro-antd@^19.3.1",
+						"@components/base",
+						"@directives/base-cva",
+						"@enums/ui.enum",
+						"@services/common"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "select-pill",
+			"blocks": [
+				{
+					"name": "select-pill.component",
+					"directory": "src/app/shared/components/base/select-pill",
+					"category": "select-pill",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"select-pill.component.html",
+						"select-pill.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "select-pill.component",
+					"directory": "src/app/shared/components/base/select-pill",
+					"category": "select-pill",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"select-pill.component.scss",
+						"select-pill.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "select-pill.component",
+					"directory": "src/app/shared/components/base/select-pill",
+					"category": "select-pill",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"select-pill.component.ts",
+						"select-pill.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@angular/forms@^19.2.0",
+						"@components/base",
+						"@directives/base-cva",
+						"@directives/click-outside",
+						"@enums/ui.enum",
+						"ng-zorro-antd@^19.3.1"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "step",
+			"blocks": [
+				{
+					"name": "step.component",
+					"directory": "src/app/shared/components/base/step",
+					"category": "step",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"step.component.html"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "step.component",
+					"directory": "src/app/shared/components/base/step",
+					"category": "step",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"step.component.scss"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "step.component",
+					"directory": "src/app/shared/components/base/step",
+					"category": "step",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"step.component.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/core@^19.2.0",
+						"@angular/common@^19.2.0",
+						"@ngx-translate/core@^16.0.4",
+						"@services/steps",
+						"@enums/ui.enum"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "svg-inline",
+			"blocks": [
+				{
+					"name": "svg-inline.component",
+					"directory": "src/app/shared/components/base/svg-inline",
+					"category": "svg-inline",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"svg-inline.component.html",
+						"svg-inline.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "svg-inline.component",
+					"directory": "src/app/shared/components/base/svg-inline",
+					"category": "svg-inline",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"svg-inline.component.scss",
+						"svg-inline.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "svg-inline.component",
+					"directory": "src/app/shared/components/base/svg-inline",
+					"category": "svg-inline",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"svg-inline.component.ts",
+						"svg-inline.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@enums/ui.enum"
+					],
+					"devDependencies": [
+						"ng-inline-svg-2@^19.0.0"
+					]
+				}
+			]
+		},
+		{
+			"name": "swiper",
+			"blocks": [
+				{
+					"name": "swiper.component",
+					"directory": "src/app/shared/components/base/swiper",
+					"category": "swiper",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"swiper.component.html"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "swiper.component",
+					"directory": "src/app/shared/components/base/swiper",
+					"category": "swiper",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"swiper.component.scss"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "swiper.component",
+					"directory": "src/app/shared/components/base/swiper",
+					"category": "swiper",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"swiper.component.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@angular/router@^19.2.0"
+					],
+					"devDependencies": [
+						"swiper@^11.2.6"
+					]
+				},
+				{
+					"name": "swiper.interface",
+					"directory": "src/app/shared/components/base/swiper",
+					"category": "swiper",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"swiper.interface.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "tab",
+			"blocks": [
+				{
+					"name": "tab.component",
+					"directory": "src/app/shared/components/base/tab",
+					"category": "tab",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"tab.component.html"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "tab.component",
+					"directory": "src/app/shared/components/base/tab",
+					"category": "tab",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"tab.component.scss"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "tab.component",
+					"directory": "src/app/shared/components/base/tab",
+					"category": "tab",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"tab.component.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@enums/ui.enum",
+						"@ngx-translate/core@^16.0.4",
+						"ng-zorro-antd@^19.3.1"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "textarea",
+			"blocks": [
+				{
+					"name": "textarea.component",
+					"directory": "src/app/shared/components/base/textarea",
+					"category": "textarea",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"textarea.component.html"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "textarea.component",
+					"directory": "src/app/shared/components/base/textarea",
+					"category": "textarea",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"textarea.component.scss"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "textarea.component",
+					"directory": "src/app/shared/components/base/textarea",
+					"category": "textarea",
+					"tests": false,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"textarea.component.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@angular/forms@^19.2.0",
+						"@components/base",
+						"@directives/base-cva",
+						"@enums/ui.enum",
+						"ng-zorro-antd@^19.3.1"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "toast",
+			"blocks": [
+				{
+					"name": "toast.component",
+					"directory": "src/app/shared/components/base/toast",
+					"category": "toast",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"toast.component.html",
+						"toast.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "toast.component",
+					"directory": "src/app/shared/components/base/toast",
+					"category": "toast",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"toast.component.scss",
+						"toast.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "toast.component",
+					"directory": "src/app/shared/components/base/toast",
+					"category": "toast",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"toast.component.ts",
+						"toast.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@components/base",
+						"@enums/ui.enum",
+						"@services/toast",
+						"ng-zorro-antd@^19.3.1",
+						"rxjs@~7.8.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "toggle",
+			"blocks": [
+				{
+					"name": "toggle.component",
+					"directory": "src/app/shared/components/base/toggle",
+					"category": "toggle",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"toggle.component.html",
+						"toggle.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "toggle.component",
+					"directory": "src/app/shared/components/base/toggle",
+					"category": "toggle",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"toggle.component.scss",
+						"toggle.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "toggle.component",
+					"directory": "src/app/shared/components/base/toggle",
+					"category": "toggle",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"toggle.component.ts",
+						"toggle.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/common@^19.2.0",
+						"@angular/core@^19.2.0",
+						"@angular/forms@^19.2.0",
+						"@directives/base-cva",
+						"ng-zorro-antd@^19.3.1"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "validate-error",
+			"blocks": [
+				{
+					"name": "validate-error.component",
+					"directory": "src/app/shared/components/base/validate-error",
+					"category": "validate-error",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"validate-error.component.html",
+						"validate-error.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "validate-error.component",
+					"directory": "src/app/shared/components/base/validate-error",
+					"category": "validate-error",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"validate-error.component.scss",
+						"validate-error.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "validate-error.component",
+					"directory": "src/app/shared/components/base/validate-error",
+					"category": "validate-error",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"validate-error.component.ts",
+						"validate-error.component.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/core@^19.2.0",
+						"@angular/common@^19.2.0",
+						"@angular/forms@^19.2.0",
+						"@ngx-translate/core@^16.0.4",
+						"@enums/ui.enum"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "capitalize-first-char",
+			"blocks": [
+				{
+					"name": "capitalize-first-char.pipe",
+					"directory": "src/app/shared/pipes/capitalize-first-char",
+					"category": "capitalize-first-char",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"capitalize-first-char.pipe.ts",
+						"capitalize-first-char.pipe.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/core@^19.2.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "number-to-text",
+			"blocks": [
+				{
+					"name": "number-to-text.pipe",
+					"directory": "src/app/shared/pipes/number-to-text",
+					"category": "number-to-text",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"number-to-text.pipe.ts",
+						"number-to-text.pipe.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/core@^19.2.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "replace-to-style-content-from-server",
+			"blocks": [
+				{
+					"name": "replace-to-style-content-from-server.pipe",
+					"directory": "src/app/shared/pipes/replace-to-style-content-from-server",
+					"category": "replace-to-style-content-from-server",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"replace-to-style-content-from-server.pipe.ts",
+						"replace-to-style-content-from-server.pipe.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/core@^19.2.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "shortenName",
+			"blocks": [
+				{
+					"name": "shorten-name.pipe",
+					"directory": "src/app/shared/pipes/shortenName",
+					"category": "shortenName",
+					"tests": true,
+					"docs": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"shorten-name.pipe.ts",
+						"shorten-name.pipe.spec.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@angular/core@^19.2.0"
+					],
+					"devDependencies": []
+				}
+			]
+		}
+	]
+}

@@ -4,7 +4,7 @@
 	"scripts": {
 		"ng": "npx ng",
 		"start": "npx ng s --host 10.98.11.15 --port 9669",
-		"build": "npx ng build",
+		"build": "npx jsrepo build --output-dir ./public/r",
 		"build:des": "npx ng build --configuration=development --base-href /web/pgbank/pgbank-omni/ --deploy-url /web/pgbank/pgbank-omni/ && node find-and-replace-assets.js && node deploy-ftp-design.js",
 		"watch": "npx ng build --watch --configuration development",
 		"test": "npx ng test",

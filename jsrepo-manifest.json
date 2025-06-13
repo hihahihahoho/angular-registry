@@ -76,7 +76,10 @@
 						"action-grey.component.html",
 						"action-grey.component.spec.ts"
 					],
-					"localDependencies": [],
+					"localDependencies": [
+            "action-grey.component.html",
+						"action-grey.component.spec.ts"
+          ],
 					"_imports_": {},
 					"dependencies": [],
 					"devDependencies": []

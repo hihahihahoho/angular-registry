@@ -594,7 +594,7 @@
 						"avatar.component.ts"
 					],
 					"localDependencies": [
-						"base/Button",
+						"base/button",
 						"base/svgInline",
 						"enums/UI",
 						"pipes/numberToText",
@@ -607,7 +607,7 @@
 					],
 					"devDependencies": [],
 					"_imports_": {
-						"@components_base/Button/button.component": "{{base/Button}}/button.component",
+						"@components_base/button/button.component": "{{base/button}}/button.component",
 						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
 						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum",
 						"@pipes/numberToText/number-to-text.pipe": "{{pipes/numberToText}}/number-to-text.pipe",
@@ -702,8 +702,8 @@
 					}
 				},
 				{
-					"name": "Button",
-					"directory": "components/base/Button",
+					"name": "button",
+					"directory": "components/base/button",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -915,7 +915,7 @@
 						"input.component.ts"
 					],
 					"localDependencies": [
-						"base/Button",
+						"base/button",
 						"base/svgInline",
 						"base/validateError",
 						"directives/baseCva",
@@ -930,7 +930,7 @@
 					],
 					"devDependencies": [],
 					"_imports_": {
-						"@components_base/Button/button.component": "{{base/Button}}/button.component",
+						"@components_base/button/button.component": "{{base/button}}/button.component",
 						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
 						"@components_base/validateError/validate-error.component": "{{base/validateError}}/validate-error.component",
 						"@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive",
@@ -1007,7 +1007,7 @@
 					"localDependencies": [
 						"enums/UI",
 						"services/UI",
-						"base/Button",
+						"base/button",
 						"base/svgInline",
 						"enums/Type"
 					],
@@ -1023,7 +1023,7 @@
 					"_imports_": {
 						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum",
 						"@services/UI/ui.service": "{{services/UI}}/ui.service",
-						"@components_base/Button/button.component": "{{base/Button}}/button.component",
+						"@components_base/button/button.component": "{{base/button}}/button.component",
 						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
 						"@enums/Type/type.enum": "{{enums/Type}}/type.enum"
 					}
@@ -1043,7 +1043,7 @@
 						"money-input.component.ts"
 					],
 					"localDependencies": [
-						"base/Button",
+						"base/button",
 						"base/svgInline",
 						"base/validateError",
 						"directives/baseCva",
@@ -1067,7 +1067,7 @@
 					],
 					"devDependencies": [],
 					"_imports_": {
-						"@components_base/Button/button.component": "{{base/Button}}/button.component",
+						"@components_base/button/button.component": "{{base/button}}/button.component",
 						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
 						"@components_base/validateError/validate-error.component": "{{base/validateError}}/validate-error.component",
 						"@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive",

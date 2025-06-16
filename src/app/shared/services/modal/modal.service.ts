@@ -1,18 +1,18 @@
 import { inject, Injectable, TemplateRef, Type } from '@angular/core';
-import { ModalConfirmComponent } from '@components/base/modal/confirm/confirm.component';
-import { ModalNoticeComponent } from '@components/base/modal/notice/notice.component';
+import { ModalConfirmComponent } from '@components_base/modal/Confirm/confirm.component';
+import { ModalNoticeComponent } from '@components_base/modal/Notice/notice.component';
 import {
   ButtonColor,
   ModalActionLayout,
   ModalSize,
   ModalTypeShow,
-} from '@enums/ui.enum';
-import { NzModalService } from 'ng-zorro-antd/modal';
+} from '@enums/UI/ui.enum';
 import {
   IModalNoticeTypeContent,
   IModalOption,
   ModalTypeData,
-} from './modal.interface';
+} from '@services/Modal/modal.interface';
+import { NzModalService } from 'ng-zorro-antd/modal';
 
 export interface IModalBaseOption {
   title?: string | TemplateRef<void>;

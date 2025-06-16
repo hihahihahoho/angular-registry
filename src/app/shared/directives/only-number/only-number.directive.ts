@@ -1,5 +1,5 @@
-import { Directive, ElementRef, HostListener } from '@angular/core';
-import { CommonService } from '@services/common/common.service';
+import { Directive, HostListener } from '@angular/core';
+import { CommonService } from '@services/Common/common.service';
 
 @Directive({
   selector: '[onlyNumber]',

@@ -4,22 +4,12 @@
 	"version": "0.0.1",
 	"readme": "README.md",
 	"dirs": [
-		"./src/app/shared/components/base/*",
-    "./src/app/shared/pipes"
+		"./src/app/shared",
+    "./src/app/shared/components"
 	],
   "allowSubdirectories": true,
-	"doNotListBlocks": [],
-	"doNotListCategories": [],
-	"listBlocks": [],
-	"listCategories": [],
-	"excludeDeps": [],
-	"includeBlocks": [],
-	"includeCategories": [],
-	"excludeBlocks": [],
-	"excludeCategories": [],
-	"preview": false,
-	"includeDocs": false,
+  "excludeCategories": ["components"],
   "rules": {
-    "require-local-dependency-exists": "warn"
-  }
+    "no-framework-dependency": "warn"
+}
 }

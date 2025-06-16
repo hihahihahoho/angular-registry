@@ -10,10 +10,10 @@ import {
   forwardRef,
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR, ReactiveFormsModule } from '@angular/forms';
-import { SvgInlineComponent } from '@components/base/svg-inline/svg-inline.component';
-import { ValidateErrorComponent } from '@components/base/validate-error/validate-error.component';
-import { BaseCVADirective } from '@directives/base-cva/base-cva.directive';
-import { DateMode, Direction, InputShape, InputSize } from '@enums/ui.enum';
+import { SvgInlineComponent } from '@components_base/svgInline/svg-inline.component';
+import { ValidateErrorComponent } from '@components_base/validateError/validate-error.component';
+import { BaseCVADirective } from '@directives/baseCva/base-cva.directive';
+import { DateMode, Direction, InputShape, InputSize } from '@enums/UI/ui.enum';
 import dayjs from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
 import weekOfYear from 'dayjs/plugin/weekOfYear';

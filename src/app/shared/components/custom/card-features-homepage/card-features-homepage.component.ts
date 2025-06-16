@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { MainRoute } from '@enums/route.enum';
-import { UI } from '@services/ui/ui.service';
-import { ItemIconCircleComponent } from '../item-icon-circle/item-icon-circle.component';
+import { ItemIconCircleComponent } from '@components/custom/item-icon-circle/item-icon-circle.component';
+import { MainRoute } from '@enums/Route/route.enum';
+import { UI } from '@services/UI/ui.service';
 
 @Component({
   selector: 'app-card-features-homepage',

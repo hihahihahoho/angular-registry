@@ -1,15 +1,15 @@
+import { Location } from '@angular/common';
 import { inject, Injectable } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { ScreenSizeMap } from '@constants/Common/common';
 import {
-  Observable,
   distinctUntilChanged,
   filter,
   fromEvent,
   map,
+  Observable,
   startWith,
 } from 'rxjs';
-import { NavigationEnd, Router } from '@angular/router';
-import { ScreenSizeMap } from '@constants/common';
-import { Location } from '@angular/common';
 
 @Injectable({
   providedIn: 'root',

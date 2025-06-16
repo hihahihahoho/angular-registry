@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener, Input, inject } from '@angular/core';
-import { ToastService } from '@services/toast/toast.service';
+import { SvgInlineComponent } from '@components_base/svgInline/svg-inline.component';
+import { ToastService } from '@services/Toast/toast.service';
 import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
-import { SvgInlineComponent } from '../svg-inline/svg-inline.component';
 
 @Component({
   selector: 'app-copy-button',

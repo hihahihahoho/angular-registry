@@ -1,6 +1,6 @@
 import { Component, HostBinding, Input } from '@angular/core';
-import { SvgInlineComponent } from '@components/base/svg-inline/svg-inline.component';
-import { ItemIconCircleSize } from '@enums/ui.enum';
+import { SvgInlineComponent } from '@components/base/svgInline/svg-inline.component';
+import { ItemIconCircleSize } from '@enums/UI/ui.enum';
 
 
 const SIZE_CLASS = {

@@ -7,7 +7,7 @@ import {
   Output,
   TemplateRef,
 } from '@angular/core';
-import { TabSize, TabTheme, TabType } from '@enums/ui.enum';
+import { TabSize, TabTheme, TabType } from '@enums/UI/ui.enum';
 import { TranslateModule } from '@ngx-translate/core';
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
 @Component({

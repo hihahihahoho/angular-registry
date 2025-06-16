@@ -33,7 +33,7 @@ import {
   TabTheme,
   TabType,
   ValidateErrorAlign
-} from '@enums/ui.enum';
+} from '@enums/UI/ui.enum';
 
 @Injectable({
   providedIn: 'root',

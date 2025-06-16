@@ -7,19 +7,21 @@ import {
   Output,
   inject,
 } from '@angular/core';
-import { ButtonComponent } from '@components/base/button/button.component';
-import { SvgInlineComponent } from '@components/base/svg-inline/svg-inline.component';
+import { ButtonComponent } from '@components_base/Button/button.component';
+import { SvgInlineComponent } from '@components_base/svgInline/svg-inline.component';
 import {
   AvatarSize,
   AvatarStyle,
   AvatarType,
   ButtonColor,
   RankingType,
-} from '@enums/ui.enum';
+} from '@enums/UI/ui.enum';
+import { NumberToTextPipe } from '@pipes/numberToText/number-to-text.pipe';
 import { ShortenNamePipe } from '@pipes/shortenName/shorten-name.pipe';
-import { UI } from '@services/ui/ui.service';
+import { UI } from '@services/UI/ui.service';
 
 function toAvatarSize(value: string): AvatarSize {
+  console.log(NumberToTextPipe);
   const sizeKey = Object.keys(AvatarSize).find(
     (key) => AvatarSize[key as keyof typeof AvatarSize] === value
   );

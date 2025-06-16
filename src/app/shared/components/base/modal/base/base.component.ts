@@ -6,10 +6,10 @@ import {
   TemplateRef,
   inject,
 } from '@angular/core';
-import { ButtonComponent } from '@components/base/button/button.component';
-import { ModalActionLayout } from '@enums/ui.enum';
+import { ButtonComponent } from '@components/base/Button/button.component';
+import { ModalActionLayout } from '@enums/UI/ui.enum';
 import { TranslateModule } from '@ngx-translate/core';
-import { UI } from '@services/ui/ui.service';
+import { UI } from '@services/UI/ui.service';
 import { NzModalRef } from 'ng-zorro-antd/modal';
 
 @Component({

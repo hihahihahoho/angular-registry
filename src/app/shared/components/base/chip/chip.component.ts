@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostBinding, Input, TemplateRef } from '@angular/core';
-import { SvgInlineComponent } from '@components/base/svg-inline/svg-inline.component';
-import { PillSize, PillColor } from '@enums/ui.enum';
+import { SvgInlineComponent } from '@components_base/svgInline/svg-inline.component';
+import { PillColor, PillSize } from '@enums/UI/ui.enum';
 
 @Component({
   selector: 'app-chip, [app-chip]',
@@ -19,11 +19,11 @@ export class ChipComponent {
     @Input() suffixIcon!: string | null;
     @Input() data!: any | null;
     @Input() labelClick: boolean = false;
-  
+
     @HostBinding('class') get hostClass() {
       return this.initClass();
     }
-  
+
     initClass() {
       let classs = ['app-pill'];
       if (!this.labelClick) classs.push('app-pill-no-click');
@@ -31,7 +31,7 @@ export class ChipComponent {
       classs.push('app-pill-' + this.color);
       return classs.join(' ');
     }
-  
+
     SIZE_ICON = {
       large: 5,
       medium: 4,

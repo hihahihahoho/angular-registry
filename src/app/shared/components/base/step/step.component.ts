@@ -1,8 +1,8 @@
-import { Component, HostBinding, inject, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component, HostBinding, inject, Input, OnInit } from '@angular/core';
+import { StepType } from '@enums/UI/ui.enum';
 import { TranslateModule } from '@ngx-translate/core';
-import { StepsService } from '@services/steps/steps.service';
-import { StepType } from '@enums/ui.enum';
+import { StepsService } from '@services/Steps/steps.service';
 
 @Component({
   selector: 'app-step',

@@ -1,5 +1,5 @@
 import { inject, Injectable } from '@angular/core';
-import { CommonService } from '@services/common/common.service';
+import { CommonService } from '@services/Common/common.service';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({

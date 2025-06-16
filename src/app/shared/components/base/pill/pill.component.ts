@@ -1,7 +1,7 @@
-import { Component, HostBinding, Input, TemplateRef } from '@angular/core';
-import { PillSize, PillColor } from '@enums/ui.enum';
 import { CommonModule } from '@angular/common';
-import { SvgInlineComponent } from '@components/base/svg-inline/svg-inline.component';
+import { Component, HostBinding, Input, TemplateRef } from '@angular/core';
+import { SvgInlineComponent } from '@components_base/svgInline/svg-inline.component';
+import { PillColor, PillSize } from '@enums/UI/ui.enum';
 
 @Component({
   selector: 'app-pill, [app-pill]',

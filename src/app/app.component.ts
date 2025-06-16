@@ -1,10 +1,10 @@
-import { CommonModule } from '@angular/common';
+  import { CommonModule } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { LoadingComponent } from '@components/base/loading/loading.component';
-import { ToastComponent } from '@components/base/toast/toast.component';
+import { LoadingComponent } from '@components_base/loading/loading.component';
+import { ToastComponent } from '@components_base/toast/toast.component';
 import { environment } from '@env/environment';
-import { LoadingService } from '@services/loading/loading.service';
+import { LoadingService } from '@services/Loading/loading.service';
 import { Observable } from 'rxjs';
 
 @Component({

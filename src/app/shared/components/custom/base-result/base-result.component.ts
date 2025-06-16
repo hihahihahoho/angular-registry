@@ -4,9 +4,9 @@ import {
   HostBinding,
   Input
 } from '@angular/core';
-import { SvgInlineComponent } from '@components/base/svg-inline/svg-inline.component';
-import { CCY } from '@enums/ccy.enum';
-import { ItemIconCircleComponent } from '../item-icon-circle/item-icon-circle.component';
+import { SvgInlineComponent } from '@components/base/svgInline/svg-inline.component';
+import { ItemIconCircleComponent } from '@components/custom/item-icon-circle/item-icon-circle.component';
+import { CCY } from '@enums/CCY/ccy.enum';
 
 
 @Component({

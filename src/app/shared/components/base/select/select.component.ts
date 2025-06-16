@@ -16,19 +16,19 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
 import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 
 import { AvatarComponent } from '@components/base/avatar/avatar.component';
-import { ButtonComponent } from '@components/base/button/button.component';
+import { ButtonComponent } from '@components/base/Button/button.component';
 import { CardEmptyComponent } from '@components/base/card-empty/card-empty.component';
-import { SvgInlineComponent } from '@components/base/svg-inline/svg-inline.component';
+import { SvgInlineComponent } from '@components/base/svgInline/svg-inline.component';
 import { ValidateErrorComponent } from '@components/base/validate-error/validate-error.component';
-import { BaseCVADirective } from '@directives/base-cva/base-cva.directive';
+import { BaseCVADirective } from '@directives/baseCva/base-cva.directive';
 import {
   AvatarSize,
   AvatarType,
   Direction,
   IconType,
   InputSize,
-} from '@enums/ui.enum';
-import { CommonService } from '@services/common/common.service';
+} from '@enums/UI/ui.enum';
+import { CommonService } from '@services/Common/common.service';
 export interface ISelect {
   label: string;
   value: string | number;

@@ -1,18 +1,19 @@
 {
-	"paths": {
-    "@assets/*": ["src/assets/*"],
-    "@media/*": ["src/assets/media/*"],
-    "@enums/*": ["src/app/shared/enums/*"],
-    "@components/*": ["src/app/shared/components/*"],
-    "@services/*": ["src/app/shared/services/*"],
-    "@constants/*": ["src/app/shared/constants/*"],
-    "@directives/*": ["src/app/shared/directives/*"],
-    "@plugins/*": ["src/app/shared/plugins/*"],
-    "@pipes/*": ["src/app/shared/pipes/*"],
-    "@models/*": ["src/app/shared/models/*"],
-    "@layouts/*": ["src/app/layouts/*"],
-    "@pages/*": ["src/app/pages/*"],
-    "@interfaces/*": ["src/app/shared/interfaces/*"],
-    "@env/*": ["src/environments/*"]
-	}
+  "$schema": "https://unpkg.com/jsrepo@2.4.0/schemas/project-config.json",
+  "repos": ["https://angular-registry.octung112.workers.dev/"],
+  "includeTests": false,
+  "includeDocs": false,
+  "watermark": false,
+  "formatter": "prettier",
+  "configFiles": {},
+  "paths": {
+    "*": "./src/shared",
+    "@services/*": "./src/app/shared/services/*",
+    "@components_base/*": "./src/app/shared/components/base/*",
+    "@components_custom/*": "./src/app/shared/components/custom/*",
+    "@enums/*": "./src/app/shared/enums/*",
+    "@pipes/*": "./src/app/shared/pipes/*",
+    "@directives/*": "./src/app/shared/directives/*",
+    "@constants/*": "./src/app/shared/constants/*"
+  }
 }

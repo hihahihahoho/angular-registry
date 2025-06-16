@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
-import { ButtonComponent } from '@components/base/button/button.component';
+import { ButtonComponent } from '@components/base/Button/button.component';
 import { CopyButtonComponent } from '@components/base/copy-button/copy-button.component';
-import { SvgInlineComponent } from '@components/base/svg-inline/svg-inline.component';
-import { UI } from '@services/ui/ui.service';
+import { SvgInlineComponent } from '@components/base/svgInline/svg-inline.component';
+import { UI } from '@services/UI/ui.service';
 
 @Component({
   selector: 'app-card-account-homepage',

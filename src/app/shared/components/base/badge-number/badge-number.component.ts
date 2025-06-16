@@ -1,5 +1,5 @@
 import { Component, HostBinding, Input } from '@angular/core';
-import { BadgeNumberColor } from '@enums/ui.enum';
+import { BadgeNumberColor } from '@enums/UI/ui.enum';
 
 @Component({
   selector: 'app-badge-number, [app-badge-number]',

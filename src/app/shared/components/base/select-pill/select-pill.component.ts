@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import {
   Component,
   forwardRef,
@@ -6,15 +7,14 @@ import {
   OnChanges,
   SimpleChanges,
 } from '@angular/core';
-import { PillColor, PillSize } from '@enums/ui.enum';
-import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NG_VALUE_ACCESSOR, ReactiveFormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
-import { BaseCVADirective } from '@directives/base-cva/base-cva.directive';
-import { ISelect } from '../select/select.component';
-import { ClickOutsideDirective } from '@directives/click-outside/click-outside.directive';
-import { PillComponent } from '@components/base/pill/pill.component';
 import { DropdownItemComponent } from '@components/base/dropdown-item/dropdown-item.component';
+import { PillComponent } from '@components/base/pill/pill.component';
+import { ISelect } from '@components/base/select/select.component';
+import { BaseCVADirective } from '@directives/baseCva/base-cva.directive';
+import { ClickOutsideDirective } from '@directives/click-outside/click-outside.directive';
+import { PillColor, PillSize } from '@enums/UI/ui.enum';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 
 @Component({
   selector: 'app-select-pill, [app-select-pill]',

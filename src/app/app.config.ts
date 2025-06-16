@@ -14,7 +14,7 @@ import {
   InMemoryScrollingOptions
 } from '@angular/router';
 import { CardEmptyDefaultComponent } from '@components/base/card-empty-default/card-empty-default.component';
-import { Language } from '@enums/common.enum';
+import { Language } from '@enums/Common/common.enum';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { NZ_CONFIG, NzConfig } from 'ng-zorro-antd/core/config';
 import { NzDrawerModule } from 'ng-zorro-antd/drawer';

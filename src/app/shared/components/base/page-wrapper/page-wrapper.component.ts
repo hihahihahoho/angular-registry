@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostBinding, Input } from '@angular/core';
-import { PageWrapperSize } from '@enums/ui.enum';
+import { PageWrapperSize } from '@enums/UI/ui.enum';
 
 @Component({
   selector: 'app-pagewrapper',

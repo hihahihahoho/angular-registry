@@ -1,12 +1,12 @@
-import { Component, HostBinding, Input, TemplateRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component, HostBinding, Input, TemplateRef } from '@angular/core';
+import { SvgInlineComponent } from '@components_base/svgInline/svg-inline.component';
 import {
-  ButtonSize,
-  ButtonShape,
-  ButtonColor,
   ButtonAlign,
-} from '@enums/ui.enum';
-import { SvgInlineComponent } from '@components/base/svg-inline/svg-inline.component';
+  ButtonColor,
+  ButtonShape,
+  ButtonSize,
+} from '@enums/UI/ui.enum';
 
 function toButtonColor(value: string): ButtonColor {
   const colorKey = Object.keys(ButtonColor).find(

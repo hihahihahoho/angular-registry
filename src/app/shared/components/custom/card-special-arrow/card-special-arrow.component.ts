@@ -1,6 +1,6 @@
 import { Component, HostBinding, Input } from '@angular/core';
 import { CopyButtonComponent } from '@components/base/copy-button/copy-button.component';
-import { SvgInlineComponent } from '@components/base/svg-inline/svg-inline.component';
+import { SvgInlineComponent } from '@components/base/svgInline/svg-inline.component';
 
 @Component({
   selector: '[app-card-special-arrow]',

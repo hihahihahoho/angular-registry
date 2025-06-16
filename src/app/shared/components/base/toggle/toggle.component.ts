@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, forwardRef, HostBinding, Input, Output, TemplateRef } from '@angular/core';
 import { NG_VALUE_ACCESSOR, ReactiveFormsModule } from '@angular/forms';
-import { BaseCVADirective } from '@directives/base-cva/base-cva.directive';
+import { BaseCVADirective } from '@directives/baseCva/base-cva.directive';
 import { NzSwitchModule } from 'ng-zorro-antd/switch';
 
 @Component({

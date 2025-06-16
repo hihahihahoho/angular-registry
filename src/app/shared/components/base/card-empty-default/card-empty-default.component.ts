@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CardEmptyComponent } from '../card-empty/card-empty.component';
+import { CardEmptyComponent } from '@components_base/cardEmpty/card-empty.component';
 
 @Component({
   selector: 'app-card-empty-default',

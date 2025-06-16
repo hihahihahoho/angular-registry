@@ -13,24 +13,25 @@ import {
   ViewChild,
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR, ReactiveFormsModule } from '@angular/forms';
-
-import { BaseCVADirective } from '@directives/base-cva/base-cva.directive';
-import { CCY } from '@enums/ccy.enum';
-import { Language } from '@enums/common.enum';
-import { AnySafeType } from '@enums/type.enum';
-import { Direction, InputSize } from '@enums/ui.enum';
+import { ButtonComponent } from '@components_base/Button/button.component';
+import { SvgInlineComponent } from '@components_base/svgInline/svg-inline.component';
+import { ValidateErrorComponent } from '@components_base/validateError/validate-error.component';
+import { BaseCVADirective } from '@directives/baseCva/base-cva.directive';
+import { CCY } from '@enums/CCY/ccy.enum';
+import { Language } from '@enums/Common/common.enum';
+import { AnySafeType } from '@enums/Type/type.enum';
+import { Direction, InputSize } from '@enums/UI/ui.enum';
 import { CapitalizeFirstCharPipe } from '@pipes/capitalize-first-char/capitalize-first-char.pipe';
-import { NumberToTextPipe } from '@pipes/number-to-text/number-to-text.pipe';
-import { TranslationService } from '@services/translation/translation.service';
-import { UI } from '@services/ui/ui.service';
+import { NumberToTextPipe } from '@pipes/numberToText/number-to-text.pipe';
+import { TranslationService } from '@services/Translation/translation.service';
+import { UI } from '@services/UI/ui.service';
 import { CleaveOptions } from 'cleave.js/options';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 import { NgxCleaveDirectiveModule } from 'ngx-cleave-directive';
 import { Observable } from 'rxjs';
-import { ButtonComponent } from '../button/button.component';
-import { SvgInlineComponent } from '../svg-inline/svg-inline.component';
-import { ValidateErrorComponent } from '../validate-error/validate-error.component';
+
+
 
 @Component({
   selector: 'app-input-money',

@@ -9,9 +9,9 @@ import {
   ViewChild,
 } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { SvgInlineComponent } from '@components/base/svg-inline/svg-inline.component';
-import { TOAST_DURATION } from '@enums/ui.enum';
-import { ToastService } from '@services/toast/toast.service';
+import { SvgInlineComponent } from '@components/base/svgInline/svg-inline.component';
+import { TOAST_DURATION } from '@enums/UI/ui.enum';
+import { ToastService } from '@services/Toast/toast.service';
 import {
   NzNotificationDataOptions,
   NzNotificationService,

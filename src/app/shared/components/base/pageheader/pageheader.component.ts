@@ -9,13 +9,13 @@ import {
 } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
-import { BreadcrumbComponent } from '@components/base/breadcrumb/breadcrumb.component';
-import { Language } from '@enums/common.enum';
-import { AnySafeType } from '@enums/type.enum';
-import { IBreadcrumb } from '@services/breadcrumb/breadcrumb.service';
-import { CommonService } from '@services/common/common.service';
-import { TranslationService } from '@services/translation/translation.service';
-import { UI } from '@services/ui/ui.service';
+import { BreadcrumbComponent } from '@components_base/breadcrumb/breadcrumb.component';
+import { Language } from '@enums/Common/common.enum';
+import { AnySafeType } from '@enums/Type/type.enum';
+import { IBreadcrumb } from '@services/breadCrumb/breadcrumb.service';
+import { CommonService } from '@services/Common/common.service';
+import { TranslationService } from '@services/Translation/translation.service';
+import { UI } from '@services/UI/ui.service';
 import { Observable } from 'rxjs';
 @Component({
   selector: 'app-pageheader',

@@ -1,6 +1,6 @@
 import { Injectable, TemplateRef } from '@angular/core';
+import { ToastIconType, ToastType } from '@enums/UI/ui.enum';
 import { Subject } from 'rxjs';
-import { ToastIconType, ToastType } from '@enums/ui.enum';
 
 export interface IToast {
   title: string;

@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostBinding, Input } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AuthMethod } from '@enums/ui.enum';
-import { SmsOtpComponent } from './sms-otp/sms-otp.component';
+import { SmsOtpComponent } from '@components_base/smsOtp/sms-otp.component';
+import { AuthMethod } from '@enums/UI/ui.enum';
 
 @Component({
   selector: 'app-auth-method',

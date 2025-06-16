@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostBinding, Input } from '@angular/core';
-import { BadgeColor, BadgeSize } from '@enums/ui.enum';
-import { SvgInlineComponent } from '../svg-inline/svg-inline.component';
+import { SvgInlineComponent } from '@components_base/svgInline/svg-inline.component';
+import { BadgeColor, BadgeSize } from '@enums/UI/ui.enum';
 
 @Component({
   selector: 'app-badge, [app-badge]',

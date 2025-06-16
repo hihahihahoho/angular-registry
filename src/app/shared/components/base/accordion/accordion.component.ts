@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostBinding, Input, TemplateRef } from '@angular/core';
-import { SvgInlineComponent } from '@components/base/svg-inline/svg-inline.component';
-import { AccordionSize, AccordionType } from '@enums/ui.enum';
+import { SvgInlineComponent } from '@components_base/svgInline/svg-inline.component';
+import { AccordionSize, AccordionType } from '@enums/UI/ui.enum';
 import { NzCollapseModule } from 'ng-zorro-antd/collapse';
 
 @Component({

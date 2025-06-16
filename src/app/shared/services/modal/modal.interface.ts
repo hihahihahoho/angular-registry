@@ -6,7 +6,7 @@ import {
   ModalSize,
   ModalType,
   ModalTypeShow,
-} from '@enums/ui.enum';
+} from '@enums/UI/ui.enum';
 
 export type IModalNoticeTypeContent = {
   [key in ModalType]: {

@@ -1,6 +1,6 @@
-import { Component, HostBinding, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProcessDirection, ProcessType } from '@enums/ui.enum';
+import { Component, HostBinding, Input } from '@angular/core';
+import { ProcessDirection, ProcessType } from '@enums/UI/ui.enum';
 
 @Component({
   selector: 'app-process-bar, [app-process-bar]',

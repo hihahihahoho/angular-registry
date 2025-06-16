@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
+import { IAccount } from '@components/custom/account-select/account-select.component';
 import { Observable, of } from 'rxjs';
-import { IAccount } from './account-select.component';
 
 @Injectable({
   providedIn: 'root'

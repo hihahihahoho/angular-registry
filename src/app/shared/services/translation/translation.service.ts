@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
-import { Language, StorageState } from '@enums/common.enum';
+import { Language, StorageState } from '@enums/Common/common.enum';
 import { TranslateService } from '@ngx-translate/core';
-import { NzI18nService, vi_VN, en_US } from 'ng-zorro-antd/i18n';
+import { en_US, NzI18nService, vi_VN } from 'ng-zorro-antd/i18n';
 import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({

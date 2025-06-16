@@ -7,11 +7,11 @@ import {
   forwardRef,
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR, ReactiveFormsModule } from '@angular/forms';
-import { ButtonComponent } from '@components/base/button/button.component';
-import { SvgInlineComponent } from '@components/base/svg-inline/svg-inline.component';
+import { ButtonComponent } from '@components/base/Button/button.component';
+import { SvgInlineComponent } from '@components/base/svgInline/svg-inline.component';
 import { ValidateErrorComponent } from '@components/base/validate-error/validate-error.component';
-import { BaseCVADirective } from '@directives/base-cva/base-cva.directive';
-import { Direction, InputSize } from '@enums/ui.enum';
+import { BaseCVADirective } from '@directives/baseCva/base-cva.directive';
+import { Direction, InputSize } from '@enums/UI/ui.enum';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 

@@ -2,13 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, forwardRef, inject, Input, Output } from '@angular/core';
 import { NG_VALUE_ACCESSOR, ReactiveFormsModule } from '@angular/forms';
 import { CardEmptyComponent } from '@components/base/card-empty/card-empty.component';
-import { SvgInlineComponent } from '@components/base/svg-inline/svg-inline.component';
-import { BaseCVADirective } from '@directives/base-cva/base-cva.directive';
+import { SvgInlineComponent } from '@components/base/svgInline/svg-inline.component';
+import { AccountSelectService } from '@components/custom/account-select/account-select.class';
+import { ListItemComponent } from '@components/custom/list-item/list-item.component';
+import { BaseCVADirective } from '@directives/baseCva/base-cva.directive';
 import { ElementMetricsDirective } from '@directives/element-metric/element-metric.directive';
-import { UI } from '@services/ui/ui.service';
+import { UI } from '@services/UI/ui.service';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
-import { ListItemComponent } from '../list-item/list-item.component';
-import { AccountSelectService } from './account-select.class';
 
 export interface IAccount {
   accountNumber: string;

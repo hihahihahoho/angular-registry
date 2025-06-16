@@ -1,5 +1,5 @@
 import { Component, HostBinding, Input } from '@angular/core';
-import { SvgInlineComponent } from '@components/base/svg-inline/svg-inline.component';
+import { SvgInlineComponent } from '@components/base/svgInline/svg-inline.component';
 
 @Component({
   selector: '[app-list-item]',

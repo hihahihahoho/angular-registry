@@ -1,15 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostBinding, inject, Input, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { DropdownItemComponent } from '@components/base/dropdown-item/dropdown-item.component';
-import { MainRoute } from '@enums/route.enum';
+import { DropdownItemComponent } from '@components_base/dropdownItem/dropdown-item.component';
+import { SvgInlineComponent } from '@components_base/svgInline/svg-inline.component';
+import { MainRoute } from '@enums/Route/route.enum';
 import { TranslateModule } from '@ngx-translate/core';
 import {
   BreadcrumbService,
   IBreadcrumb,
-} from '@services/breadcrumb/breadcrumb.service';
+} from '@services/breadCrumb/breadcrumb.service';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
-import { SvgInlineComponent } from '../svg-inline/svg-inline.component';
 
 @Component({
   selector: 'app-breadcrumb',

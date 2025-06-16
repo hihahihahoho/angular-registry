@@ -1,13 +1,13 @@
-import { Component, HostListener, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NZ_MODAL_DATA, NzModalRef } from 'ng-zorro-antd/modal';
+import { Component, HostListener, inject } from '@angular/core';
+import { ButtonComponent } from '@components_base/Button/button.component';
+import { SvgInlineComponent } from '@components_base/svgInline/svg-inline.component';
+import { AnySafeType } from '@enums/Type/type.enum';
 import { TranslateModule } from '@ngx-translate/core';
-import { ModalBaseComponent } from '../base/base.component';
-import { UI } from '@services/ui/ui.service';
 import { ReplaceToStyleContentFromServerPipe } from '@pipes/replace-to-style-content-from-server/replace-to-style-content-from-server.pipe';
-import { ButtonComponent } from '@components/base/button/button.component';
-import { SvgInlineComponent } from '@components/base/svg-inline/svg-inline.component';
-import { AnySafeType } from '@enums/type.enum';
+import { UI } from '@services/UI/ui.service';
+import { NZ_MODAL_DATA, NzModalRef } from 'ng-zorro-antd/modal';
+import { ModalBaseComponent } from '../Base/base.component';
 
 @Component({
   selector: 'app-modal-confirm',

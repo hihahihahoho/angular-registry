@@ -16,9 +16,9 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { ValidateErrorComponent } from '@components/base/validate-error/validate-error.component';
-import { BaseCVADirective } from '@directives/base-cva/base-cva.directive';
-import { UI } from '@services/ui/ui.service';
+import { ValidateErrorComponent } from '@components_base/validateError/validate-error.component';
+import { BaseCVADirective } from '@directives/baseCva/base-cva.directive';
+import { UI } from '@services/UI/ui.service';
 import { NgOtpInputComponent } from 'ng-otp-input';
 @Component({
   selector: 'app-otp',

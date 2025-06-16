@@ -1,8 +1,8 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, inject } from '@angular/core';
-import { SvgInlineComponent } from '@components/base/svg-inline/svg-inline.component';
+import { SvgInlineComponent } from '@components/base/svgInline/svg-inline.component';
 import { SwiperComponent } from '@components/base/swiper/swiper.component';
 import { TabComponent } from '@components/base/tab/tab.component';
-import { UI } from '@services/ui/ui.service';
+import { UI } from '@services/UI/ui.service';
 import { SwiperOptions } from 'swiper/types';
 
 @Component({

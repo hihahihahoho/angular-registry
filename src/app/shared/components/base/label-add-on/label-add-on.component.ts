@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostBinding, Input } from '@angular/core';
-import { SvgInlineComponent } from '../svg-inline/svg-inline.component';
+import { SvgInlineComponent } from '@components_base/svgInline/svg-inline.component';
 
 @Component({
   selector: '[app-label-add-on]',

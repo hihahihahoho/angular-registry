@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener, inject } from '@angular/core';
-import { ButtonComponent } from '@components_base/Button/button.component';
+import { ButtonComponent } from '@components_base/button/button.component';
 import { SvgInlineComponent } from '@components_base/svgInline/svg-inline.component';
 import { AnySafeType } from '@enums/Type/type.enum';
 import { TranslateModule } from '@ngx-translate/core';

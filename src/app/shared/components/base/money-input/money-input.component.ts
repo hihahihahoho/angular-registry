@@ -1,19 +1,19 @@
 import { CommonModule } from '@angular/common';
 import {
-  Component,
-  ElementRef,
-  EventEmitter,
-  forwardRef,
-  HostBinding,
-  inject,
-  Input,
-  OnChanges,
-  Output,
-  TemplateRef,
-  ViewChild,
+    Component,
+    ElementRef,
+    EventEmitter,
+    forwardRef,
+    HostBinding,
+    inject,
+    Input,
+    OnChanges,
+    Output,
+    TemplateRef,
+    ViewChild,
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR, ReactiveFormsModule } from '@angular/forms';
-import { ButtonComponent } from '@components_base/Button/button.component';
+import { ButtonComponent } from '@components_base/button/button.component';
 import { SvgInlineComponent } from '@components_base/svgInline/svg-inline.component';
 import { ValidateErrorComponent } from '@components_base/validateError/validate-error.component';
 import { BaseCVADirective } from '@directives/baseCva/base-cva.directive';

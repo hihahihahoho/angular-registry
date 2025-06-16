@@ -1,0 +1,17 @@
+@if (imageType === "svg") {
+<div
+  [class]="initClass()"
+  aria-label="icon svg"
+  [inlineSVG]="src"
+  [onSVGLoaded]="onSVGLoaded.bind(this)"
+></div>
+} @else {
+<img
+  [src]="src"
+  alt=""
+  [class]="initSizeAndExtendClass()"
+  [ngClass]="{
+      'icon-svg': true,
+    }"
+/>
+}

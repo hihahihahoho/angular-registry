@@ -1,5 +1,5 @@
 {
-	"name": "test",
+	"name": "yourteam/test-registry",
 	"version": "0.0.1",
 	"categories": [
 		{
@@ -594,7 +594,6 @@
 						"avatar.component.ts"
 					],
 					"localDependencies": [
-						"base/Button",
 						"base/svgInline",
 						"enums/UI",
 						"pipes/numberToText",
@@ -603,11 +602,11 @@
 					],
 					"dependencies": [
 						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0"
+						"@angular/core@^19.2.0",
+						"@components_base/button"
 					],
 					"devDependencies": [],
 					"_imports_": {
-						"@components_base/Button/button.component": "{{base/Button}}/button.component",
 						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
 						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum",
 						"@pipes/numberToText/number-to-text.pipe": "{{pipes/numberToText}}/number-to-text.pipe",
@@ -702,8 +701,8 @@
 					}
 				},
 				{
-					"name": "Button",
-					"directory": "src/app/shared/components/base/Button",
+					"name": "button",
+					"directory": "src/app/shared/components/base/button",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -915,7 +914,6 @@
 						"input.component.ts"
 					],
 					"localDependencies": [
-						"base/Button",
 						"base/svgInline",
 						"base/validateError",
 						"directives/baseCva",
@@ -926,11 +924,11 @@
 						"@angular/common@^19.2.0",
 						"@angular/core@^19.2.0",
 						"@angular/forms@^19.2.0",
+						"@components_base/button",
 						"ng-zorro-antd@^19.3.1"
 					],
 					"devDependencies": [],
 					"_imports_": {
-						"@components_base/Button/button.component": "{{base/Button}}/button.component",
 						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
 						"@components_base/validateError/validate-error.component": "{{base/validateError}}/validate-error.component",
 						"@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive",
@@ -1007,7 +1005,6 @@
 					"localDependencies": [
 						"enums/UI",
 						"services/UI",
-						"base/Button",
 						"base/svgInline",
 						"enums/Type"
 					],
@@ -1017,13 +1014,13 @@
 						"@components/base",
 						"@ngx-translate/core@^16.0.4",
 						"ng-zorro-antd@^19.3.1",
+						"@components_base/button",
 						"@pipes/replace-to-style-content-from-server"
 					],
 					"devDependencies": [],
 					"_imports_": {
 						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum",
 						"@services/UI/ui.service": "{{services/UI}}/ui.service",
-						"@components_base/Button/button.component": "{{base/Button}}/button.component",
 						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
 						"@enums/Type/type.enum": "{{enums/Type}}/type.enum"
 					}
@@ -1043,7 +1040,6 @@
 						"money-input.component.ts"
 					],
 					"localDependencies": [
-						"base/Button",
 						"base/svgInline",
 						"base/validateError",
 						"directives/baseCva",
@@ -1059,6 +1055,7 @@
 						"@angular/common@^19.2.0",
 						"@angular/core@^19.2.0",
 						"@angular/forms@^19.2.0",
+						"@components_base/button",
 						"@pipes/capitalize-first-char",
 						"cleave.js",
 						"ng-zorro-antd@^19.3.1",
@@ -1067,7 +1064,6 @@
 					],
 					"devDependencies": [],
 					"_imports_": {
-						"@components_base/Button/button.component": "{{base/Button}}/button.component",
 						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
 						"@components_base/validateError/validate-error.component": "{{base/validateError}}/validate-error.component",
 						"@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive",

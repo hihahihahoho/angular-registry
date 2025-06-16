@@ -1,20 +1,20 @@
 import { CommonModule } from '@angular/common';
 import {
-  Component,
-  EventEmitter,
-  HostBinding,
-  Input,
-  Output,
-  inject,
+    Component,
+    EventEmitter,
+    HostBinding,
+    Input,
+    Output,
+    inject,
 } from '@angular/core';
-import { ButtonComponent } from '@components_base/Button/button.component';
+import { ButtonComponent } from '@components_base/button/button.component';
 import { SvgInlineComponent } from '@components_base/svgInline/svg-inline.component';
 import {
-  AvatarSize,
-  AvatarStyle,
-  AvatarType,
-  ButtonColor,
-  RankingType,
+    AvatarSize,
+    AvatarStyle,
+    AvatarType,
+    ButtonColor,
+    RankingType,
 } from '@enums/UI/ui.enum';
 import { NumberToTextPipe } from '@pipes/numberToText/number-to-text.pipe';
 import { ShortenNamePipe } from '@pipes/shortenName/shorten-name.pipe';

@@ -7,7 +7,7 @@
 			"blocks": [
 				{
 					"name": "Common",
-					"directory": "src/app/shared/constants/Common",
+					"directory": "constants/Common",
 					"category": "constants",
 					"tests": false,
 					"docs": false,
@@ -28,7 +28,7 @@
 			"blocks": [
 				{
 					"name": "baseCva",
-					"directory": "src/app/shared/directives/baseCva",
+					"directory": "directives/baseCva",
 					"category": "directives",
 					"tests": true,
 					"docs": false,
@@ -49,7 +49,7 @@
 				},
 				{
 					"name": "click-outside",
-					"directory": "src/app/shared/directives/click-outside",
+					"directory": "directives/click-outside",
 					"category": "directives",
 					"tests": true,
 					"docs": false,
@@ -69,7 +69,7 @@
 				},
 				{
 					"name": "element-metric",
-					"directory": "src/app/shared/directives/element-metric",
+					"directory": "directives/element-metric",
 					"category": "directives",
 					"tests": false,
 					"docs": false,
@@ -87,7 +87,7 @@
 				},
 				{
 					"name": "only-number",
-					"directory": "src/app/shared/directives/only-number",
+					"directory": "directives/only-number",
 					"category": "directives",
 					"tests": false,
 					"docs": false,
@@ -114,7 +114,7 @@
 			"blocks": [
 				{
 					"name": "CCY",
-					"directory": "src/app/shared/enums/CCY",
+					"directory": "enums/CCY",
 					"category": "enums",
 					"tests": false,
 					"docs": false,
@@ -130,7 +130,7 @@
 				},
 				{
 					"name": "Common",
-					"directory": "src/app/shared/enums/Common",
+					"directory": "enums/Common",
 					"category": "enums",
 					"tests": false,
 					"docs": false,
@@ -146,7 +146,7 @@
 				},
 				{
 					"name": "Route",
-					"directory": "src/app/shared/enums/Route",
+					"directory": "enums/Route",
 					"category": "enums",
 					"tests": false,
 					"docs": false,
@@ -162,7 +162,7 @@
 				},
 				{
 					"name": "Type",
-					"directory": "src/app/shared/enums/Type",
+					"directory": "enums/Type",
 					"category": "enums",
 					"tests": false,
 					"docs": false,
@@ -178,7 +178,7 @@
 				},
 				{
 					"name": "UI",
-					"directory": "src/app/shared/enums/UI",
+					"directory": "enums/UI",
 					"category": "enums",
 					"tests": false,
 					"docs": false,
@@ -199,7 +199,7 @@
 			"blocks": [
 				{
 					"name": "capitalize-first-char",
-					"directory": "src/app/shared/pipes/capitalize-first-char",
+					"directory": "pipes/capitalize-first-char",
 					"category": "pipes",
 					"tests": true,
 					"docs": false,
@@ -218,7 +218,7 @@
 				},
 				{
 					"name": "numberToText",
-					"directory": "src/app/shared/pipes/numberToText",
+					"directory": "pipes/numberToText",
 					"category": "pipes",
 					"tests": true,
 					"docs": false,
@@ -237,7 +237,7 @@
 				},
 				{
 					"name": "replace-to-style-content-from-server",
-					"directory": "src/app/shared/pipes/replace-to-style-content-from-server",
+					"directory": "pipes/replace-to-style-content-from-server",
 					"category": "pipes",
 					"tests": true,
 					"docs": false,
@@ -256,7 +256,7 @@
 				},
 				{
 					"name": "shortenName",
-					"directory": "src/app/shared/pipes/shortenName",
+					"directory": "pipes/shortenName",
 					"category": "pipes",
 					"tests": true,
 					"docs": false,
@@ -280,7 +280,7 @@
 			"blocks": [
 				{
 					"name": "bgService",
-					"directory": "src/app/shared/services/bgService",
+					"directory": "services/bgService",
 					"category": "services",
 					"tests": true,
 					"docs": false,
@@ -299,7 +299,7 @@
 				},
 				{
 					"name": "breadCrumb",
-					"directory": "src/app/shared/services/breadCrumb",
+					"directory": "services/breadCrumb",
 					"category": "services",
 					"tests": true,
 					"docs": false,
@@ -320,7 +320,7 @@
 				},
 				{
 					"name": "Common",
-					"directory": "src/app/shared/services/Common",
+					"directory": "services/Common",
 					"category": "services",
 					"tests": true,
 					"docs": false,
@@ -346,7 +346,7 @@
 				},
 				{
 					"name": "Loading",
-					"directory": "src/app/shared/services/Loading",
+					"directory": "services/Loading",
 					"category": "services",
 					"tests": true,
 					"docs": false,
@@ -370,7 +370,7 @@
 				},
 				{
 					"name": "Modal",
-					"directory": "src/app/shared/services/Modal",
+					"directory": "services/Modal",
 					"category": "services",
 					"tests": true,
 					"docs": false,
@@ -396,7 +396,7 @@
 				},
 				{
 					"name": "pageTitle",
-					"directory": "src/app/shared/services/pageTitle",
+					"directory": "services/pageTitle",
 					"category": "services",
 					"tests": true,
 					"docs": false,
@@ -426,7 +426,7 @@
 				},
 				{
 					"name": "Steps",
-					"directory": "src/app/shared/services/Steps",
+					"directory": "services/Steps",
 					"category": "services",
 					"tests": true,
 					"docs": false,
@@ -446,7 +446,7 @@
 				},
 				{
 					"name": "Toast",
-					"directory": "src/app/shared/services/Toast",
+					"directory": "services/Toast",
 					"category": "services",
 					"tests": true,
 					"docs": false,
@@ -470,7 +470,7 @@
 				},
 				{
 					"name": "Translation",
-					"directory": "src/app/shared/services/Translation",
+					"directory": "services/Translation",
 					"category": "services",
 					"tests": true,
 					"docs": false,
@@ -496,7 +496,7 @@
 				},
 				{
 					"name": "UI",
-					"directory": "src/app/shared/services/UI",
+					"directory": "services/UI",
 					"category": "services",
 					"tests": true,
 					"docs": false,
@@ -524,7 +524,7 @@
 			"blocks": [
 				{
 					"name": "accordion",
-					"directory": "src/app/shared/components/base/accordion",
+					"directory": "components/base/accordion",
 					"category": "base",
 					"tests": false,
 					"docs": false,
@@ -552,7 +552,7 @@
 				},
 				{
 					"name": "auth-method",
-					"directory": "src/app/shared/components/base/auth-method",
+					"directory": "components/base/auth-method",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -581,7 +581,7 @@
 				},
 				{
 					"name": "avatar",
-					"directory": "src/app/shared/components/base/avatar",
+					"directory": "components/base/avatar",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -617,7 +617,7 @@
 				},
 				{
 					"name": "badge",
-					"directory": "src/app/shared/components/base/badge",
+					"directory": "components/base/badge",
 					"category": "base",
 					"tests": false,
 					"docs": false,
@@ -644,7 +644,7 @@
 				},
 				{
 					"name": "badge-number",
-					"directory": "src/app/shared/components/base/badge-number",
+					"directory": "components/base/badge-number",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -669,7 +669,7 @@
 				},
 				{
 					"name": "breadcrumb",
-					"directory": "src/app/shared/components/base/breadcrumb",
+					"directory": "components/base/breadcrumb",
 					"category": "base",
 					"tests": false,
 					"docs": false,
@@ -703,7 +703,7 @@
 				},
 				{
 					"name": "Button",
-					"directory": "src/app/shared/components/base/Button",
+					"directory": "components/base/Button",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -732,7 +732,7 @@
 				},
 				{
 					"name": "card-empty-default",
-					"directory": "src/app/shared/components/base/card-empty-default",
+					"directory": "components/base/card-empty-default",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -757,7 +757,7 @@
 				},
 				{
 					"name": "cardEmpty",
-					"directory": "src/app/shared/components/base/cardEmpty",
+					"directory": "components/base/cardEmpty",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -783,7 +783,7 @@
 				},
 				{
 					"name": "chip",
-					"directory": "src/app/shared/components/base/chip",
+					"directory": "components/base/chip",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -811,7 +811,7 @@
 				},
 				{
 					"name": "copy-button",
-					"directory": "src/app/shared/components/base/copy-button",
+					"directory": "components/base/copy-button",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -840,7 +840,7 @@
 				},
 				{
 					"name": "datepicker",
-					"directory": "src/app/shared/components/base/datepicker",
+					"directory": "components/base/datepicker",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -877,7 +877,7 @@
 				},
 				{
 					"name": "dropdownItem",
-					"directory": "src/app/shared/components/base/dropdownItem",
+					"directory": "components/base/dropdownItem",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -903,7 +903,7 @@
 				},
 				{
 					"name": "input",
-					"directory": "src/app/shared/components/base/input",
+					"directory": "components/base/input",
 					"category": "base",
 					"tests": false,
 					"docs": false,
@@ -939,7 +939,7 @@
 				},
 				{
 					"name": "label-add-on",
-					"directory": "src/app/shared/components/base/label-add-on",
+					"directory": "components/base/label-add-on",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -965,7 +965,7 @@
 				},
 				{
 					"name": "loading",
-					"directory": "src/app/shared/components/base/loading",
+					"directory": "components/base/loading",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -987,7 +987,7 @@
 				},
 				{
 					"name": "modal",
-					"directory": "src/app/shared/components/base/modal",
+					"directory": "components/base/modal",
 					"category": "base",
 					"tests": false,
 					"docs": false,
@@ -1030,7 +1030,7 @@
 				},
 				{
 					"name": "money-input",
-					"directory": "src/app/shared/components/base/money-input",
+					"directory": "components/base/money-input",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -1082,7 +1082,7 @@
 				},
 				{
 					"name": "Otp",
-					"directory": "src/app/shared/components/base/Otp",
+					"directory": "components/base/Otp",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -1115,7 +1115,7 @@
 				},
 				{
 					"name": "page-wrapper",
-					"directory": "src/app/shared/components/base/page-wrapper",
+					"directory": "components/base/page-wrapper",
 					"category": "base",
 					"tests": false,
 					"docs": false,
@@ -1140,7 +1140,7 @@
 				},
 				{
 					"name": "pageheader",
-					"directory": "src/app/shared/components/base/pageheader",
+					"directory": "components/base/pageheader",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -1180,7 +1180,7 @@
 				},
 				{
 					"name": "pill",
-					"directory": "src/app/shared/components/base/pill",
+					"directory": "components/base/pill",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -1208,7 +1208,7 @@
 				},
 				{
 					"name": "process-bar",
-					"directory": "src/app/shared/components/base/process-bar",
+					"directory": "components/base/process-bar",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -1234,7 +1234,7 @@
 				},
 				{
 					"name": "select",
-					"directory": "src/app/shared/components/base/select",
+					"directory": "components/base/select",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -1269,7 +1269,7 @@
 				},
 				{
 					"name": "select-pill",
-					"directory": "src/app/shared/components/base/select-pill",
+					"directory": "components/base/select-pill",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -1301,7 +1301,7 @@
 				},
 				{
 					"name": "smsOtp",
-					"directory": "src/app/shared/components/base/smsOtp",
+					"directory": "components/base/smsOtp",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -1337,7 +1337,7 @@
 				},
 				{
 					"name": "step",
-					"directory": "src/app/shared/components/base/step",
+					"directory": "components/base/step",
 					"category": "base",
 					"tests": false,
 					"docs": false,
@@ -1365,7 +1365,7 @@
 				},
 				{
 					"name": "svgInline",
-					"directory": "src/app/shared/components/base/svgInline",
+					"directory": "components/base/svgInline",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -1393,7 +1393,7 @@
 				},
 				{
 					"name": "swiper",
-					"directory": "src/app/shared/components/base/swiper",
+					"directory": "components/base/swiper",
 					"category": "base",
 					"tests": false,
 					"docs": false,
@@ -1418,7 +1418,7 @@
 				},
 				{
 					"name": "tab",
-					"directory": "src/app/shared/components/base/tab",
+					"directory": "components/base/tab",
 					"category": "base",
 					"tests": false,
 					"docs": false,
@@ -1445,7 +1445,7 @@
 				},
 				{
 					"name": "textarea",
-					"directory": "src/app/shared/components/base/textarea",
+					"directory": "components/base/textarea",
 					"category": "base",
 					"tests": false,
 					"docs": false,
@@ -1475,7 +1475,7 @@
 				},
 				{
 					"name": "toast",
-					"directory": "src/app/shared/components/base/toast",
+					"directory": "components/base/toast",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -1506,7 +1506,7 @@
 				},
 				{
 					"name": "toggle",
-					"directory": "src/app/shared/components/base/toggle",
+					"directory": "components/base/toggle",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -1534,7 +1534,7 @@
 				},
 				{
 					"name": "validateError",
-					"directory": "src/app/shared/components/base/validateError",
+					"directory": "components/base/validateError",
 					"category": "base",
 					"tests": true,
 					"docs": false,
@@ -1567,7 +1567,7 @@
 			"blocks": [
 				{
 					"name": "account-select",
-					"directory": "src/app/shared/components/custom/account-select",
+					"directory": "components/custom/account-select",
 					"category": "custom",
 					"tests": true,
 					"docs": false,
@@ -1602,7 +1602,7 @@
 				},
 				{
 					"name": "anim-texts",
-					"directory": "src/app/shared/components/custom/anim-texts",
+					"directory": "components/custom/anim-texts",
 					"category": "custom",
 					"tests": true,
 					"docs": false,
@@ -1625,7 +1625,7 @@
 				},
 				{
 					"name": "base-confirm",
-					"directory": "src/app/shared/components/custom/base-confirm",
+					"directory": "components/custom/base-confirm",
 					"category": "custom",
 					"tests": true,
 					"docs": false,
@@ -1664,7 +1664,7 @@
 				},
 				{
 					"name": "base-result",
-					"directory": "src/app/shared/components/custom/base-result",
+					"directory": "components/custom/base-result",
 					"category": "custom",
 					"tests": true,
 					"docs": false,
@@ -1692,7 +1692,7 @@
 				},
 				{
 					"name": "card-account-homepage",
-					"directory": "src/app/shared/components/custom/card-account-homepage",
+					"directory": "components/custom/card-account-homepage",
 					"category": "custom",
 					"tests": true,
 					"docs": false,
@@ -1719,7 +1719,7 @@
 				},
 				{
 					"name": "card-features-homepage",
-					"directory": "src/app/shared/components/custom/card-features-homepage",
+					"directory": "components/custom/card-features-homepage",
 					"category": "custom",
 					"tests": true,
 					"docs": false,
@@ -1749,7 +1749,7 @@
 				},
 				{
 					"name": "card-special-arrow",
-					"directory": "src/app/shared/components/custom/card-special-arrow",
+					"directory": "components/custom/card-special-arrow",
 					"category": "custom",
 					"tests": true,
 					"docs": false,
@@ -1771,7 +1771,7 @@
 				},
 				{
 					"name": "item-icon-circle",
-					"directory": "src/app/shared/components/custom/item-icon-circle",
+					"directory": "components/custom/item-icon-circle",
 					"category": "custom",
 					"tests": true,
 					"docs": false,
@@ -1797,7 +1797,7 @@
 				},
 				{
 					"name": "list-item",
-					"directory": "src/app/shared/components/custom/list-item",
+					"directory": "components/custom/list-item",
 					"category": "custom",
 					"tests": true,
 					"docs": false,
@@ -1819,7 +1819,7 @@
 				},
 				{
 					"name": "list-item-card",
-					"directory": "src/app/shared/components/custom/list-item-card",
+					"directory": "components/custom/list-item-card",
 					"category": "custom",
 					"tests": true,
 					"docs": false,
@@ -1841,7 +1841,7 @@
 				},
 				{
 					"name": "pg-card",
-					"directory": "src/app/shared/components/custom/pg-card",
+					"directory": "components/custom/pg-card",
 					"category": "custom",
 					"tests": false,
 					"docs": false,
@@ -1855,7 +1855,7 @@
 				},
 				{
 					"name": "swiper-homepage",
-					"directory": "src/app/shared/components/custom/swiper-homepage",
+					"directory": "components/custom/swiper-homepage",
 					"category": "custom",
 					"tests": true,
 					"docs": false,

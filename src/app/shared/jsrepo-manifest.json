@@ -1,1887 +1,1887 @@
 {
-	"name": "test",
-	"version": "0.0.1",
-	"categories": [
-		{
-			"name": "constants",
-			"blocks": [
-				{
-					"name": "Common",
-					"directory": "constants/Common",
-					"category": "constants",
-					"tests": false,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"common.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [],
-					"devDependencies": [],
-					"_imports_": {}
-				}
-			]
-		},
-		{
-			"name": "directives",
-			"blocks": [
-				{
-					"name": "baseCva",
-					"directory": "directives/baseCva",
-					"category": "directives",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"base-cva.directive.spec.ts",
-						"base-cva.directive.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [
-						"@angular/core@^19.2.0",
-						"@angular/forms@^19.2.0",
-						"rxjs@~7.8.0"
-					],
-					"devDependencies": [],
-					"_imports_": {}
-				},
-				{
-					"name": "click-outside",
-					"directory": "directives/click-outside",
-					"category": "directives",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"click-outside.directive.spec.ts",
-						"click-outside.directive.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [
-						"@angular/core@^19.2.0",
-						"rxjs@~7.8.0"
-					],
-					"devDependencies": [],
-					"_imports_": {}
-				},
-				{
-					"name": "element-metric",
-					"directory": "directives/element-metric",
-					"category": "directives",
-					"tests": false,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"element-metric.directive.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {}
-				},
-				{
-					"name": "only-number",
-					"directory": "directives/only-number",
-					"category": "directives",
-					"tests": false,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"only-number.directive.ts"
-					],
-					"localDependencies": [
-						"services/Common"
-					],
-					"dependencies": [
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@services/Common/common.service": "{{services/Common}}/common.service"
-					}
-				}
-			]
-		},
-		{
-			"name": "enums",
-			"blocks": [
-				{
-					"name": "CCY",
-					"directory": "enums/CCY",
-					"category": "enums",
-					"tests": false,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"ccy.enum.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [],
-					"devDependencies": [],
-					"_imports_": {}
-				},
-				{
-					"name": "Common",
-					"directory": "enums/Common",
-					"category": "enums",
-					"tests": false,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"common.enum.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [],
-					"devDependencies": [],
-					"_imports_": {}
-				},
-				{
-					"name": "Route",
-					"directory": "enums/Route",
-					"category": "enums",
-					"tests": false,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"route.enum.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [],
-					"devDependencies": [],
-					"_imports_": {}
-				},
-				{
-					"name": "Type",
-					"directory": "enums/Type",
-					"category": "enums",
-					"tests": false,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"type.enum.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [],
-					"devDependencies": [],
-					"_imports_": {}
-				},
-				{
-					"name": "UI",
-					"directory": "enums/UI",
-					"category": "enums",
-					"tests": false,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"ui.enum.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [],
-					"devDependencies": [],
-					"_imports_": {}
-				}
-			]
-		},
-		{
-			"name": "pipes",
-			"blocks": [
-				{
-					"name": "capitalize-first-char",
-					"directory": "pipes/capitalize-first-char",
-					"category": "pipes",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"capitalize-first-char.pipe.spec.ts",
-						"capitalize-first-char.pipe.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {}
-				},
-				{
-					"name": "numberToText",
-					"directory": "pipes/numberToText",
-					"category": "pipes",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"number-to-text.pipe.spec.ts",
-						"number-to-text.pipe.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {}
-				},
-				{
-					"name": "replace-to-style-content-from-server",
-					"directory": "pipes/replace-to-style-content-from-server",
-					"category": "pipes",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"replace-to-style-content-from-server.pipe.spec.ts",
-						"replace-to-style-content-from-server.pipe.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {}
-				},
-				{
-					"name": "shortenName",
-					"directory": "pipes/shortenName",
-					"category": "pipes",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"shorten-name.pipe.spec.ts",
-						"shorten-name.pipe.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {}
-				}
-			]
-		},
-		{
-			"name": "services",
-			"blocks": [
-				{
-					"name": "bgService",
-					"directory": "services/bgService",
-					"category": "services",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"bg-service.service.spec.ts",
-						"bg-service.service.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {}
-				},
-				{
-					"name": "breadCrumb",
-					"directory": "services/breadCrumb",
-					"category": "services",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"breadcrumb.service.spec.ts",
-						"breadcrumb.service.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [
-						"@angular/core@^19.2.0",
-						"@angular/router@^19.2.0",
-						"rxjs@~7.8.0"
-					],
-					"devDependencies": [],
-					"_imports_": {}
-				},
-				{
-					"name": "Common",
-					"directory": "services/Common",
-					"category": "services",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"common.service.spec.ts",
-						"common.service.ts"
-					],
-					"localDependencies": [
-						"constants/Common"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@angular/router@^19.2.0",
-						"rxjs@~7.8.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@constants/Common/common": "{{constants/Common}}/common"
-					}
-				},
-				{
-					"name": "Loading",
-					"directory": "services/Loading",
-					"category": "services",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"loading.service.spec.ts",
-						"loading.service.ts"
-					],
-					"localDependencies": [
-						"services/Common"
-					],
-					"dependencies": [
-						"@angular/core@^19.2.0",
-						"rxjs@~7.8.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@services/Common/common.service": "{{services/Common}}/common.service"
-					}
-				},
-				{
-					"name": "Modal",
-					"directory": "services/Modal",
-					"category": "services",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"modal.interface.ts",
-						"modal.service.spec.ts",
-						"modal.service.ts"
-					],
-					"localDependencies": [
-						"enums/UI"
-					],
-					"dependencies": [
-						"@angular/core@^19.2.0",
-						"@components_base/modal",
-						"ng-zorro-antd@^19.3.1"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				},
-				{
-					"name": "pageTitle",
-					"directory": "services/pageTitle",
-					"category": "services",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"page-title.service.spec.ts",
-						"page-title.service.ts"
-					],
-					"localDependencies": [
-						"enums/Common",
-						"enums/Type",
-						"services/Translation"
-					],
-					"dependencies": [
-						"@angular/core@^19.2.0",
-						"@angular/platform-browser@^19.2.0",
-						"@angular/router@^19.2.0",
-						"rxjs@~7.8.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@enums/Common/common.enum": "{{enums/Common}}/common.enum",
-						"@enums/Type/type.enum": "{{enums/Type}}/type.enum",
-						"@services/Translation/translation.service": "{{services/Translation}}/translation.service"
-					}
-				},
-				{
-					"name": "Steps",
-					"directory": "services/Steps",
-					"category": "services",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"steps.service.spec.ts",
-						"steps.service.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [
-						"@angular/core@^19.2.0",
-						"rxjs@~7.8.0"
-					],
-					"devDependencies": [],
-					"_imports_": {}
-				},
-				{
-					"name": "Toast",
-					"directory": "services/Toast",
-					"category": "services",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"toast.service.spec.ts",
-						"toast.service.ts"
-					],
-					"localDependencies": [
-						"enums/UI"
-					],
-					"dependencies": [
-						"@angular/core@^19.2.0",
-						"rxjs@~7.8.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				},
-				{
-					"name": "Translation",
-					"directory": "services/Translation",
-					"category": "services",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"translation.service.spec.ts",
-						"translation.service.ts"
-					],
-					"localDependencies": [
-						"enums/Common"
-					],
-					"dependencies": [
-						"@angular/core@^19.2.0",
-						"@ngx-translate/core@^16.0.4",
-						"ng-zorro-antd@^19.3.1",
-						"rxjs@~7.8.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@enums/Common/common.enum": "{{enums/Common}}/common.enum"
-					}
-				},
-				{
-					"name": "UI",
-					"directory": "services/UI",
-					"category": "services",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"ui.service.spec.ts",
-						"ui.service.ts"
-					],
-					"localDependencies": [
-						"enums/UI"
-					],
-					"dependencies": [
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				}
-			]
-		},
-		{
-			"name": "base",
-			"blocks": [
-				{
-					"name": "accordion",
-					"directory": "components/base/accordion",
-					"category": "base",
-					"tests": false,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"accordion.component.html",
-						"accordion.component.scss",
-						"accordion.component.ts"
-					],
-					"localDependencies": [
-						"base/svgInline",
-						"enums/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"ng-zorro-antd@^19.3.1"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				},
-				{
-					"name": "auth-method",
-					"directory": "components/base/auth-method",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"auth-method.component.html",
-						"auth-method.component.scss",
-						"auth-method.component.spec.ts",
-						"auth-method.component.ts"
-					],
-					"localDependencies": [
-						"base/smsOtp",
-						"enums/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@angular/forms@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@components_base/smsOtp/sms-otp.component": "{{base/smsOtp}}/sms-otp.component",
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				},
-				{
-					"name": "avatar",
-					"directory": "components/base/avatar",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"avatar.component.html",
-						"avatar.component.scss",
-						"avatar.component.spec.ts",
-						"avatar.component.ts"
-					],
-					"localDependencies": [
-						"base/button",
-						"base/svgInline",
-						"enums/UI",
-						"pipes/numberToText",
-						"pipes/shortenName",
-						"services/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@components_base/button/button.component": "{{base/button}}/button.component",
-						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum",
-						"@pipes/numberToText/number-to-text.pipe": "{{pipes/numberToText}}/number-to-text.pipe",
-						"@pipes/shortenName/shorten-name.pipe": "{{pipes/shortenName}}/shorten-name.pipe",
-						"@services/UI/ui.service": "{{services/UI}}/ui.service"
-					}
-				},
-				{
-					"name": "badge",
-					"directory": "components/base/badge",
-					"category": "base",
-					"tests": false,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"badge.component.html",
-						"badge.component.scss",
-						"badge.component.ts"
-					],
-					"localDependencies": [
-						"base/svgInline",
-						"enums/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				},
-				{
-					"name": "badge-number",
-					"directory": "components/base/badge-number",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"badge-number.component.html",
-						"badge-number.component.scss",
-						"badge-number.component.spec.ts",
-						"badge-number.component.ts"
-					],
-					"localDependencies": [
-						"enums/UI"
-					],
-					"dependencies": [
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				},
-				{
-					"name": "breadcrumb",
-					"directory": "components/base/breadcrumb",
-					"category": "base",
-					"tests": false,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"breadcrumb.component.html",
-						"breadcrumb.component.scss",
-						"breadcrumb.component.ts"
-					],
-					"localDependencies": [
-						"base/dropdownItem",
-						"base/svgInline",
-						"enums/Route",
-						"services/breadCrumb"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@angular/router@^19.2.0",
-						"@ngx-translate/core@^16.0.4",
-						"ng-zorro-antd@^19.3.1"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@components_base/dropdownItem/dropdown-item.component": "{{base/dropdownItem}}/dropdown-item.component",
-						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
-						"@enums/Route/route.enum": "{{enums/Route}}/route.enum",
-						"@services/breadCrumb/breadcrumb.service": "{{services/breadCrumb}}/breadcrumb.service"
-					}
-				},
-				{
-					"name": "button",
-					"directory": "components/base/button",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"button.component.html",
-						"button.component.scss",
-						"button.component.spec.ts",
-						"button.component.ts",
-						"button.ui.enum.ts"
-					],
-					"localDependencies": [
-						"base/svgInline",
-						"enums/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				},
-				{
-					"name": "card-empty-default",
-					"directory": "components/base/card-empty-default",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"card-empty-default.component.html",
-						"card-empty-default.component.scss",
-						"card-empty-default.component.spec.ts",
-						"card-empty-default.component.ts"
-					],
-					"localDependencies": [
-						"base/cardEmpty"
-					],
-					"dependencies": [
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@components_base/cardEmpty/card-empty.component": "{{base/cardEmpty}}/card-empty.component"
-					}
-				},
-				{
-					"name": "cardEmpty",
-					"directory": "components/base/cardEmpty",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"card-empty.component.html",
-						"card-empty.component.scss",
-						"card-empty.component.spec.ts",
-						"card-empty.component.ts"
-					],
-					"localDependencies": [
-						"enums/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				},
-				{
-					"name": "chip",
-					"directory": "components/base/chip",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"chip.component.html",
-						"chip.component.scss",
-						"chip.component.spec.ts",
-						"chip.component.ts"
-					],
-					"localDependencies": [
-						"base/svgInline",
-						"enums/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				},
-				{
-					"name": "copy-button",
-					"directory": "components/base/copy-button",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"copy-button.component.html",
-						"copy-button.component.scss",
-						"copy-button.component.spec.ts",
-						"copy-button.component.ts"
-					],
-					"localDependencies": [
-						"base/svgInline",
-						"services/Toast"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"ng-zorro-antd@^19.3.1"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
-						"@services/Toast/toast.service": "{{services/Toast}}/toast.service"
-					}
-				},
-				{
-					"name": "datepicker",
-					"directory": "components/base/datepicker",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"datepicker.component.html",
-						"datepicker.component.scss",
-						"datepicker.component.spec.ts",
-						"datepicker.component.ts"
-					],
-					"localDependencies": [
-						"base/svgInline",
-						"base/validateError",
-						"directives/baseCva",
-						"enums/UI"
-					],
-					"dependencies": [
-						"mixin",
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@angular/forms@^19.2.0",
-						"ng-zorro-antd@^19.3.1"
-					],
-					"devDependencies": [
-						"dayjs@^1.11.13"
-					],
-					"_imports_": {
-						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
-						"@components_base/validateError/validate-error.component": "{{base/validateError}}/validate-error.component",
-						"@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive",
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				},
-				{
-					"name": "dropdownItem",
-					"directory": "components/base/dropdownItem",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"dropdown-item.component.html",
-						"dropdown-item.component.scss",
-						"dropdown-item.component.spec.ts",
-						"dropdown-item.component.ts"
-					],
-					"localDependencies": [
-						"base/svgInline"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component"
-					}
-				},
-				{
-					"name": "input",
-					"directory": "components/base/input",
-					"category": "base",
-					"tests": false,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"input.component.html",
-						"input.component.scss",
-						"input.component.ts"
-					],
-					"localDependencies": [
-						"base/button",
-						"base/svgInline",
-						"base/validateError",
-						"directives/baseCva",
-						"enums/UI"
-					],
-					"dependencies": [
-						"mixin",
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@angular/forms@^19.2.0",
-						"ng-zorro-antd@^19.3.1"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@components_base/button/button.component": "{{base/button}}/button.component",
-						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
-						"@components_base/validateError/validate-error.component": "{{base/validateError}}/validate-error.component",
-						"@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive",
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				},
-				{
-					"name": "label-add-on",
-					"directory": "components/base/label-add-on",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"label-add-on.component.html",
-						"label-add-on.component.scss",
-						"label-add-on.component.spec.ts",
-						"label-add-on.component.ts"
-					],
-					"localDependencies": [
-						"base/svgInline"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component"
-					}
-				},
-				{
-					"name": "loading",
-					"directory": "components/base/loading",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"loading.component.html",
-						"loading.component.scss",
-						"loading.component.spec.ts",
-						"loading.component.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [
-						"@angular/core@^19.2.0",
-						"@angular/common@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {}
-				},
-				{
-					"name": "modal",
-					"directory": "components/base/modal",
-					"category": "base",
-					"tests": false,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"Base/base.component.html",
-						"Base/base.component.scss",
-						"Base/base.component.ts",
-						"Confirm/confirm.component.html",
-						"Confirm/confirm.component.scss",
-						"Confirm/confirm.component.ts",
-						"Notice/notice.component.html",
-						"Notice/notice.component.scss",
-						"Notice/notice.component.ts"
-					],
-					"localDependencies": [
-						"enums/UI",
-						"services/UI",
-						"base/button",
-						"base/svgInline",
-						"enums/Type"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@components/base",
-						"@ngx-translate/core@^16.0.4",
-						"ng-zorro-antd@^19.3.1",
-						"@pipes/replace-to-style-content-from-server"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum",
-						"@services/UI/ui.service": "{{services/UI}}/ui.service",
-						"@components_base/button/button.component": "{{base/button}}/button.component",
-						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
-						"@enums/Type/type.enum": "{{enums/Type}}/type.enum"
-					}
-				},
-				{
-					"name": "money-input",
-					"directory": "components/base/money-input",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"money-input.component.html",
-						"money-input.component.scss",
-						"money-input.component.spec.ts",
-						"money-input.component.ts"
-					],
-					"localDependencies": [
-						"base/button",
-						"base/svgInline",
-						"base/validateError",
-						"directives/baseCva",
-						"enums/CCY",
-						"enums/Common",
-						"enums/Type",
-						"enums/UI",
-						"pipes/numberToText",
-						"services/Translation",
-						"services/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@angular/forms@^19.2.0",
-						"@pipes/capitalize-first-char",
-						"cleave.js",
-						"ng-zorro-antd@^19.3.1",
-						"ngx-cleave-directive@^2.1.0",
-						"rxjs@~7.8.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@components_base/button/button.component": "{{base/button}}/button.component",
-						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
-						"@components_base/validateError/validate-error.component": "{{base/validateError}}/validate-error.component",
-						"@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive",
-						"@enums/CCY/ccy.enum": "{{enums/CCY}}/ccy.enum",
-						"@enums/Common/common.enum": "{{enums/Common}}/common.enum",
-						"@enums/Type/type.enum": "{{enums/Type}}/type.enum",
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum",
-						"@pipes/numberToText/number-to-text.pipe": "{{pipes/numberToText}}/number-to-text.pipe",
-						"@services/Translation/translation.service": "{{services/Translation}}/translation.service",
-						"@services/UI/ui.service": "{{services/UI}}/ui.service"
-					}
-				},
-				{
-					"name": "Otp",
-					"directory": "components/base/Otp",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"otp.component.html",
-						"otp.component.scss",
-						"otp.component.spec.ts",
-						"otp.component.ts"
-					],
-					"localDependencies": [
-						"base/validateError",
-						"directives/baseCva",
-						"services/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@angular/forms@^19.2.0"
-					],
-					"devDependencies": [
-						"ng-otp-input@^2.0.7"
-					],
-					"_imports_": {
-						"@components_base/validateError/validate-error.component": "{{base/validateError}}/validate-error.component",
-						"@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive",
-						"@services/UI/ui.service": "{{services/UI}}/ui.service"
-					}
-				},
-				{
-					"name": "page-wrapper",
-					"directory": "components/base/page-wrapper",
-					"category": "base",
-					"tests": false,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"page-wrapper.component.html",
-						"page-wrapper.component.scss",
-						"page-wrapper.component.ts"
-					],
-					"localDependencies": [
-						"enums/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				},
-				{
-					"name": "pageheader",
-					"directory": "components/base/pageheader",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"pageheader.component.html",
-						"pageheader.component.scss",
-						"pageheader.component.spec.ts",
-						"pageheader.component.ts"
-					],
-					"localDependencies": [
-						"enums/Common",
-						"enums/Type",
-						"services/breadCrumb",
-						"services/Common",
-						"services/Translation",
-						"services/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@angular/platform-browser@^19.2.0",
-						"@angular/router@^19.2.0",
-						"@components_base/breadcrumb",
-						"rxjs@~7.8.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@enums/Common/common.enum": "{{enums/Common}}/common.enum",
-						"@enums/Type/type.enum": "{{enums/Type}}/type.enum",
-						"@services/breadCrumb/breadcrumb.service": "{{services/breadCrumb}}/breadcrumb.service",
-						"@services/Common/common.service": "{{services/Common}}/common.service",
-						"@services/Translation/translation.service": "{{services/Translation}}/translation.service",
-						"@services/UI/ui.service": "{{services/UI}}/ui.service"
-					}
-				},
-				{
-					"name": "pill",
-					"directory": "components/base/pill",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"pill.component.html",
-						"pill.component.scss",
-						"pill.component.spec.ts",
-						"pill.component.ts"
-					],
-					"localDependencies": [
-						"base/svgInline",
-						"enums/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				},
-				{
-					"name": "process-bar",
-					"directory": "components/base/process-bar",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"process-bar.component.html",
-						"process-bar.component.scss",
-						"process-bar.component.spec.ts",
-						"process-bar.component.ts"
-					],
-					"localDependencies": [
-						"enums/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				},
-				{
-					"name": "select",
-					"directory": "components/base/select",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"select.component.html",
-						"select.component.scss",
-						"select.component.spec.ts",
-						"select.component.ts"
-					],
-					"localDependencies": [
-						"directives/baseCva",
-						"enums/UI",
-						"services/Common"
-					],
-					"dependencies": [
-						"mixin",
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@angular/forms@^19.2.0",
-						"@ngx-translate/core@^16.0.4",
-						"ng-zorro-antd@^19.3.1",
-						"@components/base"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive",
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum",
-						"@services/Common/common.service": "{{services/Common}}/common.service"
-					}
-				},
-				{
-					"name": "select-pill",
-					"directory": "components/base/select-pill",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"select-pill.component.html",
-						"select-pill.component.scss",
-						"select-pill.component.spec.ts",
-						"select-pill.component.ts"
-					],
-					"localDependencies": [
-						"directives/baseCva",
-						"enums/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@angular/forms@^19.2.0",
-						"@components/base",
-						"@directives/click-outside",
-						"ng-zorro-antd@^19.3.1"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive",
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				},
-				{
-					"name": "smsOtp",
-					"directory": "components/base/smsOtp",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"sms-otp.component.html",
-						"sms-otp.component.scss",
-						"sms-otp.component.spec.ts",
-						"sms-otp.component.ts"
-					],
-					"localDependencies": [
-						"base/Otp",
-						"base/svgInline",
-						"enums/UI",
-						"services/Steps",
-						"services/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@angular/forms@^19.2.0",
-						"rxjs@~7.8.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@components_base/Otp/otp.component": "{{base/Otp}}/otp.component",
-						"@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum",
-						"@services/Steps/steps.service": "{{services/Steps}}/steps.service",
-						"@services/UI/ui.service": "{{services/UI}}/ui.service"
-					}
-				},
-				{
-					"name": "step",
-					"directory": "components/base/step",
-					"category": "base",
-					"tests": false,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"step.component.html",
-						"step.component.scss",
-						"step.component.ts"
-					],
-					"localDependencies": [
-						"enums/UI",
-						"services/Steps"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@ngx-translate/core@^16.0.4"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum",
-						"@services/Steps/steps.service": "{{services/Steps}}/steps.service"
-					}
-				},
-				{
-					"name": "svgInline",
-					"directory": "components/base/svgInline",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"svg-inline.component.html",
-						"svg-inline.component.scss",
-						"svg-inline.component.spec.ts",
-						"svg-inline.component.ts"
-					],
-					"localDependencies": [
-						"enums/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [
-						"ng-inline-svg-2@^19.0.0"
-					],
-					"_imports_": {
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				},
-				{
-					"name": "swiper",
-					"directory": "components/base/swiper",
-					"category": "base",
-					"tests": false,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"swiper.component.html",
-						"swiper.component.scss",
-						"swiper.component.ts",
-						"swiper.interface.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@angular/router@^19.2.0"
-					],
-					"devDependencies": [
-						"swiper@^11.2.6"
-					],
-					"_imports_": {}
-				},
-				{
-					"name": "tab",
-					"directory": "components/base/tab",
-					"category": "base",
-					"tests": false,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"tab.component.html",
-						"tab.component.scss",
-						"tab.component.ts"
-					],
-					"localDependencies": [
-						"enums/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@ngx-translate/core@^16.0.4",
-						"ng-zorro-antd@^19.3.1"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				},
-				{
-					"name": "textarea",
-					"directory": "components/base/textarea",
-					"category": "base",
-					"tests": false,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"textarea.component.html",
-						"textarea.component.scss",
-						"textarea.component.ts"
-					],
-					"localDependencies": [
-						"directives/baseCva",
-						"enums/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@angular/forms@^19.2.0",
-						"@components/base",
-						"ng-zorro-antd@^19.3.1"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive",
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				},
-				{
-					"name": "toast",
-					"directory": "components/base/toast",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"toast.component.html",
-						"toast.component.scss",
-						"toast.component.spec.ts",
-						"toast.component.ts"
-					],
-					"localDependencies": [
-						"enums/UI",
-						"services/Toast"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@components/base",
-						"ng-zorro-antd@^19.3.1",
-						"rxjs@~7.8.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum",
-						"@services/Toast/toast.service": "{{services/Toast}}/toast.service"
-					}
-				},
-				{
-					"name": "toggle",
-					"directory": "components/base/toggle",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"toggle.component.html",
-						"toggle.component.scss",
-						"toggle.component.spec.ts",
-						"toggle.component.ts"
-					],
-					"localDependencies": [
-						"directives/baseCva"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@angular/forms@^19.2.0",
-						"ng-zorro-antd@^19.3.1"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive"
-					}
-				},
-				{
-					"name": "validateError",
-					"directory": "components/base/validateError",
-					"category": "base",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"validate-error.component.html",
-						"validate-error.component.scss",
-						"validate-error.component.spec.ts",
-						"validate-error.component.ts"
-					],
-					"localDependencies": [
-						"enums/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@angular/forms@^19.2.0",
-						"@ngx-translate/core@^16.0.4"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				}
-			]
-		},
-		{
-			"name": "custom",
-			"blocks": [
-				{
-					"name": "account-select",
-					"directory": "components/custom/account-select",
-					"category": "custom",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"account-select.class.ts",
-						"account-select.component.html",
-						"account-select.component.scss",
-						"account-select.component.spec.ts",
-						"account-select.component.ts"
-					],
-					"localDependencies": [
-						"directives/baseCva",
-						"services/UI"
-					],
-					"dependencies": [
-						"@angular/core@^19.2.0",
-						"@components/custom",
-						"rxjs@~7.8.0",
-						"@angular/common@^19.2.0",
-						"@angular/forms@^19.2.0",
-						"@components/base",
-						"@directives/element-metric",
-						"ng-zorro-antd@^19.3.1"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive",
-						"@services/UI/ui.service": "{{services/UI}}/ui.service"
-					}
-				},
-				{
-					"name": "anim-texts",
-					"directory": "components/custom/anim-texts",
-					"category": "custom",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"anim-texts.component.html",
-						"anim-texts.component.scss",
-						"anim-texts.component.spec.ts",
-						"anim-texts.component.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [
-						"@angular/animations",
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {}
-				},
-				{
-					"name": "base-confirm",
-					"directory": "components/custom/base-confirm",
-					"category": "custom",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"base-confirm.component.html",
-						"base-confirm.component.scss",
-						"base-confirm.component.spec.ts",
-						"base-confirm.component.ts"
-					],
-					"localDependencies": [
-						"enums/CCY",
-						"enums/Common",
-						"pipes/numberToText",
-						"services/Steps",
-						"services/Translation",
-						"services/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@components/base",
-						"@pipes/capitalize-first-char",
-						"rxjs@~7.8.0"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@enums/CCY/ccy.enum": "{{enums/CCY}}/ccy.enum",
-						"@enums/Common/common.enum": "{{enums/Common}}/common.enum",
-						"@pipes/numberToText/number-to-text.pipe": "{{pipes/numberToText}}/number-to-text.pipe",
-						"@services/Steps/steps.service": "{{services/Steps}}/steps.service",
-						"@services/Translation/translation.service": "{{services/Translation}}/translation.service",
-						"@services/UI/ui.service": "{{services/UI}}/ui.service"
-					}
-				},
-				{
-					"name": "base-result",
-					"directory": "components/custom/base-result",
-					"category": "custom",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"base-result.component.html",
-						"base-result.component.scss",
-						"base-result.component.spec.ts",
-						"base-result.component.ts"
-					],
-					"localDependencies": [
-						"enums/CCY"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@components/base",
-						"@components/custom"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@enums/CCY/ccy.enum": "{{enums/CCY}}/ccy.enum"
-					}
-				},
-				{
-					"name": "card-account-homepage",
-					"directory": "components/custom/card-account-homepage",
-					"category": "custom",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"card-account-homepage.component.html",
-						"card-account-homepage.component.scss",
-						"card-account-homepage.component.spec.ts",
-						"card-account-homepage.component.ts"
-					],
-					"localDependencies": [
-						"services/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@components/base"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@services/UI/ui.service": "{{services/UI}}/ui.service"
-					}
-				},
-				{
-					"name": "card-features-homepage",
-					"directory": "components/custom/card-features-homepage",
-					"category": "custom",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"card-features-homepage.component.html",
-						"card-features-homepage.component.scss",
-						"card-features-homepage.component.spec.ts",
-						"card-features-homepage.component.ts"
-					],
-					"localDependencies": [
-						"enums/Route",
-						"services/UI"
-					],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0",
-						"@angular/router@^19.2.0",
-						"@components/custom"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@enums/Route/route.enum": "{{enums/Route}}/route.enum",
-						"@services/UI/ui.service": "{{services/UI}}/ui.service"
-					}
-				},
-				{
-					"name": "card-special-arrow",
-					"directory": "components/custom/card-special-arrow",
-					"category": "custom",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"card-special-arrow.component.html",
-						"card-special-arrow.component.scss",
-						"card-special-arrow.component.spec.ts",
-						"card-special-arrow.component.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [
-						"@angular/core@^19.2.0",
-						"@components/base"
-					],
-					"devDependencies": [],
-					"_imports_": {}
-				},
-				{
-					"name": "item-icon-circle",
-					"directory": "components/custom/item-icon-circle",
-					"category": "custom",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"item-icon-circle.component.html",
-						"item-icon-circle.component.scss",
-						"item-icon-circle.component.spec.ts",
-						"item-icon-circle.component.ts"
-					],
-					"localDependencies": [
-						"enums/UI"
-					],
-					"dependencies": [
-						"@angular/core@^19.2.0",
-						"@components/base"
-					],
-					"devDependencies": [],
-					"_imports_": {
-						"@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
-					}
-				},
-				{
-					"name": "list-item",
-					"directory": "components/custom/list-item",
-					"category": "custom",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"list-item.component.html",
-						"list-item.component.scss",
-						"list-item.component.spec.ts",
-						"list-item.component.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [
-						"@angular/core@^19.2.0",
-						"@components/base"
-					],
-					"devDependencies": [],
-					"_imports_": {}
-				},
-				{
-					"name": "list-item-card",
-					"directory": "components/custom/list-item-card",
-					"category": "custom",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"list-item-card.component.html",
-						"list-item-card.component.scss",
-						"list-item-card.component.spec.ts",
-						"list-item-card.component.ts"
-					],
-					"localDependencies": [],
-					"dependencies": [
-						"@angular/common@^19.2.0",
-						"@angular/core@^19.2.0"
-					],
-					"devDependencies": [],
-					"_imports_": {}
-				},
-				{
-					"name": "pg-card",
-					"directory": "components/custom/pg-card",
-					"category": "custom",
-					"tests": false,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [],
-					"localDependencies": [],
-					"dependencies": [],
-					"devDependencies": [],
-					"_imports_": {}
-				},
-				{
-					"name": "swiper-homepage",
-					"directory": "components/custom/swiper-homepage",
-					"category": "custom",
-					"tests": true,
-					"docs": false,
-					"subdirectory": true,
-					"list": true,
-					"files": [
-						"swiper-homepage.component.html",
-						"swiper-homepage.component.scss",
-						"swiper-homepage.component.spec.ts",
-						"swiper-homepage.component.ts"
-					],
-					"localDependencies": [
-						"services/UI"
-					],
-					"dependencies": [
-						"@angular/core@^19.2.0",
-						"@components/base"
-					],
-					"devDependencies": [
-						"swiper@^11.2.6"
-					],
-					"_imports_": {
-						"@services/UI/ui.service": "{{services/UI}}/ui.service"
-					}
-				}
-			]
-		}
-	]
+  "name": "test",
+  "version": "0.0.1",
+  "categories": [
+    {
+      "name": "constants",
+      "blocks": [
+        {
+          "name": "common",
+          "directory": "constants/common",
+          "category": "constants",
+          "tests": false,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "common.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [],
+          "devDependencies": [],
+          "_imports_": {}
+        }
+      ]
+    },
+    {
+      "name": "directives",
+      "blocks": [
+        {
+          "name": "base-cva",
+          "directory": "directives/base-cva",
+          "category": "directives",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "base-cva.directive.spec.ts",
+            "base-cva.directive.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [
+            "@angular/core@^19.2.0",
+            "@angular/forms@^19.2.0",
+            "rxjs@~7.8.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {}
+        },
+        {
+          "name": "click-outside",
+          "directory": "directives/click-outside",
+          "category": "directives",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "click-outside.directive.spec.ts",
+            "click-outside.directive.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [
+            "@angular/core@^19.2.0",
+            "rxjs@~7.8.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {}
+        },
+        {
+          "name": "element-metric",
+          "directory": "directives/element-metric",
+          "category": "directives",
+          "tests": false,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "element-metric.directive.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {}
+        },
+        {
+          "name": "only-number",
+          "directory": "directives/only-number",
+          "category": "directives",
+          "tests": false,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "only-number.directive.ts"
+          ],
+          "localDependencies": [
+            "services/Common"
+          ],
+          "dependencies": [
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@services/Common/common.service": "{{services/Common}}/common.service"
+          }
+        }
+      ]
+    },
+    {
+      "name": "enums",
+      "blocks": [
+        {
+          "name": "ccy",
+          "directory": "enums/ccy",
+          "category": "enums",
+          "tests": false,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "ccy.enum.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [],
+          "devDependencies": [],
+          "_imports_": {}
+        },
+        {
+          "name": "common",
+          "directory": "enums/common",
+          "category": "enums",
+          "tests": false,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "common.enum.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [],
+          "devDependencies": [],
+          "_imports_": {}
+        },
+        {
+          "name": "route",
+          "directory": "enums/route",
+          "category": "enums",
+          "tests": false,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "route.enum.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [],
+          "devDependencies": [],
+          "_imports_": {}
+        },
+        {
+          "name": "type",
+          "directory": "enums/type",
+          "category": "enums",
+          "tests": false,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "type.enum.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [],
+          "devDependencies": [],
+          "_imports_": {}
+        },
+        {
+          "name": "ui",
+          "directory": "enums/ui",
+          "category": "enums",
+          "tests": false,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "ui.enum.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [],
+          "devDependencies": [],
+          "_imports_": {}
+        }
+      ]
+    },
+    {
+      "name": "pipes",
+      "blocks": [
+        {
+          "name": "capitalize-first-char",
+          "directory": "pipes/capitalize-first-char",
+          "category": "pipes",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "capitalize-first-char.pipe.spec.ts",
+            "capitalize-first-char.pipe.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {}
+        },
+        {
+          "name": "number-to-text",
+          "directory": "pipes/number-to-text",
+          "category": "pipes",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "number-to-text.pipe.spec.ts",
+            "number-to-text.pipe.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {}
+        },
+        {
+          "name": "replace-to-style-content-from-server",
+          "directory": "pipes/replace-to-style-content-from-server",
+          "category": "pipes",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "replace-to-style-content-from-server.pipe.spec.ts",
+            "replace-to-style-content-from-server.pipe.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {}
+        },
+        {
+          "name": "shorten-name",
+          "directory": "pipes/shorten-name",
+          "category": "pipes",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "shorten-name.pipe.spec.ts",
+            "shorten-name.pipe.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {}
+        }
+      ]
+    },
+    {
+      "name": "services",
+      "blocks": [
+        {
+          "name": "bg-service",
+          "directory": "services/bg-service",
+          "category": "services",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "bg-service.service.spec.ts",
+            "bg-service.service.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {}
+        },
+        {
+          "name": "bread-crumb",
+          "directory": "services/bread-crumb",
+          "category": "services",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "breadcrumb.service.spec.ts",
+            "breadcrumb.service.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [
+            "@angular/core@^19.2.0",
+            "@angular/router@^19.2.0",
+            "rxjs@~7.8.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {}
+        },
+        {
+          "name": "common",
+          "directory": "services/common",
+          "category": "services",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "common.service.spec.ts",
+            "common.service.ts"
+          ],
+          "localDependencies": [
+            "constants/Common"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@angular/router@^19.2.0",
+            "rxjs@~7.8.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@constants/Common/common": "{{constants/Common}}/common"
+          }
+        },
+        {
+          "name": "loading",
+          "directory": "services/loading",
+          "category": "services",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "loading.service.spec.ts",
+            "loading.service.ts"
+          ],
+          "localDependencies": [
+            "services/Common"
+          ],
+          "dependencies": [
+            "@angular/core@^19.2.0",
+            "rxjs@~7.8.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@services/Common/common.service": "{{services/Common}}/common.service"
+          }
+        },
+        {
+          "name": "modal",
+          "directory": "services/modal",
+          "category": "services",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "modal.interface.ts",
+            "modal.service.spec.ts",
+            "modal.service.ts"
+          ],
+          "localDependencies": [
+            "enums/UI"
+          ],
+          "dependencies": [
+            "@angular/core@^19.2.0",
+            "@components_base/modal",
+            "ng-zorro-antd@^19.3.1"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        },
+        {
+          "name": "page-title",
+          "directory": "services/page-title",
+          "category": "services",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "page-title.service.spec.ts",
+            "page-title.service.ts"
+          ],
+          "localDependencies": [
+            "enums/Common",
+            "enums/Type",
+            "services/Translation"
+          ],
+          "dependencies": [
+            "@angular/core@^19.2.0",
+            "@angular/platform-browser@^19.2.0",
+            "@angular/router@^19.2.0",
+            "rxjs@~7.8.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@enums/Common/common.enum": "{{enums/Common}}/common.enum",
+            "@enums/Type/type.enum": "{{enums/Type}}/type.enum",
+            "@services/Translation/translation.service": "{{services/Translation}}/translation.service"
+          }
+        },
+        {
+          "name": "steps",
+          "directory": "services/steps",
+          "category": "services",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "steps.service.spec.ts",
+            "steps.service.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [
+            "@angular/core@^19.2.0",
+            "rxjs@~7.8.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {}
+        },
+        {
+          "name": "toast",
+          "directory": "services/toast",
+          "category": "services",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "toast.service.spec.ts",
+            "toast.service.ts"
+          ],
+          "localDependencies": [
+            "enums/UI"
+          ],
+          "dependencies": [
+            "@angular/core@^19.2.0",
+            "rxjs@~7.8.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        },
+        {
+          "name": "translation",
+          "directory": "services/translation",
+          "category": "services",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "translation.service.spec.ts",
+            "translation.service.ts"
+          ],
+          "localDependencies": [
+            "enums/Common"
+          ],
+          "dependencies": [
+            "@angular/core@^19.2.0",
+            "@ngx-translate/core@^16.0.4",
+            "ng-zorro-antd@^19.3.1",
+            "rxjs@~7.8.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@enums/Common/common.enum": "{{enums/Common}}/common.enum"
+          }
+        },
+        {
+          "name": "ui",
+          "directory": "services/ui",
+          "category": "services",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "ui.service.spec.ts",
+            "ui.service.ts"
+          ],
+          "localDependencies": [
+            "enums/UI"
+          ],
+          "dependencies": [
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        }
+      ]
+    },
+    {
+      "name": "base",
+      "blocks": [
+        {
+          "name": "accordion",
+          "directory": "components/base/accordion",
+          "category": "base",
+          "tests": false,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "accordion.component.html",
+            "accordion.component.scss",
+            "accordion.component.ts"
+          ],
+          "localDependencies": [
+            "base/svgInline",
+            "enums/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "ng-zorro-antd@^19.3.1"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        },
+        {
+          "name": "auth-method",
+          "directory": "components/base/auth-method",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "auth-method.component.html",
+            "auth-method.component.scss",
+            "auth-method.component.spec.ts",
+            "auth-method.component.ts"
+          ],
+          "localDependencies": [
+            "base/smsOtp",
+            "enums/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@angular/forms@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@components_base/smsOtp/sms-otp.component": "{{base/smsOtp}}/sms-otp.component",
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        },
+        {
+          "name": "avatar",
+          "directory": "components/base/avatar",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "avatar.component.html",
+            "avatar.component.scss",
+            "avatar.component.spec.ts",
+            "avatar.component.ts"
+          ],
+          "localDependencies": [
+            "base/button",
+            "base/svgInline",
+            "enums/UI",
+            "pipes/numberToText",
+            "pipes/shortenName",
+            "services/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@components_base/button/button.component": "{{base/button}}/button.component",
+            "@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum",
+            "@pipes/numberToText/number-to-text.pipe": "{{pipes/numberToText}}/number-to-text.pipe",
+            "@pipes/shortenName/shorten-name.pipe": "{{pipes/shortenName}}/shorten-name.pipe",
+            "@services/UI/ui.service": "{{services/UI}}/ui.service"
+          }
+        },
+        {
+          "name": "badge",
+          "directory": "components/base/badge",
+          "category": "base",
+          "tests": false,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "badge.component.html",
+            "badge.component.scss",
+            "badge.component.ts"
+          ],
+          "localDependencies": [
+            "base/svgInline",
+            "enums/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        },
+        {
+          "name": "badge-number",
+          "directory": "components/base/badge-number",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "badge-number.component.html",
+            "badge-number.component.scss",
+            "badge-number.component.spec.ts",
+            "badge-number.component.ts"
+          ],
+          "localDependencies": [
+            "enums/UI"
+          ],
+          "dependencies": [
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        },
+        {
+          "name": "breadcrumb",
+          "directory": "components/base/breadcrumb",
+          "category": "base",
+          "tests": false,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "breadcrumb.component.html",
+            "breadcrumb.component.scss",
+            "breadcrumb.component.ts"
+          ],
+          "localDependencies": [
+            "base/dropdownItem",
+            "base/svgInline",
+            "enums/Route",
+            "services/breadCrumb"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@angular/router@^19.2.0",
+            "@ngx-translate/core@^16.0.4",
+            "ng-zorro-antd@^19.3.1"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@components_base/dropdownItem/dropdown-item.component": "{{base/dropdownItem}}/dropdown-item.component",
+            "@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
+            "@enums/Route/route.enum": "{{enums/Route}}/route.enum",
+            "@services/breadCrumb/breadcrumb.service": "{{services/breadCrumb}}/breadcrumb.service"
+          }
+        },
+        {
+          "name": "button",
+          "directory": "components/base/button",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "button.component.html",
+            "button.component.scss",
+            "button.component.spec.ts",
+            "button.component.ts",
+            "button.ui.enum.ts"
+          ],
+          "localDependencies": [
+            "base/svgInline",
+            "enums/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        },
+        {
+          "name": "card-empty-default",
+          "directory": "components/base/card-empty-default",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "card-empty-default.component.html",
+            "card-empty-default.component.scss",
+            "card-empty-default.component.spec.ts",
+            "card-empty-default.component.ts"
+          ],
+          "localDependencies": [
+            "base/cardEmpty"
+          ],
+          "dependencies": [
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@components_base/cardEmpty/card-empty.component": "{{base/cardEmpty}}/card-empty.component"
+          }
+        },
+        {
+          "name": "card-empty",
+          "directory": "components/base/card-empty",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "card-empty.component.html",
+            "card-empty.component.scss",
+            "card-empty.component.spec.ts",
+            "card-empty.component.ts"
+          ],
+          "localDependencies": [
+            "enums/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        },
+        {
+          "name": "chip",
+          "directory": "components/base/chip",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "chip.component.html",
+            "chip.component.scss",
+            "chip.component.spec.ts",
+            "chip.component.ts"
+          ],
+          "localDependencies": [
+            "base/svgInline",
+            "enums/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        },
+        {
+          "name": "copy-button",
+          "directory": "components/base/copy-button",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "copy-button.component.html",
+            "copy-button.component.scss",
+            "copy-button.component.spec.ts",
+            "copy-button.component.ts"
+          ],
+          "localDependencies": [
+            "base/svgInline",
+            "services/Toast"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "ng-zorro-antd@^19.3.1"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
+            "@services/Toast/toast.service": "{{services/Toast}}/toast.service"
+          }
+        },
+        {
+          "name": "datepicker",
+          "directory": "components/base/datepicker",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "datepicker.component.html",
+            "datepicker.component.scss",
+            "datepicker.component.spec.ts",
+            "datepicker.component.ts"
+          ],
+          "localDependencies": [
+            "base/svgInline",
+            "base/validateError",
+            "directives/baseCva",
+            "enums/UI"
+          ],
+          "dependencies": [
+            "mixin",
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@angular/forms@^19.2.0",
+            "ng-zorro-antd@^19.3.1"
+          ],
+          "devDependencies": [
+            "dayjs@^1.11.13"
+          ],
+          "_imports_": {
+            "@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
+            "@components_base/validateError/validate-error.component": "{{base/validateError}}/validate-error.component",
+            "@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive",
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        },
+        {
+          "name": "dropdown-item",
+          "directory": "components/base/dropdown-item",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "dropdown-item.component.html",
+            "dropdown-item.component.scss",
+            "dropdown-item.component.spec.ts",
+            "dropdown-item.component.ts"
+          ],
+          "localDependencies": [
+            "base/svgInline"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component"
+          }
+        },
+        {
+          "name": "input",
+          "directory": "components/base/input",
+          "category": "base",
+          "tests": false,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "input.component.html",
+            "input.component.scss",
+            "input.component.ts"
+          ],
+          "localDependencies": [
+            "base/button",
+            "base/svgInline",
+            "base/validateError",
+            "directives/baseCva",
+            "enums/UI"
+          ],
+          "dependencies": [
+            "mixin",
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@angular/forms@^19.2.0",
+            "ng-zorro-antd@^19.3.1"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@components_base/button/button.component": "{{base/button}}/button.component",
+            "@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
+            "@components_base/validateError/validate-error.component": "{{base/validateError}}/validate-error.component",
+            "@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive",
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        },
+        {
+          "name": "label-add-on",
+          "directory": "components/base/label-add-on",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "label-add-on.component.html",
+            "label-add-on.component.scss",
+            "label-add-on.component.spec.ts",
+            "label-add-on.component.ts"
+          ],
+          "localDependencies": [
+            "base/svgInline"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component"
+          }
+        },
+        {
+          "name": "loading",
+          "directory": "components/base/loading",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "loading.component.html",
+            "loading.component.scss",
+            "loading.component.spec.ts",
+            "loading.component.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [
+            "@angular/core@^19.2.0",
+            "@angular/common@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {}
+        },
+        {
+          "name": "modal",
+          "directory": "components/base/modal",
+          "category": "base",
+          "tests": false,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "Base/base.component.html",
+            "Base/base.component.scss",
+            "Base/base.component.ts",
+            "Confirm/confirm.component.html",
+            "Confirm/confirm.component.scss",
+            "Confirm/confirm.component.ts",
+            "Notice/notice.component.html",
+            "Notice/notice.component.scss",
+            "Notice/notice.component.ts"
+          ],
+          "localDependencies": [
+            "enums/UI",
+            "services/UI",
+            "base/button",
+            "base/svgInline",
+            "enums/Type"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@components/base",
+            "@ngx-translate/core@^16.0.4",
+            "ng-zorro-antd@^19.3.1",
+            "@pipes/replace-to-style-content-from-server"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum",
+            "@services/UI/ui.service": "{{services/UI}}/ui.service",
+            "@components_base/button/button.component": "{{base/button}}/button.component",
+            "@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
+            "@enums/Type/type.enum": "{{enums/Type}}/type.enum"
+          }
+        },
+        {
+          "name": "money-input",
+          "directory": "components/base/money-input",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "money-input.component.html",
+            "money-input.component.scss",
+            "money-input.component.spec.ts",
+            "money-input.component.ts"
+          ],
+          "localDependencies": [
+            "base/button",
+            "base/svgInline",
+            "base/validateError",
+            "directives/baseCva",
+            "enums/CCY",
+            "enums/Common",
+            "enums/Type",
+            "enums/UI",
+            "pipes/numberToText",
+            "services/Translation",
+            "services/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@angular/forms@^19.2.0",
+            "@pipes/capitalize-first-char",
+            "cleave.js",
+            "ng-zorro-antd@^19.3.1",
+            "ngx-cleave-directive@^2.1.0",
+            "rxjs@~7.8.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@components_base/button/button.component": "{{base/button}}/button.component",
+            "@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
+            "@components_base/validateError/validate-error.component": "{{base/validateError}}/validate-error.component",
+            "@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive",
+            "@enums/CCY/ccy.enum": "{{enums/CCY}}/ccy.enum",
+            "@enums/Common/common.enum": "{{enums/Common}}/common.enum",
+            "@enums/Type/type.enum": "{{enums/Type}}/type.enum",
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum",
+            "@pipes/numberToText/number-to-text.pipe": "{{pipes/numberToText}}/number-to-text.pipe",
+            "@services/Translation/translation.service": "{{services/Translation}}/translation.service",
+            "@services/UI/ui.service": "{{services/UI}}/ui.service"
+          }
+        },
+        {
+          "name": "otp",
+          "directory": "components/base/otp",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "otp.component.html",
+            "otp.component.scss",
+            "otp.component.spec.ts",
+            "otp.component.ts"
+          ],
+          "localDependencies": [
+            "base/validateError",
+            "directives/baseCva",
+            "services/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@angular/forms@^19.2.0"
+          ],
+          "devDependencies": [
+            "ng-otp-input@^2.0.7"
+          ],
+          "_imports_": {
+            "@components_base/validateError/validate-error.component": "{{base/validateError}}/validate-error.component",
+            "@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive",
+            "@services/UI/ui.service": "{{services/UI}}/ui.service"
+          }
+        },
+        {
+          "name": "page-wrapper",
+          "directory": "components/base/page-wrapper",
+          "category": "base",
+          "tests": false,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "page-wrapper.component.html",
+            "page-wrapper.component.scss",
+            "page-wrapper.component.ts"
+          ],
+          "localDependencies": [
+            "enums/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        },
+        {
+          "name": "pageheader",
+          "directory": "components/base/pageheader",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "pageheader.component.html",
+            "pageheader.component.scss",
+            "pageheader.component.spec.ts",
+            "pageheader.component.ts"
+          ],
+          "localDependencies": [
+            "enums/Common",
+            "enums/Type",
+            "services/breadCrumb",
+            "services/Common",
+            "services/Translation",
+            "services/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@angular/platform-browser@^19.2.0",
+            "@angular/router@^19.2.0",
+            "@components_base/breadcrumb",
+            "rxjs@~7.8.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@enums/Common/common.enum": "{{enums/Common}}/common.enum",
+            "@enums/Type/type.enum": "{{enums/Type}}/type.enum",
+            "@services/breadCrumb/breadcrumb.service": "{{services/breadCrumb}}/breadcrumb.service",
+            "@services/Common/common.service": "{{services/Common}}/common.service",
+            "@services/Translation/translation.service": "{{services/Translation}}/translation.service",
+            "@services/UI/ui.service": "{{services/UI}}/ui.service"
+          }
+        },
+        {
+          "name": "pill",
+          "directory": "components/base/pill",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "pill.component.html",
+            "pill.component.scss",
+            "pill.component.spec.ts",
+            "pill.component.ts"
+          ],
+          "localDependencies": [
+            "base/svgInline",
+            "enums/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        },
+        {
+          "name": "process-bar",
+          "directory": "components/base/process-bar",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "process-bar.component.html",
+            "process-bar.component.scss",
+            "process-bar.component.spec.ts",
+            "process-bar.component.ts"
+          ],
+          "localDependencies": [
+            "enums/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        },
+        {
+          "name": "select",
+          "directory": "components/base/select",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "select.component.html",
+            "select.component.scss",
+            "select.component.spec.ts",
+            "select.component.ts"
+          ],
+          "localDependencies": [
+            "directives/baseCva",
+            "enums/UI",
+            "services/Common"
+          ],
+          "dependencies": [
+            "mixin",
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@angular/forms@^19.2.0",
+            "@ngx-translate/core@^16.0.4",
+            "ng-zorro-antd@^19.3.1",
+            "@components/base"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive",
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum",
+            "@services/Common/common.service": "{{services/Common}}/common.service"
+          }
+        },
+        {
+          "name": "select-pill",
+          "directory": "components/base/select-pill",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "select-pill.component.html",
+            "select-pill.component.scss",
+            "select-pill.component.spec.ts",
+            "select-pill.component.ts"
+          ],
+          "localDependencies": [
+            "directives/baseCva",
+            "enums/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@angular/forms@^19.2.0",
+            "@components/base",
+            "@directives/click-outside",
+            "ng-zorro-antd@^19.3.1"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive",
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        },
+        {
+          "name": "sms-otp",
+          "directory": "components/base/sms-otp",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "sms-otp.component.html",
+            "sms-otp.component.scss",
+            "sms-otp.component.spec.ts",
+            "sms-otp.component.ts"
+          ],
+          "localDependencies": [
+            "base/Otp",
+            "base/svgInline",
+            "enums/UI",
+            "services/Steps",
+            "services/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@angular/forms@^19.2.0",
+            "rxjs@~7.8.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@components_base/Otp/otp.component": "{{base/Otp}}/otp.component",
+            "@components_base/svgInline/svg-inline.component": "{{base/svgInline}}/svg-inline.component",
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum",
+            "@services/Steps/steps.service": "{{services/Steps}}/steps.service",
+            "@services/UI/ui.service": "{{services/UI}}/ui.service"
+          }
+        },
+        {
+          "name": "step",
+          "directory": "components/base/step",
+          "category": "base",
+          "tests": false,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "step.component.html",
+            "step.component.scss",
+            "step.component.ts"
+          ],
+          "localDependencies": [
+            "enums/UI",
+            "services/Steps"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@ngx-translate/core@^16.0.4"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum",
+            "@services/Steps/steps.service": "{{services/Steps}}/steps.service"
+          }
+        },
+        {
+          "name": "svg-inline",
+          "directory": "components/base/svg-inline",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "svg-inline.component.html",
+            "svg-inline.component.scss",
+            "svg-inline.component.spec.ts",
+            "svg-inline.component.ts"
+          ],
+          "localDependencies": [
+            "enums/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [
+            "ng-inline-svg-2@^19.0.0"
+          ],
+          "_imports_": {
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        },
+        {
+          "name": "swiper",
+          "directory": "components/base/swiper",
+          "category": "base",
+          "tests": false,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "swiper.component.html",
+            "swiper.component.scss",
+            "swiper.component.ts",
+            "swiper.interface.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@angular/router@^19.2.0"
+          ],
+          "devDependencies": [
+            "swiper@^11.2.6"
+          ],
+          "_imports_": {}
+        },
+        {
+          "name": "tab",
+          "directory": "components/base/tab",
+          "category": "base",
+          "tests": false,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "tab.component.html",
+            "tab.component.scss",
+            "tab.component.ts"
+          ],
+          "localDependencies": [
+            "enums/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@ngx-translate/core@^16.0.4",
+            "ng-zorro-antd@^19.3.1"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        },
+        {
+          "name": "textarea",
+          "directory": "components/base/textarea",
+          "category": "base",
+          "tests": false,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "textarea.component.html",
+            "textarea.component.scss",
+            "textarea.component.ts"
+          ],
+          "localDependencies": [
+            "directives/baseCva",
+            "enums/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@angular/forms@^19.2.0",
+            "@components/base",
+            "ng-zorro-antd@^19.3.1"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive",
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        },
+        {
+          "name": "toast",
+          "directory": "components/base/toast",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "toast.component.html",
+            "toast.component.scss",
+            "toast.component.spec.ts",
+            "toast.component.ts"
+          ],
+          "localDependencies": [
+            "enums/UI",
+            "services/Toast"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@components/base",
+            "ng-zorro-antd@^19.3.1",
+            "rxjs@~7.8.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum",
+            "@services/Toast/toast.service": "{{services/Toast}}/toast.service"
+          }
+        },
+        {
+          "name": "toggle",
+          "directory": "components/base/toggle",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "toggle.component.html",
+            "toggle.component.scss",
+            "toggle.component.spec.ts",
+            "toggle.component.ts"
+          ],
+          "localDependencies": [
+            "directives/baseCva"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@angular/forms@^19.2.0",
+            "ng-zorro-antd@^19.3.1"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive"
+          }
+        },
+        {
+          "name": "validate-error",
+          "directory": "components/base/validate-error",
+          "category": "base",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "validate-error.component.html",
+            "validate-error.component.scss",
+            "validate-error.component.spec.ts",
+            "validate-error.component.ts"
+          ],
+          "localDependencies": [
+            "enums/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@angular/forms@^19.2.0",
+            "@ngx-translate/core@^16.0.4"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        }
+      ]
+    },
+    {
+      "name": "custom",
+      "blocks": [
+        {
+          "name": "account-select",
+          "directory": "components/custom/account-select",
+          "category": "custom",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "account-select.class.ts",
+            "account-select.component.html",
+            "account-select.component.scss",
+            "account-select.component.spec.ts",
+            "account-select.component.ts"
+          ],
+          "localDependencies": [
+            "directives/baseCva",
+            "services/UI"
+          ],
+          "dependencies": [
+            "@angular/core@^19.2.0",
+            "@components/custom",
+            "rxjs@~7.8.0",
+            "@angular/common@^19.2.0",
+            "@angular/forms@^19.2.0",
+            "@components/base",
+            "@directives/element-metric",
+            "ng-zorro-antd@^19.3.1"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@directives/baseCva/base-cva.directive": "{{directives/baseCva}}/base-cva.directive",
+            "@services/UI/ui.service": "{{services/UI}}/ui.service"
+          }
+        },
+        {
+          "name": "anim-texts",
+          "directory": "components/custom/anim-texts",
+          "category": "custom",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "anim-texts.component.html",
+            "anim-texts.component.scss",
+            "anim-texts.component.spec.ts",
+            "anim-texts.component.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [
+            "@angular/animations",
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {}
+        },
+        {
+          "name": "base-confirm",
+          "directory": "components/custom/base-confirm",
+          "category": "custom",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "base-confirm.component.html",
+            "base-confirm.component.scss",
+            "base-confirm.component.spec.ts",
+            "base-confirm.component.ts"
+          ],
+          "localDependencies": [
+            "enums/CCY",
+            "enums/Common",
+            "pipes/numberToText",
+            "services/Steps",
+            "services/Translation",
+            "services/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@components/base",
+            "@pipes/capitalize-first-char",
+            "rxjs@~7.8.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@enums/CCY/ccy.enum": "{{enums/CCY}}/ccy.enum",
+            "@enums/Common/common.enum": "{{enums/Common}}/common.enum",
+            "@pipes/numberToText/number-to-text.pipe": "{{pipes/numberToText}}/number-to-text.pipe",
+            "@services/Steps/steps.service": "{{services/Steps}}/steps.service",
+            "@services/Translation/translation.service": "{{services/Translation}}/translation.service",
+            "@services/UI/ui.service": "{{services/UI}}/ui.service"
+          }
+        },
+        {
+          "name": "base-result",
+          "directory": "components/custom/base-result",
+          "category": "custom",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "base-result.component.html",
+            "base-result.component.scss",
+            "base-result.component.spec.ts",
+            "base-result.component.ts"
+          ],
+          "localDependencies": [
+            "enums/CCY"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@components/base",
+            "@components/custom"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@enums/CCY/ccy.enum": "{{enums/CCY}}/ccy.enum"
+          }
+        },
+        {
+          "name": "card-account-homepage",
+          "directory": "components/custom/card-account-homepage",
+          "category": "custom",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "card-account-homepage.component.html",
+            "card-account-homepage.component.scss",
+            "card-account-homepage.component.spec.ts",
+            "card-account-homepage.component.ts"
+          ],
+          "localDependencies": [
+            "services/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@components/base"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@services/UI/ui.service": "{{services/UI}}/ui.service"
+          }
+        },
+        {
+          "name": "card-features-homepage",
+          "directory": "components/custom/card-features-homepage",
+          "category": "custom",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "card-features-homepage.component.html",
+            "card-features-homepage.component.scss",
+            "card-features-homepage.component.spec.ts",
+            "card-features-homepage.component.ts"
+          ],
+          "localDependencies": [
+            "enums/Route",
+            "services/UI"
+          ],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0",
+            "@angular/router@^19.2.0",
+            "@components/custom"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@enums/Route/route.enum": "{{enums/Route}}/route.enum",
+            "@services/UI/ui.service": "{{services/UI}}/ui.service"
+          }
+        },
+        {
+          "name": "card-special-arrow",
+          "directory": "components/custom/card-special-arrow",
+          "category": "custom",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "card-special-arrow.component.html",
+            "card-special-arrow.component.scss",
+            "card-special-arrow.component.spec.ts",
+            "card-special-arrow.component.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [
+            "@angular/core@^19.2.0",
+            "@components/base"
+          ],
+          "devDependencies": [],
+          "_imports_": {}
+        },
+        {
+          "name": "item-icon-circle",
+          "directory": "components/custom/item-icon-circle",
+          "category": "custom",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "item-icon-circle.component.html",
+            "item-icon-circle.component.scss",
+            "item-icon-circle.component.spec.ts",
+            "item-icon-circle.component.ts"
+          ],
+          "localDependencies": [
+            "enums/UI"
+          ],
+          "dependencies": [
+            "@angular/core@^19.2.0",
+            "@components/base"
+          ],
+          "devDependencies": [],
+          "_imports_": {
+            "@enums/UI/ui.enum": "{{enums/UI}}/ui.enum"
+          }
+        },
+        {
+          "name": "list-item",
+          "directory": "components/custom/list-item",
+          "category": "custom",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "list-item.component.html",
+            "list-item.component.scss",
+            "list-item.component.spec.ts",
+            "list-item.component.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [
+            "@angular/core@^19.2.0",
+            "@components/base"
+          ],
+          "devDependencies": [],
+          "_imports_": {}
+        },
+        {
+          "name": "list-item-card",
+          "directory": "components/custom/list-item-card",
+          "category": "custom",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "list-item-card.component.html",
+            "list-item-card.component.scss",
+            "list-item-card.component.spec.ts",
+            "list-item-card.component.ts"
+          ],
+          "localDependencies": [],
+          "dependencies": [
+            "@angular/common@^19.2.0",
+            "@angular/core@^19.2.0"
+          ],
+          "devDependencies": [],
+          "_imports_": {}
+        },
+        {
+          "name": "pg-card",
+          "directory": "components/custom/pg-card",
+          "category": "custom",
+          "tests": false,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [],
+          "localDependencies": [],
+          "dependencies": [],
+          "devDependencies": [],
+          "_imports_": {}
+        },
+        {
+          "name": "swiper-homepage",
+          "directory": "components/custom/swiper-homepage",
+          "category": "custom",
+          "tests": true,
+          "docs": false,
+          "subdirectory": true,
+          "list": true,
+          "files": [
+            "swiper-homepage.component.html",
+            "swiper-homepage.component.scss",
+            "swiper-homepage.component.spec.ts",
+            "swiper-homepage.component.ts"
+          ],
+          "localDependencies": [
+            "services/UI"
+          ],
+          "dependencies": [
+            "@angular/core@^19.2.0",
+            "@components/base"
+          ],
+          "devDependencies": [
+            "swiper@^11.2.6"
+          ],
+          "_imports_": {
+            "@services/UI/ui.service": "{{services/UI}}/ui.service"
+          }
+        }
+      ]
+    }
+  ]
 }

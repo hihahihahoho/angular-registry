@@ -1,13 +1,16 @@
 {
 	"$schema": "https://unpkg.com/jsrepo@2.4.0/schemas/registry-config.json",
-	"name": "yourteam/test-registry",
+	"name": "webteam/angular-components",
 	"version": "0.0.1",
 	"readme": "README.md",
 	"dirs": [
 		"./src/app/shared",
     "./src/app/shared/components"
 	],
-  "allowSubdirectories": true,
+  "defaultPaths": {
+    "@services/": "./src/app/shared/services"
+  },
+  "preview": true,
   "excludeCategories": ["components"],
   "rules": {
     "no-framework-dependency": "warn"

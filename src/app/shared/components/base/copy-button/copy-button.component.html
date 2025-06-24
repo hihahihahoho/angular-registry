@@ -1,0 +1,10 @@
+<div
+  class="min-w-{{ size }} min-h-{{
+    size
+  }} cursor-pointer select-none flex items-center gap-1"
+  nz-tooltip
+  [nzTooltipTitle]="'Sao chép'"
+>
+  <ng-content> </ng-content>
+  <app-svg [size]="size" [src]="'media/icons/outline/copy.svg'" />
+</div>

@@ -1,0 +1,11 @@
+<div class="icon-wrap-dropdown" *ngIf="icon">
+  <app-svg
+    [src]="icon"
+    [size]="iconSize"
+    [colorChange]="iconColorChange"
+    [ngClass]="iconClass"
+  />
+</div>
+<div class="dropdown-label">
+  <ng-content />
+</div>

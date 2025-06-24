@@ -1,0 +1,21 @@
+<swiper-container #swiper init="false" class="swiper-container">
+  <ng-container *ngIf="!slidesTpl; else slidesFreeTpl">
+    <swiper-slide class="swiper-slide" *ngFor="let item of slides">
+      <ng-container
+        [ngTemplateOutlet]="swiperTpl || swiperDefaultTpl"
+        [ngTemplateOutletContext]="{ item: item }"
+      />
+    </swiper-slide>
+  </ng-container>
+  <ng-template #slidesFreeTpl>
+    <ng-container [ngTemplateOutlet]="slidesTpl" />
+  </ng-template>
+</swiper-container>
+
+<ng-template #swiperDefaultTpl let-item="item">
+  <a [routerLink]="[item?.route]" class="slide-content">
+    <div class="img-wrap">
+      <img [src]="item.image" alt="" class="img" />
+    </div>
+  </a>
+</ng-template>

@@ -1,0 +1,24 @@
+:host {
+  &.app-card-empty {
+    @apply block pb-3;
+    .card-empty-inner {
+      @apply space-y-3 w-full max-w-[492px] mx-auto;
+    }
+
+    .empty-media {
+      @apply w-[160px] h-[160px] mx-auto;
+    }
+
+    .content {
+      @apply text-center;
+    }
+
+    .title {
+      @apply mb-2;
+    }
+
+    .descriptions {
+      // @apply text-text-secondary text-body-large-medium;
+    }
+  }
+}

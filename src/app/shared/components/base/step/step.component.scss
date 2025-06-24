@@ -1,0 +1,125 @@
+:host {
+  &.app-steps-wrap {
+    @apply flex items-center mb-6;
+    gap: 12px;
+    padding: 12px 0px;
+
+    .step {
+      @apply relative;
+
+      // Inactive steps have fixed width
+      &:not(.active) {
+        @apply sm:w-[90px] w-[30px]
+      }
+
+      // Active step takes remaining space
+      &.active {
+        flex: 1;
+      }
+      &-hide {
+        .step-title {
+          @apply hidden;
+        }
+      }
+    }
+
+    &.app-steps-full {
+      .step-container {
+        @apply flex flex-col;
+        gap: 4px;
+
+        .step-header {
+          @apply flex items-baseline ;
+          gap: 4px;
+
+          .step-number {
+            @apply text-title-xs text-text-primary leading-5;
+            width: 20px;
+            text-align: left;
+          }
+
+          .step-title {
+            @apply text-title-small text-text-textneutralprimary;
+            flex: 1;
+          }
+        }
+
+        .step-divider {
+          height: 2px;
+          width: 100%;
+          @apply relative;
+        }
+
+        .step-arrow {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 24px;
+          height: 2px;
+          @apply bg-icon-iconbrandsecondary blur-[4px];
+        }
+      }
+
+      // Styling for different step states
+      .step {
+        &.done,
+        &.active {
+          .step-number {
+            color: #1f1d83;
+          }
+
+          .step-title {
+            color: #18181b;
+          }
+
+          .step-divider {
+            background: var(--step-divider-bg);
+          }
+        }
+        &.done {
+          .step-divider {
+            background: var(--brand-brandprimary100);
+          }
+        }
+        &:not(.done):not(.active) {
+          .step-number {
+            @apply text-text-textneutraltertiary;
+          }
+
+          .step-title {
+            @apply text-text-textneutraltertiary;
+          }
+
+          .step-divider {
+            @apply bg-border-borderdefault;
+          }
+        }
+      }
+    }
+
+    &.app-steps-bar {
+      @apply gap-2;
+      --height-bar: 4px;
+      --bg-bar: var(--primary-light);
+      --bg-bar-active: var(--primary);
+
+      .step {
+        .step-bar {
+          @apply bg-[var(--bg-bar)] h-[var(--height-bar)] rounded-full relative;
+          &:before {
+            content: "";
+            @apply w-0 absolute h-full rounded-full bg-[var(--bg-bar-active)];
+            transition: 0.1s linear;
+            transition-delay: 0.1s;
+          }
+        }
+        &.active,
+        &.done {
+          .step-bar::before {
+            @apply w-full;
+          }
+        }
+      }
+    }
+  }
+}

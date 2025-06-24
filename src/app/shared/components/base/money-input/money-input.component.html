@@ -1,0 +1,157 @@
+<ng-template #prefixTpl>
+  <div class="input-prefix">
+    <div class="wrapper">
+      <app-svg
+        [src]="prefixIcon"
+        *ngIf="prefixIcon"
+        [colorChange]="iconColorChange"
+      />
+      <ng-container [ngTemplateOutlet]="prefix || null" />
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #suffixFullTpl>
+  <div
+    class="input-suffix"
+    *ngIf="
+      suffix || suffixIcon || suffixTpl || changeCCY || ccy || isShowClearBtn()
+    "
+  >
+    <div class="wrapper">
+      <a
+        app-button
+        *ngIf="isShowClearBtn()"
+        [mute]="true"
+        class="clear-icon"
+        [iconOnly]="true"
+        (click)="onClearInput()"
+        [iconColorChange]="false"
+        [size]="'lg'"
+        [prefixIcon]="'media/icons/solid/cancel.svg'"
+      ></a>
+
+      <div
+        class="text-body-large-semibold text-brand-brandprimary100"
+        *ngIf="ccy"
+      >
+        {{ ccy }}
+      </div>
+
+      <app-svg
+        *ngIf="suffixIcon"
+        [src]="suffixIcon"
+        [colorChange]="iconColorChange"
+      />
+
+      <div *ngIf="suffix">{{ suffix }}</div>
+
+      <ng-container [ngTemplateOutlet]="suffixTpl || null" />
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #tooltipDefaultTpl>
+  <div class="text-title-sm">Hạn mức giao dịch</div>
+</ng-template>
+
+<div
+  *ngIf="label"
+  [ngClass]="{
+    label: true,
+    required: showRequired,
+  }"
+>
+  <label class="label-inner" [for]="id">
+    {{ label }}
+    @if (showTooltip) {
+      <button
+        app-button
+        type="button"
+        aria-label="icon tooltip"
+        class="icon-tooltip"
+        [prefixIcon]="tooltipIcon"
+        [color]="UI.ButtonColor.LinkPrimary"
+        [iconOnly]="true"
+        [mute]="true"
+        nz-tooltip
+        [nzTooltipTitle]="tooltipTpl || tooltipDefaultTpl"
+        (click)="handleTooltip($event)"
+      ></button>
+    }
+  </label>
+</div>
+
+<div class="app-root">
+  <div class="app-root-main">
+    <div
+      [ngClass]="{
+        'input-wrapper': true,
+        'input-money-wrapper': true,
+        'input-simple-wrapper': isSimple,
+        'input-wrapper-disabled': control.disabled,
+      }"
+      [class]="size !== 'default' ? ' input-wrapper-' + size : ' '"
+    >
+      <ng-container
+        *ngIf="prefix || prefixIcon"
+        [ngTemplateOutlet]="prefixTpl"
+      />
+
+      <input
+        #moneyInput
+        [id]="id"
+        type="text"
+        [ngClass]="{
+          input: true,
+          'input-money-input': true,
+          'input-empty': !control.value,
+          'input-not-to-text': !numberToText && !isSimple,
+          disabled: control.disabled,
+        }"
+        [formControl]="control"
+        [placeholder]="placeholder"
+        aria-label="input money"
+        [cleave]="cleaveOptions"
+      />
+
+      <ng-container [ngTemplateOutlet]="suffixFullTpl" />
+
+      <div class="frame"></div>
+    </div>
+
+    @if (extendRight) {
+      <div class="extend-right">
+        <ng-container [ngTemplateOutlet]="extendRight" />
+      </div>
+    }
+  </div>
+  @if (
+    (control.invalid && control.touched) || hint || extendBottom || numberToText
+  ) {
+    <div class="explain">
+      <ng-container *ngIf="language$ | async as lang">
+        <div
+          *ngIf="control.value && numberToText"
+          class="text-text-textneutralsecondary text-body-medium-pominent"
+        >
+          {{ rawValue | numberToText: ccy : lang | capitalizeFirstChar }}
+        </div>
+      </ng-container>
+      @if (control.invalid && control.touched) {
+        <app-validate-error
+          [errors]="control.errors"
+          [errorMessages]="errorMessages"
+        />
+      }
+      @if (hint) {
+        <div class="hint">
+          {{ hint }}
+        </div>
+      }
+      @if (extendBottom) {
+        <ng-container [ngTemplateOutlet]="extendBottom" />
+      }
+    </div>
+  }
+</div>

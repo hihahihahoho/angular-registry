@@ -1,0 +1,33 @@
+@for (step of steps; track $index) {
+  <div
+    class="step"
+    [ngClass]="{
+      done: $index < currentStep - 1,
+      active: $index === currentStep - 1,
+      'step-hide': $index !== currentStep - 1,
+    }"
+  >
+    <ng-container *ngIf="type === STEP_TYPE.Full; else stepBarTpl">
+      <div class="step-container">
+        <div class="step-header">
+          <div class="step-number">
+            {{ ($index + 1).toString().padStart(2, "0") }}
+          </div>
+          <div class="step-title">
+            {{ step.name | translate }}
+          </div>
+        </div>
+        <div class="step-divider">
+          <div
+            class="step-arrow"
+            *ngIf="$index === currentStep - 1 && $index < steps.length - 1"
+          ></div>
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-template #stepBarTpl>
+      <div class="step-bar"></div>
+    </ng-template>
+  </div>
+}

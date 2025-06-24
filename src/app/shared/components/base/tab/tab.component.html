@@ -1,0 +1,27 @@
+@if (tabs) {
+  <nz-tabset
+    [nzSelectedIndex]="initIndex"
+    (nzSelectedIndexChange)="tabChange($event)"
+    [nzCentered]="tabCenter"
+  >
+    @for (tab of tabs; track tab; let i = $index) {
+      <nz-tab [nzTitle]="titleTpl">
+        <ng-template #titleTpl>
+          <div *ngIf="tabTitleTpl; else titleTplDefault" class=" flex items-center gap-2">
+            <ng-container
+              [ngTemplateOutlet]="tabTitleTpl"
+              [ngTemplateOutletContext]="{
+                tab: tab,
+                tabIndex: i,
+                selectedIndex: initIndex,
+              }"
+            />
+          </div>
+          <ng-template #titleTplDefault>
+            {{ tab | translate }}
+          </ng-template>
+        </ng-template>
+      </nz-tab>
+    }
+  </nz-tabset>
+}

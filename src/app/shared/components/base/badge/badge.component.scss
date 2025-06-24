@@ -1,0 +1,47 @@
+//name, textColor,  bgColor, borderColor, iconColor
+$BadgeConfigs:
+  ("success", var(--text-textsuccess), var(--background-backgroundsuccesssecondary), var(--transparent), var(--icon-iconsuccess)),
+  ("warning", var(--text-textwarning), var(--background-backgroundwarningsecondary), var(--transparent), var(--icon-iconwarning)),
+  ("disable", var(--text-textdisable), var(--background-backgrounddisable), var(--transparent), var(--icon-icondisable)),
+  ("non-semantic", var(--text-textneutralprimary), var(--background-backgroundsecondary), var(--transparent), var(--icon-iconneutralprimary)),
+  ("error", var(--text-texterror), var(--background-backgrounderrorsecondary), var(--transparent), var(--icon-iconerror)),
+  ("info", var(--text-textinfo), var(--background-backgroundinfosecondary), var(--transparent), var(--icon-iconinfo));
+
+:host {
+  @each $name, $textColor, $bgColor, $borderColor, $iconColor in $BadgeConfigs {
+    &.app-badge-#{$name} {
+      --badge-color: #{$textColor};
+      --badge-bg: #{$bgColor};
+      --badge-border: #{$borderColor};
+      --badge-icon-color: #{$iconColor};
+    }
+  }
+
+  &.app-badge {
+    @apply inline-flex items-center justify-center gap-1 rounded-full text-label-medium px-3 py-1;
+    transition: all 0.15s ease-in;
+    background: var(--badge-bg);
+    color: var(--badge-color);
+    box-shadow: inset 0 0 0 1px var(--badge-border);
+  }
+  &.app-badge-icon-prefix {
+    @apply pl-1;
+  }
+  &.app-badge-icon-suffix {
+    @apply pr-1;
+  }
+
+  svg {
+    color: var(--badge-icon-color);
+  }
+
+  &.app-badge {
+    &-sm {
+      // @apply text-label-xs px-[7px] py-[2px];
+    }
+
+    &-lg {
+      // @apply text-label-medium py-[6px] px-3;
+    }
+  }
+}

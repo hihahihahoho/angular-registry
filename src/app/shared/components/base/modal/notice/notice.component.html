@@ -1,0 +1,63 @@
+<ng-template #iconTpl let-type="type">
+  <div class="flex items-center justify-center notice-icon-wrap">
+    <div class="notice-icon-inner" [ngClass]="type?.type">
+      <app-svg
+        [src]="type?.icon"
+        [colorChange]="false"
+        [extendClass]="'notice-icon'"
+      />
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #header>
+  <ng-container
+    *ngIf="data.type"
+    [ngTemplateOutlet]="iconTpl"
+    [ngTemplateOutletContext]="{ type: data.type }"
+  />
+
+  @if(data.title || data.subTitle) {
+  <div class="modal-title-group">
+    @if(data.title) {
+    <h3 class="modal-title">
+      {{ data.title | translate }}
+    </h3>
+    } @if(data.subTitle) {
+    <p class="modal-title-sub">
+      {{ data.subTitle | translate }}
+    </p>
+    }
+  </div>
+  }
+</ng-template>
+
+<ng-template #actions>
+  <a
+    app-button
+    [size]="UI.ButtonSize.Lg"
+    [color]="data?.type?.btnConfirm?.color || data?.btnConfirm?.color"
+    (click)="confirmModal()"
+  >
+    {{ data.btnConfirm?.title | translate }}
+  </a>
+</ng-template>
+
+<app-modal-base
+  [header]="header"
+  [actions]="actions"
+  [actionsLayout]="data.actionsLayout"
+>
+  @if (typeOf(data.message) === 'object') {
+  <div class="message">
+    <ng-container [ngTemplateOutlet]="data.message" />
+  </div>
+  } @else { @if(data.isServerContent) {
+  <div
+    class="message"
+    [innerHTML]="data.message | replaceToStyleContentFromServer"
+  ></div>
+  } @else {
+  <div class="message" [innerHTML]="data.message | translate"></div>
+  } }
+</app-modal-base>

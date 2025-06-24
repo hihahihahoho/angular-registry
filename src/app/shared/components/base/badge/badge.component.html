@@ -1,0 +1,11 @@
+<app-svg
+  *ngIf="prefixIcon"
+  [src]="prefixIcon"
+  [size]="5"
+/>
+<ng-content />
+<app-svg
+  *ngIf="suffixIcon"
+  [src]="suffixIcon"
+  [size]="5"
+/>

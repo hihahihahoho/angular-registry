@@ -1,0 +1,23 @@
+<div [formGroup]="formOTP" class="input-otps">
+  <ng-otp-input
+    formControlName="otp"
+    [config]="config"
+    (onInputChange)="onOtpChange($event)"
+    class="input-otp-wrap"
+  ></ng-otp-input>
+</div>
+
+@if ((otpControl.invalid && otpControl.touched && errors) || hint) {
+  <div class="explain">
+    @if (hint && !(otpControl.invalid && otpControl.touched)) {
+      <div class="hint">
+        {{ hint }}
+      </div>
+    }
+    @if (showError) {
+      @if ((otpControl.invalid && otpControl.touched) || invalid) {
+        <app-validate-error [errors]="errors" [errorMessages]="errorMessages" [align]="UI.ValidateErrorAlign.Center" />
+      }
+    }
+  </div>
+}

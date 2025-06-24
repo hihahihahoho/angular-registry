@@ -9,8 +9,7 @@
   "paths": {
     "*": "./src/shared",
     "@services/*": "./src/app/shared/services/*",
-    "@components_base/*": "./src/app/shared/components/base/*",
-    "@components_custom/*": "./src/app/shared/components/custom/*",
+    "@components*": "./src/app/shared/components/*",
     "@enums/*": "./src/app/shared/enums/*",
     "@pipes/*": "./src/app/shared/pipes/*",
     "@directives/*": "./src/app/shared/directives/*",

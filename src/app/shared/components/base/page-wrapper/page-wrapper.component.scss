@@ -1,0 +1,19 @@
+// name, size
+$pageSizes: ("medium", var(--page-wrapper)), ("large", var(--page-wrapper-lg)),
+  ("xlarge", var(--page-wrapper-xl)), ("full", var(--page-wrapper-full));
+:host {
+  &.app-page-wrapper {
+    @apply block mx-auto;
+
+    &:not(.no-padding) {
+      @apply px-[var(--pd-base)];
+    }
+  }
+
+  @each $name, $pgSize in $pageSizes {
+    &.app-page-wrapper-#{$name} {
+      --pageWraperSizeCurrent: #{$pgSize};
+      max-width: calc($pgSize + var(--pd-base) * 2);
+    }
+  }
+}

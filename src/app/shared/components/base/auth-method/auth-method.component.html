@@ -1,0 +1,7 @@
+<ng-container [ngSwitch]="type">
+  @switch (type) {
+    @case (authType.SMS_OTP) {
+      <app-sms-otp />
+    }
+  }
+</ng-container>

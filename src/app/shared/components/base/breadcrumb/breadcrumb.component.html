@@ -1,0 +1,68 @@
+<ng-template
+  #breadCrumbTpl
+  let-item="item"
+  let-isLast="isLast"
+  let-special="special"
+>
+
+  @if (special) {
+    <a
+      class="breadcrumb-item"
+      nz-dropdown
+      [nzTrigger]="'click'"
+      [nzDropdownMenu]="dropDownTpl"
+    >
+      ...
+    </a>
+  } @else {
+    <a
+      class="breadcrumb-item"
+      [routerLink]="isLast || item?.url === '/' ? null : item?.url"
+      [ngClass]="{
+        'breadcrumb-item-active': isLast,
+        'breadcrumb-item-disabled': item?.url === '/' && !isLast
+      }"
+    >
+      <div>{{ item.label | translate }}</div>
+    </a>
+  }
+</ng-template>
+
+<a [routerLink]="HomeBread.url" class="flex items-center">
+  <app-svg
+    [src]="'media/icons/doutone/home.svg'"
+    [size]="5"
+  />
+</a>
+@for (breadcrumb of breadcrumbs; track $index) {
+  @if ($count > LENGTH_MAX_SHOW_ALL) {
+    @let lastIndex = $count - 1;
+    @if ([0, lastIndex].includes($index)) {
+      <ng-container
+        [ngTemplateOutlet]="breadCrumbTpl"
+        [ngTemplateOutletContext]="{ item: breadcrumb, isLast: $last }"
+      />
+    } @else if ($index === 1) {
+      <ng-container
+        [ngTemplateOutlet]="breadCrumbTpl"
+        [ngTemplateOutletContext]="{ special: true }"
+      />
+    }
+  } @else {
+    <ng-container
+      [ngTemplateOutlet]="breadCrumbTpl"
+      [ngTemplateOutletContext]="{ item: breadcrumb, isLast: $last }"
+    />
+  }
+}
+<nz-dropdown-menu #dropDownTpl="nzDropdownMenu">
+  <ul nz-menu>
+    @for (item of breadcrumbs.slice(1, -1); track $index) {
+      <li nz-menu-item [routerLink]="item.url">
+        <app-dropdown-item>
+          {{ item.label | translate }}
+        </app-dropdown-item>
+      </li>
+    }
+  </ul>
+</nz-dropdown-menu>
